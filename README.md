@@ -24,8 +24,10 @@ hardcoded so the site owner can edit it without touching code.
 | Schema.org JSON-LD (Organization, WebSite, Service, Article, JobPosting, BreadcrumbList) | Code — `inc/schema.php`, `inc/breadcrumbs.php` |
 | SEO meta fallback + ACF↔Rank Math/Yoast bridge + noindex | Code — `inc/seo-support.php` |
 | Performance hardening (lazy-load, dequeues, defer, CWV) | Code — `inc/performance.php` |
-| Fallback PHP templates for Service/Case Study/Career/404/HTML Sitemap | Code — `templates/` (used only if Elementor Pro Theme Builder isn't licensed) |
-| Actual page layouts (Home, About, Contact, etc.), colors, fonts, spacing | **Elementor** — built visually by the site editor using Site Settings |
+| Home, About Us, Contact Us page layouts | Code — importable Elementor JSON templates in `elementor-templates/` |
+| Services Listing, Service Detail, Blog Listing, Blog Detail layouts | Code — `templates/archive/archive-service.php`, `templates/single-service.php`, `index.php`, `single.php` (Elementor Pro Theme Builder equivalent documented in `elementor-templates/THEME-BUILDER-GUIDE.md`) |
+| Fallback PHP templates for Case Study/Career/404/HTML Sitemap | Code — `templates/` (used only if Elementor Pro Theme Builder isn't licensed) |
+| Colors, fonts, spacing, button styling | **Elementor → Site Settings** — set once, referenced by every page |
 | Real service/case-study/career/testimonial content, blog posts | **WP Admin** — entered by the site administrator |
 | Plugin installation & activation | **WP Admin → Plugins** |
 | CF7 form creation from the templates below | **WP Admin → Contact → Add New** (paste in) |
@@ -64,10 +66,25 @@ hardcoded so the site owner can edit it without touching code.
    add_filter( 'devhems_service_enquiry_form_id', fn() => 123 );
    add_filter( 'devhems_career_application_form_id', fn() => 124 );
    ```
-7. Build the header/footer/pages in Elementor (Pro Theme Builder if
-   licensed) per the section lists in the project brief, using the
-   `[devhems_mega_menu]`, `[devhems_breadcrumbs]`, `[devhems_service_enquiry_form]`
-   and `[devhems_career_application_form]` shortcodes where noted.
+7. Build the header/footer in Elementor (Pro Theme Builder if licensed),
+   using the `[devhems_mega_menu]` shortcode for the navigation if not
+   using Elementor Pro's own Nav Menu widget.
+7a. Import the Home, About Us and Contact Us layouts: create each Page in
+    WP Admin, edit it with Elementor, then **Templates (folder icon) →
+    Import Templates** and select `elementor-templates/home.json`,
+    `about-us.json` or `contact-us.json`, then insert the imported template
+    into the page. Replace the placeholder CF7 shortcode IDs in each
+    (`PROJECT_ENQUIRY_FORM_ID`, `GENERAL_CONTACT_FORM_ID`,
+    `FOOTER_ENQUIRY_FORM_ID`) with the real form IDs from step 5, and swap
+    the placeholder images/logos/copy for real content.
+7b. Services Listing, Service Detail, Blog Listing and Blog Detail render
+    automatically from the PHP templates in `templates/`, `index.php` and
+    `single.php` the moment content exists (no page needs to be created for
+    them — they're CPT archive/singular and post archive/singular
+    templates). If Elementor Pro is licensed, rebuild them natively in the
+    Theme Builder instead by following `elementor-templates/THEME-BUILDER-GUIDE.md`
+    — Elementor's own Theme Builder template then takes priority
+    automatically, no theme code changes needed.
 8. Configure SMTP, reCAPTCHA/Turnstile, Rank Math/Yoast, and GA4/GTM from
    their own plugin settings screens.
 9. Add real content: Services, Case Studies, Careers, Testimonials, Blog
@@ -99,3 +116,12 @@ hardcoded so the site owner can edit it without touching code.
   and analytics IDs belong in their respective plugin settings screens, not
   in this theme — keeps them editable without a deploy and out of version
   control.
+- **Elementor JSON vs. PHP fallback templates**: Home/About/Contact are
+  static content, so they're shipped as real, importable Elementor JSON
+  (works in free Elementor). Services Listing/Service Detail/Blog
+  Listing/Blog Detail need to loop over posts or bind to a different post's
+  ACF fields on every page load — that requires Elementor Pro's Theme
+  Builder, which can't be authored as JSON and verified without a live site
+  to import it into. Those four ship as working PHP templates instead, with
+  a widget-by-widget Theme Builder rebuild guide for when Pro is available
+  (`elementor-templates/THEME-BUILDER-GUIDE.md`).

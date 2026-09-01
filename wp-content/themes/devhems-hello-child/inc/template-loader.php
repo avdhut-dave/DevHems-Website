@@ -29,6 +29,15 @@ function devhems_template_loader( $template ) {
 		}
 	}
 
+	// Service Category term archives reuse the Services Listing template
+	// (it already branches on is_tax() to highlight the active category).
+	if ( is_tax( 'service_category' ) ) {
+		$candidate = DEVHEMS_THEME_DIR . '/templates/archive/archive-service.php';
+		if ( file_exists( $candidate ) ) {
+			return $candidate;
+		}
+	}
+
 	return $template;
 }
 add_filter( 'template_include', 'devhems_template_loader', 15 );

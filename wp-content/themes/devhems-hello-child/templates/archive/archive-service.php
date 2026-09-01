@@ -2,11 +2,15 @@
 /**
  * Services Listing page fallback template.
  * Prefer building this visually in Elementor Pro Theme Builder
- * (condition: Archive = Service) with the reusable service card component.
+ * (condition: Archive = Service) with the reusable service card component
+ * and a Loop Grid widget filtered by Service Category — see
+ * elementor-templates/THEME-BUILDER-GUIDE.md for the exact widget setup.
  */
 
 defined( 'ABSPATH' ) || exit;
 get_header();
+
+$categories = get_terms( array( 'taxonomy' => 'service_category', 'hide_empty' => true ) );
 ?>
 
 <main id="content" tabindex="-1">
@@ -14,7 +18,21 @@ get_header();
 
 	<header class="devhems-archive-header">
 		<h1><?php esc_html_e( 'Our Services', 'devhems-child' ); ?></h1>
+		<p><?php esc_html_e( 'Digital marketing, website development and AI automation services built around your growth goals.', 'devhems-child' ); ?></p>
 	</header>
+
+	<?php if ( ! empty( $categories ) && ! is_wp_error( $categories ) ) : ?>
+	<nav class="devhems-service-filter" aria-label="<?php esc_attr_e( 'Filter services by category', 'devhems-child' ); ?>">
+		<a href="<?php echo esc_url( get_post_type_archive_link( 'service' ) ); ?>" class="devhems-filter-pill<?php echo ( ! is_tax() ) ? ' is-active' : ''; ?>">
+			<?php esc_html_e( 'All Services', 'devhems-child' ); ?>
+		</a>
+		<?php foreach ( $categories as $category ) : ?>
+			<a href="<?php echo esc_url( get_term_link( $category ) ); ?>" class="devhems-filter-pill<?php echo is_tax( 'service_category', $category->term_id ) ? ' is-active' : ''; ?>">
+				<?php echo esc_html( $category->name ); ?>
+			</a>
+		<?php endforeach; ?>
+	</nav>
+	<?php endif; ?>
 
 	<div class="devhems-card-grid">
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -28,6 +46,11 @@ get_header();
 	</div>
 
 	<?php the_posts_pagination(); ?>
+
+	<section class="devhems-final-cta">
+		<h2><?php esc_html_e( 'Not sure which service fits your business?', 'devhems-child' ); ?></h2>
+		<a class="devhems-header-cta" href="<?php echo esc_url( home_url( '/contact-us/' ) ); ?>"><?php esc_html_e( 'Talk to Our Team', 'devhems-child' ); ?></a>
+	</section>
 </main>
 
 <?php get_footer(); ?>
