@@ -181,10 +181,10 @@
               "elType": "widget",
               "settings": {
                 "image": {
-                  "url": "",
+                  "url": "https://placehold.co/900x700/0842B8/FFFFFF?text=Hero+Image&font=poppins",
                   "id": "",
-                  "alt": "DevHems Technology hero illustration",
-                  "source": "library"
+                  "alt": "Hero Image",
+                  "source": "url"
                 },
                 "border_radius": {
                   "unit": "px",
@@ -258,10 +258,10 @@
               "elType": "widget",
               "settings": {
                 "image": {
-                  "url": "",
+                  "url": "https://placehold.co/200x80/E7EAF0/5A6472?text=Client+Logo+1&font=poppins",
                   "id": "",
-                  "alt": "Client logo",
-                  "source": "library"
+                  "alt": "Client Logo 1",
+                  "source": "url"
                 }
               },
               "elements": [],
@@ -272,10 +272,10 @@
               "elType": "widget",
               "settings": {
                 "image": {
-                  "url": "",
+                  "url": "https://placehold.co/200x80/E7EAF0/5A6472?text=Client+Logo+2&font=poppins",
                   "id": "",
-                  "alt": "Client logo",
-                  "source": "library"
+                  "alt": "Client Logo 2",
+                  "source": "url"
                 }
               },
               "elements": [],
@@ -286,10 +286,10 @@
               "elType": "widget",
               "settings": {
                 "image": {
-                  "url": "",
+                  "url": "https://placehold.co/200x80/E7EAF0/5A6472?text=Client+Logo+3&font=poppins",
                   "id": "",
-                  "alt": "Client logo",
-                  "source": "library"
+                  "alt": "Client Logo 3",
+                  "source": "url"
                 }
               },
               "elements": [],
@@ -300,10 +300,10 @@
               "elType": "widget",
               "settings": {
                 "image": {
-                  "url": "",
+                  "url": "https://placehold.co/200x80/E7EAF0/5A6472?text=Client+Logo+4&font=poppins",
                   "id": "",
-                  "alt": "Client logo",
-                  "source": "library"
+                  "alt": "Client Logo 4",
+                  "source": "url"
                 }
               },
               "elements": [],
@@ -314,10 +314,10 @@
               "elType": "widget",
               "settings": {
                 "image": {
-                  "url": "",
+                  "url": "https://placehold.co/200x80/E7EAF0/5A6472?text=Client+Logo+5&font=poppins",
                   "id": "",
-                  "alt": "Client logo",
-                  "source": "library"
+                  "alt": "Client Logo 5",
+                  "source": "url"
                 }
               },
               "elements": [],
@@ -1668,10 +1668,10 @@
                   "elType": "widget",
                   "settings": {
                     "image": {
-                      "url": "",
+                      "url": "https://placehold.co/800x600/0B5FFF/FFFFFF?text=Case+Study+1&font=poppins",
                       "id": "",
-                      "alt": "Case study 1 thumbnail",
-                      "source": "library"
+                      "alt": "Case Study 1",
+                      "source": "url"
                     },
                     "border_radius": {
                       "unit": "px",
@@ -1775,10 +1775,10 @@
                   "elType": "widget",
                   "settings": {
                     "image": {
-                      "url": "",
+                      "url": "https://placehold.co/800x600/101828/FFFFFF?text=Case+Study+2&font=poppins",
                       "id": "",
-                      "alt": "Case study 2 thumbnail",
-                      "source": "library"
+                      "alt": "Case Study 2",
+                      "source": "url"
                     },
                     "border_radius": {
                       "unit": "px",
@@ -1882,10 +1882,10 @@
                   "elType": "widget",
                   "settings": {
                     "image": {
-                      "url": "",
+                      "url": "https://placehold.co/800x600/14C38E/FFFFFF?text=Case+Study+3&font=poppins",
                       "id": "",
-                      "alt": "Case study 3 thumbnail",
-                      "source": "library"
+                      "alt": "Case Study 3",
+                      "source": "url"
                     },
                     "border_radius": {
                       "unit": "px",
@@ -2394,10 +2394,10 @@
                   "elType": "widget",
                   "settings": {
                     "image": {
-                      "url": "",
+                      "url": "https://placehold.co/800x600/101828/FFFFFF?text=Blog+Post+1&font=poppins",
                       "id": "",
-                      "alt": "Blog post 1 thumbnail",
-                      "source": "library"
+                      "alt": "Blog Post 1",
+                      "source": "url"
                     },
                     "border_radius": {
                       "unit": "px",
@@ -2501,10 +2501,10 @@
                   "elType": "widget",
                   "settings": {
                     "image": {
-                      "url": "",
+                      "url": "https://placehold.co/800x600/14C38E/FFFFFF?text=Blog+Post+2&font=poppins",
                       "id": "",
-                      "alt": "Blog post 2 thumbnail",
-                      "source": "library"
+                      "alt": "Blog Post 2",
+                      "source": "url"
                     },
                     "border_radius": {
                       "unit": "px",
@@ -2608,10 +2608,10 @@
                   "elType": "widget",
                   "settings": {
                     "image": {
-                      "url": "",
+                      "url": "https://placehold.co/800x600/0842B8/FFFFFF?text=Blog+Post+3&font=poppins",
                       "id": "",
-                      "alt": "Blog post 3 thumbnail",
-                      "source": "library"
+                      "alt": "Blog Post 3",
+                      "source": "url"
                     },
                     "border_radius": {
                       "unit": "px",

@@ -148,10 +148,10 @@
               "elType": "widget",
               "settings": {
                 "image": {
-                  "url": "",
+                  "url": "https://placehold.co/800x650/14C38E/0B2A22?text=Our+Team&font=poppins",
                   "id": "",
-                  "alt": "Our team at DevHems Technology",
-                  "source": "library"
+                  "alt": "Our Team",
+                  "source": "url"
                 },
                 "border_radius": {
                   "unit": "px",
@@ -522,10 +522,10 @@
                     "title_text": "Team Member Name",
                     "description_text": "Role / Title",
                     "image": {
-                      "url": "",
+                      "url": "https://placehold.co/400x400/0B5FFF/FFFFFF?text=Team+Photo&font=poppins",
                       "id": "",
                       "alt": "Team Member Name",
-                      "source": "library"
+                      "source": "url"
                     }
                   },
                   "elements": [],
@@ -589,10 +589,10 @@
                     "title_text": "Team Member Name",
                     "description_text": "Role / Title",
                     "image": {
-                      "url": "",
+                      "url": "https://placehold.co/400x400/101828/FFFFFF?text=Team+Photo&font=poppins",
                       "id": "",
                       "alt": "Team Member Name",
-                      "source": "library"
+                      "source": "url"
                     }
                   },
                   "elements": [],
@@ -656,10 +656,10 @@
                     "title_text": "Team Member Name",
                     "description_text": "Role / Title",
                     "image": {
-                      "url": "",
+                      "url": "https://placehold.co/400x400/14C38E/FFFFFF?text=Team+Photo&font=poppins",
                       "id": "",
                       "alt": "Team Member Name",
-                      "source": "library"
+                      "source": "url"
                     }
                   },
                   "elements": [],
@@ -723,10 +723,10 @@
                     "title_text": "Team Member Name",
                     "description_text": "Role / Title",
                     "image": {
-                      "url": "",
+                      "url": "https://placehold.co/400x400/0842B8/FFFFFF?text=Team+Photo&font=poppins",
                       "id": "",
                       "alt": "Team Member Name",
-                      "source": "library"
+                      "source": "url"
                     }
                   },
                   "elements": [],
