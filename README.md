@@ -24,9 +24,9 @@ hardcoded so the site owner can edit it without touching code.
 | Schema.org JSON-LD (Organization, WebSite, Service, Article, JobPosting, BreadcrumbList) | Code — `inc/schema.php`, `inc/breadcrumbs.php` |
 | SEO meta fallback + ACF↔Rank Math/Yoast bridge + noindex | Code — `inc/seo-support.php` |
 | Performance hardening (lazy-load, dequeues, defer, CWV) | Code — `inc/performance.php` |
-| Home, About Us, Contact Us page layouts | Code — importable Elementor JSON templates in `elementor-templates/` |
-| Services Listing, Service Detail, Blog Listing, Blog Detail layouts | Code — `templates/archive/archive-service.php`, `templates/single-service.php`, `index.php`, `single.php` (Elementor Pro Theme Builder equivalent documented in `elementor-templates/THEME-BUILDER-GUIDE.md`) |
-| Fallback PHP templates for Case Study/Career/404/HTML Sitemap | Code — `templates/` (used only if Elementor Pro Theme Builder isn't licensed) |
+| Home, About Us, Contact Us, Privacy Policy, Terms & Conditions, Thank You page layouts | Code — importable Elementor JSON templates in `elementor-templates/` |
+| Services Listing, Service Detail, Portfolio/Case Studies Listing, Case Study Detail, Careers Listing, Career Detail, Blog Listing, Blog Detail layouts | Code — `templates/archive/*.php`, `templates/single-*.php`, `index.php`, `single.php` (Elementor Pro Theme Builder equivalent documented in `elementor-templates/THEME-BUILDER-GUIDE.md`) |
+| Fallback PHP templates for 404/HTML Sitemap | Code — `templates/` (used only if Elementor Pro Theme Builder isn't licensed) |
 | Colors, fonts, spacing, button styling | **Elementor → Site Settings** — set once, referenced by every page |
 | Real service/case-study/career/testimonial content, blog posts | **WP Admin** — entered by the site administrator |
 | Plugin installation & activation | **WP Admin → Plugins** |
@@ -69,26 +69,37 @@ hardcoded so the site owner can edit it without touching code.
 7. Build the header/footer in Elementor (Pro Theme Builder if licensed),
    using the `[devhems_mega_menu]` shortcode for the navigation if not
    using Elementor Pro's own Nav Menu widget.
-7a. Import the Home, About Us and Contact Us layouts: create each Page in
-    WP Admin, edit it with Elementor, then **Templates (folder icon) →
-    Import Templates** and select `elementor-templates/home.json`,
-    `about-us.json` or `contact-us.json`, then insert the imported template
-    into the page. Replace the placeholder CF7 shortcode IDs in each
-    (`PROJECT_ENQUIRY_FORM_ID`, `GENERAL_CONTACT_FORM_ID`,
-    `FOOTER_ENQUIRY_FORM_ID`) with the real form IDs from step 5, and swap
-    the placeholder images/logos/copy for real content.
-7b. Services Listing, Service Detail, Blog Listing and Blog Detail render
+7a. Import the static-content layouts: create a Page in WP Admin for each of
+    **Home, About Us, Contact Us, Privacy Policy, Terms and Conditions, and
+    Thank You**, edit it with Elementor, then **Templates (folder icon) →
+    Import Templates** and select the matching file from
+    `elementor-templates/` (`home.json`, `about-us.json`, `contact-us.json`,
+    `privacy-policy.json`, `terms-conditions.json`, `thank-you.json`), then
+    insert the imported template into the page. Replace the placeholder CF7
+    shortcode IDs (`PROJECT_ENQUIRY_FORM_ID`, `GENERAL_CONTACT_FORM_ID`,
+    `FOOTER_ENQUIRY_FORM_ID`) with the real form IDs from step 5, swap
+    placeholder images/logos/copy for real content, and set the Thank You
+    page's slug to `/thank-you/` (the CF7 redirect script in
+    `inc/cf7-integration.php` targets that URL). **Privacy Policy and Terms
+    and Conditions ship with placeholder legal text — have a lawyer review
+    and finalize both before launch.**
+7b. Services Listing, Service Detail, Portfolio Listing, Case Study Detail,
+    Careers Listing, Career Detail, Blog Listing and Blog Detail render
     automatically from the PHP templates in `templates/`, `index.php` and
     `single.php` the moment content exists (no page needs to be created for
-    them — they're CPT archive/singular and post archive/singular
-    templates). If Elementor Pro is licensed, rebuild them natively in the
-    Theme Builder instead by following `elementor-templates/THEME-BUILDER-GUIDE.md`
-    — Elementor's own Theme Builder template then takes priority
-    automatically, no theme code changes needed.
+    them — they're CPT/post archive and singular templates). If Elementor
+    Pro is licensed, rebuild them natively in the Theme Builder instead by
+    following `elementor-templates/THEME-BUILDER-GUIDE.md` — Elementor's own
+    Theme Builder template then takes priority automatically, no theme code
+    changes needed.
 8. Configure SMTP, reCAPTCHA/Turnstile, Rank Math/Yoast, and GA4/GTM from
    their own plugin settings screens.
+8a. Settings → Reading: set "Your homepage displays" to **A static page**,
+    choose the Home page for Homepage and create/choose a "Blog" page for
+    Posts page (this is what makes `index.php` render at `/blog/` as the
+    Blog Listing rather than at the site root).
 9. Add real content: Services, Case Studies, Careers, Testimonials, Blog
-   posts, and the required legal pages (Privacy Policy, Terms & Conditions).
+   posts. (Portfolio/Careers listing pages need no separate WP Page — see 7b.)
 10. Create a Page using the **HTML Sitemap** template
     (`templates/page-html-sitemap.php`) for the required HTML Sitemap page —
     it lists Pages/Services/Case Studies/Careers/Blog automatically.

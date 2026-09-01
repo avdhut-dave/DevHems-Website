@@ -29,12 +29,21 @@ function devhems_template_loader( $template ) {
 		}
 	}
 
-	// Service Category term archives reuse the Services Listing template
-	// (it already branches on is_tax() to highlight the active category).
-	if ( is_tax( 'service_category' ) ) {
-		$candidate = DEVHEMS_THEME_DIR . '/templates/archive/archive-service.php';
-		if ( file_exists( $candidate ) ) {
-			return $candidate;
+	// Taxonomy term archives reuse their post type's own archive template
+	// (each already branches on is_tax()/is_wp_error() to highlight the
+	// active term and only show its own filter bar).
+	$taxonomy_map = array(
+		'service_category' => 'templates/archive/archive-service.php',
+		'department'        => 'templates/archive/archive-career.php',
+		'industry'          => 'templates/archive/archive-case-study.php',
+	);
+
+	foreach ( $taxonomy_map as $taxonomy => $theme_relative_path ) {
+		if ( is_tax( $taxonomy ) ) {
+			$candidate = DEVHEMS_THEME_DIR . '/' . $theme_relative_path;
+			if ( file_exists( $candidate ) ) {
+				return $candidate;
+			}
 		}
 	}
 
