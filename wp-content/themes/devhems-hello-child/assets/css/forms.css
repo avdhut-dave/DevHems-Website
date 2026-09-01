@@ -1,0 +1,176 @@
+/* Contact Form 7 styling — added via enqueued stylesheet only, per the
+   requirement not to edit CF7 core files or use inline plugin CSS hacks. */
+
+.wpcf7-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--dh-space-2) var(--dh-space-3);
+}
+
+.wpcf7-form p {
+  margin: 0;
+}
+
+.wpcf7-form .dh-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.wpcf7-form .dh-field-full,
+.wpcf7-form .dh-field-message,
+.wpcf7-form .dh-field-submit,
+.wpcf7-form .dh-field-consent {
+  grid-column: 1 / -1;
+}
+
+.wpcf7-form label {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--dh-color-secondary);
+}
+
+.wpcf7-form .dh-required {
+  color: var(--dh-color-error);
+  margin-left: 2px;
+}
+
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"],
+.wpcf7-form input[type="tel"],
+.wpcf7-form input[type="url"],
+.wpcf7-form input[type="number"],
+.wpcf7-form input[type="date"],
+.wpcf7-form select,
+.wpcf7-form textarea {
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid var(--dh-color-border);
+  border-radius: var(--dh-radius);
+  font-family: var(--dh-font-body);
+  font-size: 15px;
+  color: var(--dh-color-text);
+  background: #fff;
+  width: 100%;
+}
+
+.wpcf7-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.wpcf7-form input:focus-visible,
+.wpcf7-form select:focus-visible,
+.wpcf7-form textarea:focus-visible {
+  outline: 3px solid var(--dh-color-accent);
+  outline-offset: 1px;
+  border-color: var(--dh-color-primary);
+}
+
+.wpcf7-form input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+.wpcf7-form .dh-field-consent label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.wpcf7-form input[type="submit"] {
+  min-height: 48px;
+  padding: 12px 32px;
+  background: var(--dh-color-primary);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--dh-radius);
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.15s ease, opacity 0.15s ease;
+}
+
+.wpcf7-form input[type="submit"]:hover {
+  background: var(--dh-color-primary-dark);
+}
+
+.wpcf7-form input[type="submit"]:disabled,
+.wpcf7-form input[type="submit"].is-loading {
+  opacity: 0.7;
+  cursor: progress;
+}
+
+.wpcf7-form input[type="submit"].is-loading::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-left: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: dh-spin 0.6s linear infinite;
+  vertical-align: middle;
+}
+
+@keyframes dh-spin {
+  to { transform: rotate(360deg); }
+}
+
+.wpcf7-form .wpcf7-not-valid-tip {
+  color: var(--dh-color-error);
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.wpcf7-form .wpcf7-not-valid {
+  border-color: var(--dh-color-error);
+}
+
+.wpcf7 .wpcf7-response-output {
+  grid-column: 1 / -1;
+  border-radius: var(--dh-radius);
+  padding: 14px 16px;
+  margin: var(--dh-space-2) 0 0;
+  font-size: 14px;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+  background: #E8F7EE;
+  border: 1px solid var(--dh-color-success);
+  color: var(--dh-color-success);
+}
+
+.wpcf7 form.failed .wpcf7-response-output,
+.wpcf7 form.aborted .wpcf7-response-output,
+.wpcf7 form.spam .wpcf7-response-output {
+  background: #FDECEC;
+  border: 1px solid var(--dh-color-error);
+  color: var(--dh-color-error);
+}
+
+.wpcf7 .screen-reader-response {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Honeypot field — visually hidden but present in the DOM/tab order-safe way. */
+.dh-honeypot-field {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .wpcf7-form {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,88 @@
+DevHems — Contact Form 7 template: PROJECT ENQUIRY FORM
+Used on: Home page and About Us page
+=========================================================
+--------------------------- FORM -----------------------------------------
+<div class="dh-field dh-field-full">
+  <label for="dh-pe-name">Full Name <span class="dh-required">*</span></label>
+  [text* full-name id:dh-pe-name autocomplete:name]
+</div>
+
+<div class="dh-field">
+  <label for="dh-pe-email">Business Email <span class="dh-required">*</span></label>
+  [email* your-email id:dh-pe-email autocomplete:email]
+</div>
+
+<div class="dh-field">
+  <label for="dh-pe-phone">Phone Number <span class="dh-required">*</span></label>
+  [tel* phone id:dh-pe-phone autocomplete:tel]
+</div>
+
+<div class="dh-field">
+  <label for="dh-pe-company">Company Name</label>
+  [text company id:dh-pe-company]
+</div>
+
+<div class="dh-field">
+  <label for="dh-pe-service">Service Interested In</label>
+  [select required_service id:dh-pe-service "Select a service" "Digital Marketing / SEO" "Website Design & Development" "AI & Automation" "Not sure yet"]
+</div>
+
+<div class="dh-field">
+  <label for="dh-pe-budget">Estimated Budget</label>
+  [select budget id:dh-pe-budget "Select a range" "Under $1,000" "$1,000 - $5,000" "$5,000 - $15,000" "$15,000+"]
+</div>
+
+<div class="dh-field dh-field-message">
+  <label for="dh-pe-details">Tell us about your project <span class="dh-required">*</span></label>
+  [textarea* project-details id:dh-pe-details]
+</div>
+
+<div class="dh-field dh-field-consent">
+  <label>[checkbox* consent id:dh-pe-consent "I agree to the Privacy Policy."]</label>
+</div>
+
+[hidden source_url default:get]
+[hidden utm_source default:get]
+[hidden utm_medium default:get]
+[hidden utm_campaign default:get]
+<p class="dh-honeypot-field" aria-hidden="true">
+  <label>Website (leave blank)<input type="text" name="dh_hp_website" tabindex="-1" autocomplete="off"></label>
+</p>
+
+<div class="dh-field-submit">
+  [submit "Start Your Project"]
+</div>
+
+--------------------------- MAIL (admin notification) ---------------------
+To: info@devhems.com
+From: DevHems Technology Website <no-reply@devhems.com>
+Subject: [Project Enquiry] [full-name] — [required_service]
+Additional Headers: Reply-To: [your-email]
+
+Form: Project Enquiry Form
+Date: [_date] [_time]
+Name: [full-name]
+Email: [your-email]
+Phone: [phone]
+Company: [company]
+Service: [required_service]
+Budget: [budget]
+
+Project Details:
+[project-details]
+
+Source Page: [source_url]
+UTM Source: [utm_source] | Medium: [utm_medium] | Campaign: [utm_campaign]
+
+-------------------- MAIL (2) (visitor acknowledgement) --------------------
+To: [your-email]
+From: DevHems Technology <no-reply@devhems.com>
+Subject: Thanks for sharing your project with DevHems Technology
+Additional Headers: Reply-To: info@devhems.com
+
+Hi [full-name],
+
+We've received your project details and will follow up within one
+business day with next steps.
+
+— DevHems Technology

@@ -1,0 +1,231 @@
+/* Shared component styling for the fallback PHP templates (single-service,
+   single-case-study, single-career, archives, 404, HTML sitemap). Elementor
+   Theme Builder templates style themselves via Site Settings instead. */
+
+main#content {
+  max-width: var(--dh-container);
+  margin: 0 auto;
+  padding: 0 var(--dh-space-3) var(--dh-space-5);
+}
+
+.devhems-breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  margin: var(--dh-space-2) 0;
+  padding: 0;
+  font-size: 13px;
+  color: var(--dh-color-text-muted);
+}
+.devhems-breadcrumbs li:not(:last-child)::after {
+  content: "/";
+  margin-left: 6px;
+}
+.devhems-breadcrumbs a {
+  color: var(--dh-color-text-muted);
+}
+
+.devhems-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--dh-space-3);
+  margin: var(--dh-space-3) 0;
+}
+
+.devhems-service-card,
+.devhems-case-study-card,
+.devhems-benefit-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: var(--dh-space-2);
+  border: 1px solid var(--dh-color-border);
+  border-radius: var(--dh-radius);
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+}
+
+.devhems-service-card img,
+.devhems-case-study-card img {
+  border-radius: calc(var(--dh-radius) - 4px);
+  width: 100%;
+  height: auto;
+}
+
+.devhems-process-list {
+  list-style: none;
+  margin: var(--dh-space-3) 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--dh-space-3);
+}
+.devhems-process-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--dh-color-primary);
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.devhems-logo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--dh-space-3);
+  align-items: center;
+}
+.devhems-logo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--dh-color-text-muted);
+}
+
+.devhems-faq-accordion {
+  margin: var(--dh-space-3) 0;
+  border-top: 1px solid var(--dh-color-border);
+}
+.devhems-faq-item {
+  border-bottom: 1px solid var(--dh-color-border);
+}
+.devhems-faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 16px 4px;
+  background: none;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  min-height: 44px;
+  color: var(--dh-color-secondary);
+}
+.devhems-faq-answer {
+  padding: 0 4px 16px;
+  color: var(--dh-color-text-muted);
+}
+
+.devhems-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--dh-space-3);
+  text-align: center;
+  margin: var(--dh-space-3) 0;
+}
+.devhems-stat-value {
+  display: block;
+  font-family: var(--dh-font-heading);
+  font-size: 32px;
+  color: var(--dh-color-primary);
+}
+.devhems-stat-label {
+  display: block;
+  font-size: 13px;
+  color: var(--dh-color-text-muted);
+}
+
+.devhems-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--dh-space-2);
+  margin: var(--dh-space-3) 0;
+}
+.devhems-gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--dh-radius);
+}
+
+.devhems-job-list {
+  list-style: none;
+  margin: var(--dh-space-3) 0;
+  padding: 0;
+}
+.devhems-job-list-item {
+  border: 1px solid var(--dh-color-border);
+  border-radius: var(--dh-radius);
+  margin-bottom: var(--dh-space-2);
+}
+.devhems-job-list-item a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--dh-space-2);
+  padding: var(--dh-space-2);
+  text-decoration: none;
+  color: inherit;
+  min-height: 44px;
+}
+.devhems-job-list-meta {
+  color: var(--dh-color-text-muted);
+  font-size: 13px;
+}
+
+.devhems-job-closed-notice {
+  display: inline-block;
+  background: #FDECEC;
+  color: var(--dh-color-error);
+  padding: 8px 14px;
+  border-radius: var(--dh-radius);
+  font-size: 14px;
+}
+
+.devhems-final-cta {
+  text-align: center;
+  background: var(--dh-color-bg-alt);
+  border-radius: var(--dh-radius);
+  padding: var(--dh-space-4) var(--dh-space-3);
+  margin: var(--dh-space-4) 0;
+}
+
+.devhems-404 {
+  text-align: center;
+  padding: var(--dh-space-5) var(--dh-space-3);
+}
+.devhems-404-search {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin: var(--dh-space-3) 0;
+  flex-wrap: wrap;
+}
+.devhems-404-search input {
+  min-height: 44px;
+  padding: 0 14px;
+  border: 1px solid var(--dh-color-border);
+  border-radius: var(--dh-radius);
+}
+.devhems-404-search button {
+  min-height: 44px;
+  padding: 0 20px;
+  border: none;
+  border-radius: var(--dh-radius);
+  background: var(--dh-color-primary);
+  color: #fff;
+  cursor: pointer;
+}
+.devhems-404-links {
+  display: flex;
+  gap: var(--dh-space-2);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: var(--dh-space-2);
+}
+
+@media (max-width: 767px) {
+  .devhems-card-grid,
+  .devhems-process-list,
+  .devhems-stat-grid,
+  .devhems-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}

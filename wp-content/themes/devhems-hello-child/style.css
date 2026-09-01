@@ -1,0 +1,61 @@
+/*
+Theme Name:   DevHems Technology Child
+Theme URI:    https://devhems.com/
+Description:  Child theme of Hello Elementor for DevHems Technology. Provides custom post types, ACF field registrations, Contact Form 7 integration, mega menu, schema markup and performance tweaks. All page content is built and edited in Elementor.
+Author:       DevHems Technology
+Template:     hello-elementor
+Version:      1.0.0
+Text Domain:  devhems-child
+*/
+
+/* Global brand tokens (mirrored in Elementor > Site Settings; kept here only as a CSS fallback / for elements Elementor Global Colors can't reach, e.g. CF7 markup). */
+:root {
+  --dh-color-primary: #0B5FFF;
+  --dh-color-primary-dark: #0842B8;
+  --dh-color-secondary: #101828;
+  --dh-color-accent: #14C38E;
+  --dh-color-text: #1D2433;
+  --dh-color-text-muted: #5A6472;
+  --dh-color-bg: #FFFFFF;
+  --dh-color-bg-alt: #F5F7FA;
+  --dh-color-border: #E2E6EB;
+  --dh-color-success: #15803D;
+  --dh-color-error: #C1121F;
+  --dh-font-heading: "Poppins", sans-serif;
+  --dh-font-body: "Inter", sans-serif;
+  --dh-radius: 10px;
+  --dh-container: 1240px;
+  --dh-space-1: 8px;
+  --dh-space-2: 16px;
+  --dh-space-3: 24px;
+  --dh-space-4: 40px;
+  --dh-space-5: 64px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100000;
+  background: var(--dh-color-secondary);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 0 0 8px 0;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+:focus-visible {
+  outline: 3px solid var(--dh-color-accent);
+  outline-offset: 2px;
+}

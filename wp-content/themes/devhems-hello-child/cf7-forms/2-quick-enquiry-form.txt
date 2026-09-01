@@ -1,0 +1,66 @@
+DevHems — Contact Form 7 template: QUICK ENQUIRY FORM
+Used on: short inline CTAs, sidebars
+=======================================================
+--------------------------- FORM -----------------------------------------
+<div class="dh-field dh-field-full">
+  <label for="dh-qe-name">Full Name <span class="dh-required">*</span></label>
+  [text* full-name id:dh-qe-name autocomplete:name]
+</div>
+
+<div class="dh-field">
+  <label for="dh-qe-email">Email <span class="dh-required">*</span></label>
+  [email* your-email id:dh-qe-email autocomplete:email]
+</div>
+
+<div class="dh-field">
+  <label for="dh-qe-phone">Phone <span class="dh-required">*</span></label>
+  [tel* phone id:dh-qe-phone autocomplete:tel]
+</div>
+
+<div class="dh-field dh-field-message">
+  <label for="dh-qe-message">How can we help?</label>
+  [textarea message id:dh-qe-message]
+</div>
+
+<div class="dh-field dh-field-consent">
+  <label>[checkbox* consent id:dh-qe-consent "I agree to the Privacy Policy."]</label>
+</div>
+
+[hidden source_url default:get]
+[hidden utm_source default:get]
+[hidden utm_medium default:get]
+[hidden utm_campaign default:get]
+<p class="dh-honeypot-field" aria-hidden="true">
+  <label>Website (leave blank)<input type="text" name="dh_hp_website" tabindex="-1" autocomplete="off"></label>
+</p>
+
+<div class="dh-field-submit">
+  [submit "Get in Touch"]
+</div>
+
+--------------------------- MAIL (admin notification) ---------------------
+To: info@devhems.com
+From: DevHems Technology Website <no-reply@devhems.com>
+Subject: [Quick Enquiry] [full-name]
+Additional Headers: Reply-To: [your-email]
+
+Form: Quick Enquiry Form
+Date: [_date] [_time]
+Name: [full-name]
+Email: [your-email]
+Phone: [phone]
+Message: [message]
+Source Page: [source_url]
+UTM Source: [utm_source] | Medium: [utm_medium] | Campaign: [utm_campaign]
+
+-------------------- MAIL (2) (visitor acknowledgement) --------------------
+To: [your-email]
+From: DevHems Technology <no-reply@devhems.com>
+Subject: We've received your message
+Additional Headers: Reply-To: info@devhems.com
+
+Hi [full-name],
+
+Thanks for your message — we'll be in touch shortly.
+
+— DevHems Technology

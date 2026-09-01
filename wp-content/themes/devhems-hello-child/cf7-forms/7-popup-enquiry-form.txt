@@ -1,0 +1,78 @@
+DevHems — Contact Form 7 template: POPUP ENQUIRY FORM
+Triggered by: every "Start Your Project" CTA button (header, hero, and
+final-CTA sections). Built as an Elementor Pro Popup (Templates > Popups)
+with an open-on-click trigger tied to the CTA buttons' ID/class — NOT an
+auto-open-on-page-load popup, per the requirement to avoid intrusive
+popups. If Elementor Pro is unavailable, use inc/mega-menu.php's pattern
+to build a lightweight accessible dialog (role="dialog", aria-modal="true",
+focus trap, Escape to close) around this same form markup.
+=============================================================================
+--------------------------- FORM -----------------------------------------
+<div class="dh-field dh-field-full">
+  <label for="dh-pp-name">Full Name <span class="dh-required">*</span></label>
+  [text* full-name id:dh-pp-name autocomplete:name]
+</div>
+
+<div class="dh-field">
+  <label for="dh-pp-email">Email <span class="dh-required">*</span></label>
+  [email* your-email id:dh-pp-email autocomplete:email]
+</div>
+
+<div class="dh-field">
+  <label for="dh-pp-phone">Phone <span class="dh-required">*</span></label>
+  [tel* phone id:dh-pp-phone autocomplete:tel]
+</div>
+
+<div class="dh-field">
+  <label for="dh-pp-service">Service Interested In</label>
+  [select required_service id:dh-pp-service "Select a service" "Digital Marketing / SEO" "Website Design & Development" "AI & Automation" "Not sure yet"]
+</div>
+
+<div class="dh-field dh-field-message">
+  <label for="dh-pp-message">What are you looking to achieve?</label>
+  [textarea message id:dh-pp-message]
+</div>
+
+<div class="dh-field dh-field-consent">
+  <label>[checkbox* consent id:dh-pp-consent "I agree to the Privacy Policy."]</label>
+</div>
+
+[hidden source_url default:get]
+[hidden utm_source default:get]
+[hidden utm_medium default:get]
+[hidden utm_campaign default:get]
+<p class="dh-honeypot-field" aria-hidden="true">
+  <label>Website (leave blank)<input type="text" name="dh_hp_website" tabindex="-1" autocomplete="off"></label>
+</p>
+
+<div class="dh-field-submit">
+  [submit "Send"]
+</div>
+
+--------------------------- MAIL (admin notification) ---------------------
+To: info@devhems.com
+From: DevHems Technology Website <no-reply@devhems.com>
+Subject: [Popup Enquiry] [full-name] — [required_service]
+Additional Headers: Reply-To: [your-email]
+
+Form: Popup Enquiry Form
+Date: [_date] [_time]
+Name: [full-name]
+Email: [your-email]
+Phone: [phone]
+Service: [required_service]
+Message: [message]
+Source Page: [source_url]
+UTM Source: [utm_source] | Medium: [utm_medium] | Campaign: [utm_campaign]
+
+-------------------- MAIL (2) (visitor acknowledgement) --------------------
+To: [your-email]
+From: DevHems Technology <no-reply@devhems.com>
+Subject: Thanks for your interest in DevHems Technology
+Additional Headers: Reply-To: info@devhems.com
+
+Hi [full-name],
+
+Thanks for getting in touch — we'll follow up within one business day.
+
+— DevHems Technology

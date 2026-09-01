@@ -1,0 +1,60 @@
+DevHems — Contact Form 7 template: FOOTER ENQUIRY FORM
+Used on: global footer (every page), via Elementor Theme Builder footer
+=========================================================================
+--------------------------- FORM -----------------------------------------
+<div class="dh-field">
+  <label for="dh-fe-name">Name <span class="dh-required">*</span></label>
+  [text* full-name id:dh-fe-name autocomplete:name]
+</div>
+
+<div class="dh-field">
+  <label for="dh-fe-email">Email <span class="dh-required">*</span></label>
+  [email* your-email id:dh-fe-email autocomplete:email]
+</div>
+
+<div class="dh-field">
+  <label for="dh-fe-phone">Phone <span class="dh-required">*</span></label>
+  [tel* phone id:dh-fe-phone autocomplete:tel]
+</div>
+
+<div class="dh-field dh-field-consent">
+  <label>[checkbox* consent id:dh-fe-consent "I agree to the Privacy Policy."]</label>
+</div>
+
+[hidden source_url default:get]
+[hidden utm_source default:get]
+[hidden utm_medium default:get]
+[hidden utm_campaign default:get]
+<p class="dh-honeypot-field" aria-hidden="true">
+  <label>Website (leave blank)<input type="text" name="dh_hp_website" tabindex="-1" autocomplete="off"></label>
+</p>
+
+<div class="dh-field-submit">
+  [submit "Request a Callback"]
+</div>
+
+--------------------------- MAIL (admin notification) ---------------------
+To: info@devhems.com
+From: DevHems Technology Website <no-reply@devhems.com>
+Subject: [Footer Enquiry] [full-name]
+Additional Headers: Reply-To: [your-email]
+
+Form: Footer Enquiry Form
+Date: [_date] [_time]
+Name: [full-name]
+Email: [your-email]
+Phone: [phone]
+Source Page: [source_url]
+UTM Source: [utm_source] | Medium: [utm_medium] | Campaign: [utm_campaign]
+
+-------------------- MAIL (2) (visitor acknowledgement) --------------------
+To: [your-email]
+From: DevHems Technology <no-reply@devhems.com>
+Subject: Thanks — we'll call you back
+Additional Headers: Reply-To: info@devhems.com
+
+Hi [full-name],
+
+Thanks for reaching out. Someone from our team will call you back shortly.
+
+— DevHems Technology

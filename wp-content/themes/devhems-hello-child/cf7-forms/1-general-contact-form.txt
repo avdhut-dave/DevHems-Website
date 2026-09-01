@@ -1,0 +1,115 @@
+DevHems — Contact Form 7 template: GENERAL CONTACT FORM
+Used on: Contact Us page (full form)
+========================================================
+HOW TO USE
+1. Plugins > Add New > install & activate "Contact Form 7" and "Flamingo".
+2. Contact Form 7 > Add New, title it "General Contact Form".
+3. Paste the FORM block below into the Form tab.
+4. Paste the MAIL block into the Mail tab (this is the admin notification).
+5. Paste the MAIL (2) block into the Mail tab's second tab (the visitor's
+   acknowledgement email) — enable "Mail (2)" first.
+6. Save, copy the shortcode, and drop it on the Contact Us page inside an
+   Elementor "Shortcode" widget.
+7. Under Contact Form 7 > Integration, connect Google reCAPTCHA (v3) or
+   configure Cloudflare Turnstile per that plugin's own instructions —
+   both integrate with CF7 without editing this template.
+
+--------------------------- FORM -----------------------------------------
+<div class="dh-field dh-field-full">
+  <label for="dh-full-name">Full Name <span class="dh-required">*</span></label>
+  [text* full-name id:dh-full-name autocomplete:name]
+</div>
+
+<div class="dh-field">
+  <label for="dh-email">Business Email <span class="dh-required">*</span></label>
+  [email* your-email id:dh-email autocomplete:email]
+</div>
+
+<div class="dh-field">
+  <label for="dh-phone">Phone Number <span class="dh-required">*</span></label>
+  [tel* phone id:dh-phone autocomplete:tel]
+</div>
+
+<div class="dh-field">
+  <label for="dh-company">Company Name</label>
+  [text company id:dh-company]
+</div>
+
+<div class="dh-field">
+  <label for="dh-website">Website URL</label>
+  [url website id:dh-website]
+</div>
+
+<div class="dh-field">
+  <label for="dh-service">Required Service</label>
+  [select required_service id:dh-service "Select a service" "Digital Marketing / SEO" "Website Design & Development" "AI & Automation" "Not sure yet"]
+</div>
+
+<div class="dh-field">
+  <label for="dh-budget">Estimated Budget</label>
+  [select budget id:dh-budget "Select a range" "Under $1,000" "$1,000 - $5,000" "$5,000 - $15,000" "$15,000+"]
+</div>
+
+<div class="dh-field dh-field-message">
+  <label for="dh-message">Project Details <span class="dh-required">*</span></label>
+  [textarea* project-details id:dh-message]
+</div>
+
+<div class="dh-field dh-field-consent">
+  <label>[checkbox* consent id:dh-consent "I agree to the Privacy Policy and consent to being contacted about my enquiry."]</label>
+</div>
+
+[hidden source_url default:get]
+[hidden utm_source default:get]
+[hidden utm_medium default:get]
+[hidden utm_campaign default:get]
+[hidden utm_term default:get]
+[hidden utm_content default:get]
+<p class="dh-honeypot-field" aria-hidden="true">
+  <label>Website (leave blank)<input type="text" name="dh_hp_website" tabindex="-1" autocomplete="off"></label>
+</p>
+
+<div class="dh-field-submit">
+  [submit "Send Enquiry"]
+</div>
+
+--------------------------- MAIL (admin notification) ---------------------
+To: info@devhems.com
+From: DevHems Technology Website <no-reply@devhems.com>
+Subject: [General Contact Form] New enquiry from [full-name]
+Additional Headers: Reply-To: [your-email]
+
+Form: General Contact Form
+Date: [_date] [_time]
+
+Name: [full-name]
+Email: [your-email]
+Phone: [phone]
+Company: [company]
+Website: [website]
+Required Service: [required_service]
+Estimated Budget: [budget]
+
+Project Details:
+[project-details]
+
+Source Page: [source_url]
+UTM Source: [utm_source]
+UTM Medium: [utm_medium]
+UTM Campaign: [utm_campaign]
+
+-------------------- MAIL (2) (visitor acknowledgement) --------------------
+To: [your-email]
+From: DevHems Technology <no-reply@devhems.com>
+Subject: Thanks for reaching out to DevHems Technology
+Additional Headers: Reply-To: info@devhems.com
+
+Hi [full-name],
+
+Thanks for contacting DevHems Technology. We've received your enquiry and
+a member of our team will get back to you within one business day.
+
+Summary of what you sent us:
+[project-details]
+
+— DevHems Technology

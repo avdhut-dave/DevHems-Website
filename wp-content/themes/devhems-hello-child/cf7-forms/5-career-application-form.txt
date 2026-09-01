@@ -1,0 +1,112 @@
+DevHems — Contact Form 7 template: CAREER APPLICATION FORM
+Used on: every Career/Job detail page, via the [devhems_career_application_form]
+wrapper shortcode (inc/template-tags.php) which auto-fills "job_position"
+with the current job posting's title, the same pattern as the Service
+Enquiry Form.
+=============================================================================
+--------------------------- FORM -----------------------------------------
+<div class="dh-field dh-field-full">
+  <label for="dh-ca-name">Full Name <span class="dh-required">*</span></label>
+  [text* full-name id:dh-ca-name autocomplete:name]
+</div>
+
+<div class="dh-field">
+  <label for="dh-ca-email">Email Address <span class="dh-required">*</span></label>
+  [email* your-email id:dh-ca-email autocomplete:email]
+</div>
+
+<div class="dh-field">
+  <label for="dh-ca-phone">Phone Number <span class="dh-required">*</span></label>
+  [tel* phone id:dh-ca-phone autocomplete:tel]
+</div>
+
+<div class="dh-field">
+  <label for="dh-ca-position">Job Position</label>
+  [text job_position id:dh-ca-position class:dh-autoselect-job readonly]
+</div>
+
+<div class="dh-field">
+  <label for="dh-ca-experience">Total Experience</label>
+  [text total_experience id:dh-ca-experience placeholder "e.g. 3 years"]
+</div>
+
+<div class="dh-field">
+  <label for="dh-ca-location">Current Location</label>
+  [text current_location id:dh-ca-location autocomplete:address-level2]
+</div>
+
+<div class="dh-field">
+  <label for="dh-ca-linkedin">LinkedIn Profile</label>
+  [url linkedin_url id:dh-ca-linkedin]
+</div>
+
+<div class="dh-field">
+  <label for="dh-ca-portfolio">Portfolio URL</label>
+  [url portfolio_url id:dh-ca-portfolio]
+</div>
+
+<div class="dh-field dh-field-message">
+  <label for="dh-ca-cover">Cover Message</label>
+  [textarea cover_message id:dh-ca-cover]
+</div>
+
+<div class="dh-field dh-field-full">
+  <label for="dh-ca-resume">Resume Upload (PDF, DOC or DOCX, max 5MB) <span class="dh-required">*</span></label>
+  [file* resume id:dh-ca-resume limit:5mb filetypes:pdf|doc|docx]
+</div>
+
+<div class="dh-field dh-field-consent">
+  <label>[checkbox* consent id:dh-ca-consent "I agree to the Privacy Policy and consent to DevHems Technology processing my application data."]</label>
+</div>
+
+[hidden source_url default:get]
+[hidden utm_source default:get]
+[hidden utm_medium default:get]
+[hidden utm_campaign default:get]
+<p class="dh-honeypot-field" aria-hidden="true">
+  <label>Website (leave blank)<input type="text" name="dh_hp_website" tabindex="-1" autocomplete="off"></label>
+</p>
+
+<div class="dh-field-submit">
+  [submit "Submit Application"]
+</div>
+
+--------------------------- MAIL (admin notification) ---------------------
+To: careers@devhems.com
+From: DevHems Technology Website <no-reply@devhems.com>
+Subject: [Job Application — [job_position]] [full-name]
+Additional Headers: Reply-To: [your-email]
+
+Form: Career Application Form
+Date: [_date] [_time]
+Applicant: [full-name]
+Email: [your-email]
+Phone: [phone]
+Position: [job_position]
+Experience: [total_experience]
+Location: [current_location]
+LinkedIn: [linkedin_url]
+Portfolio: [portfolio_url]
+
+Cover Message:
+[cover_message]
+
+Resume: [resume]
+Source Page: [source_url]
+UTM Source: [utm_source] | Medium: [utm_medium] | Campaign: [utm_campaign]
+
+(In the Mail tab's "File Attachments" box — not the body — add: [resume])
+
+-------------------- MAIL (2) (visitor acknowledgement) --------------------
+To: [your-email]
+From: DevHems Technology <no-reply@devhems.com>
+Subject: We've received your application for [job_position]
+Additional Headers: Reply-To: careers@devhems.com
+
+Hi [full-name],
+
+Thank you for applying for the [job_position] role at DevHems Technology.
+Our hiring team will review your application and reach out if there's a
+match.
+
+— DevHems Technology

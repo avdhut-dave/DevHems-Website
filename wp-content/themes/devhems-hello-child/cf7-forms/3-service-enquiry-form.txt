@@ -1,0 +1,105 @@
+DevHems — Contact Form 7 template: SERVICE ENQUIRY FORM
+Used on: every Service detail page (single-service.php auto-fills the
+"interested_service" hidden/select field with the current service title —
+see inc/template-tags.php: devhems_cf7_service_shortcode())
+=========================================================================
+NOTE ON AUTO-SELECTION
+Contact Form 7 tags cannot read PHP variables directly, so the theme
+resolves this with a small wrapper shortcode: place
+[devhems_service_enquiry_form] on the service template instead of the raw
+[contact-form-7] shortcode. The wrapper (in inc/template-tags.php) renders
+this form and injects a hidden field with the current post title as the
+value for "interested_service", and pre-fills the visible dropdown to
+match via forms.js.
+
+--------------------------- FORM -----------------------------------------
+<div class="dh-field dh-field-full">
+  <label for="dh-se-name">Full Name <span class="dh-required">*</span></label>
+  [text* full-name id:dh-se-name autocomplete:name]
+</div>
+
+<div class="dh-field">
+  <label for="dh-se-email">Email Address <span class="dh-required">*</span></label>
+  [email* your-email id:dh-se-email autocomplete:email]
+</div>
+
+<div class="dh-field">
+  <label for="dh-se-phone">Phone Number <span class="dh-required">*</span></label>
+  [tel* phone id:dh-se-phone autocomplete:tel]
+</div>
+
+<div class="dh-field">
+  <label for="dh-se-company">Company Name</label>
+  [text company id:dh-se-company]
+</div>
+
+<div class="dh-field">
+  <label for="dh-se-service">Interested Service</label>
+  [text interested_service id:dh-se-service class:dh-autoselect-service readonly]
+</div>
+
+<div class="dh-field">
+  <label for="dh-se-website">Website URL</label>
+  [url website id:dh-se-website]
+</div>
+
+<div class="dh-field">
+  <label for="dh-se-budget">Monthly Budget</label>
+  [select monthly_budget id:dh-se-budget "Select a range" "Under $500/mo" "$500 - $2,000/mo" "$2,000 - $5,000/mo" "$5,000+/mo"]
+</div>
+
+<div class="dh-field dh-field-message">
+  <label for="dh-se-requirements">Project Requirements <span class="dh-required">*</span></label>
+  [textarea* project-requirements id:dh-se-requirements]
+</div>
+
+<div class="dh-field dh-field-consent">
+  <label>[checkbox* consent id:dh-se-consent "I agree to the Privacy Policy and consent to being contacted."]</label>
+</div>
+
+[hidden source_url default:get]
+[hidden utm_source default:get]
+[hidden utm_medium default:get]
+[hidden utm_campaign default:get]
+<p class="dh-honeypot-field" aria-hidden="true">
+  <label>Website (leave blank)<input type="text" name="dh_hp_website" tabindex="-1" autocomplete="off"></label>
+</p>
+
+<div class="dh-field-submit">
+  [submit "Request a Proposal"]
+</div>
+
+--------------------------- MAIL (admin notification) ---------------------
+To: info@devhems.com
+From: DevHems Technology Website <no-reply@devhems.com>
+Subject: [Service Enquiry — [interested_service]] [full-name]
+Additional Headers: Reply-To: [your-email]
+
+Form: Service Enquiry Form
+Date: [_date] [_time]
+Name: [full-name]
+Email: [your-email]
+Phone: [phone]
+Company: [company]
+Interested Service: [interested_service]
+Website: [website]
+Monthly Budget: [monthly_budget]
+
+Project Requirements:
+[project-requirements]
+
+Source Page: [source_url]
+UTM Source: [utm_source] | Medium: [utm_medium] | Campaign: [utm_campaign]
+
+-------------------- MAIL (2) (visitor acknowledgement) --------------------
+To: [your-email]
+From: DevHems Technology <no-reply@devhems.com>
+Subject: Your enquiry about [interested_service] has been received
+Additional Headers: Reply-To: info@devhems.com
+
+Hi [full-name],
+
+Thanks for your interest in our [interested_service] service. Our team
+will review your requirements and respond within one business day.
+
+— DevHems Technology

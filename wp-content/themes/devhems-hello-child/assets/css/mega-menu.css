@@ -1,0 +1,269 @@
+/* Mega menu — dark info panel (left) + white service panel (right).
+   Works with the markup from class-devhems-mega-menu-walker.php or an
+   equivalent Elementor Pro Nav Menu structure carrying the same classes. */
+
+body {
+  padding-top: var(--dh-header-height, 88px);
+}
+
+.devhems-primary-nav {
+  width: 100%;
+}
+
+.devhems-menu {
+  display: flex;
+  align-items: center;
+  gap: var(--dh-space-3);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.devhems-menu-item {
+  position: static;
+}
+
+.devhems-menu-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: var(--dh-space-1) 4px;
+  color: var(--dh-color-secondary);
+  font-family: var(--dh-font-body);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.devhems-menu-link:hover,
+.devhems-menu-link:focus-visible {
+  color: var(--dh-color-primary);
+}
+
+.devhems-menu-item.is-active > .devhems-menu-link {
+  color: var(--dh-color-primary);
+  border-bottom-color: var(--dh-color-primary);
+}
+
+/* Mega panel */
+.devhems-mega-panel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  background: var(--dh-color-bg);
+  box-shadow: 0 24px 48px rgba(16, 24, 40, 0.16);
+  border-top: 1px solid var(--dh-color-border);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+  z-index: 50;
+}
+
+.devhems-menu-item.has-mega-menu.is-open > .devhems-mega-panel {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.devhems-mega-panel-inner {
+  max-width: var(--dh-container);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+.devhems-mega-info {
+  background: var(--dh-color-secondary);
+  color: #fff;
+  padding: var(--dh-space-4) var(--dh-space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--dh-space-1);
+}
+
+.devhems-mega-info-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+  color: var(--dh-color-accent);
+  margin: 0;
+}
+
+.devhems-mega-info-title {
+  font-family: var(--dh-font-heading);
+  font-size: 24px;
+  margin: 0;
+}
+
+.devhems-mega-info-copy {
+  color: #C4CBD6;
+  font-size: 14px;
+  margin: 0 0 var(--dh-space-2);
+}
+
+.devhems-mega-info-cta {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.devhems-mega-info-cta:hover .devhems-arrow,
+.devhems-mega-info-cta:focus-visible .devhems-arrow {
+  transform: translateX(3px);
+}
+
+.devhems-mega-categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--dh-space-3);
+  padding: var(--dh-space-4) var(--dh-space-3);
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.devhems-mega-category-title {
+  font-family: var(--dh-font-heading);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--dh-color-secondary);
+  margin: 0 0 var(--dh-space-1);
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--dh-color-border);
+}
+
+.devhems-subservice-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.devhems-subservice-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 4px;
+  color: var(--dh-color-text-muted);
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+.devhems-subservice-link:hover,
+.devhems-subservice-link:focus-visible {
+  background: var(--dh-color-bg-alt);
+  color: var(--dh-color-primary);
+}
+
+.devhems-arrow {
+  transition: transform 0.15s ease;
+}
+
+/* Mobile: hamburger + nested accordion */
+.devhems-mobile-toggle {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .devhems-mobile-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .devhems-menu {
+    position: fixed;
+    inset: var(--dh-header-height, 88px) 0 0 0;
+    flex-direction: column;
+    align-items: stretch;
+    background: var(--dh-color-bg);
+    overflow-y: auto;
+    padding: var(--dh-space-3);
+    gap: 0;
+    transform: translateX(100%);
+    transition: transform 0.25s ease;
+  }
+
+  .devhems-menu.is-open {
+    transform: translateX(0);
+  }
+
+  .devhems-menu-item {
+    border-bottom: 1px solid var(--dh-color-border);
+  }
+
+  .devhems-menu-link {
+    width: 100%;
+    padding: 14px 4px;
+    min-height: 44px;
+  }
+
+  .devhems-mega-panel {
+    position: static;
+    box-shadow: none;
+    border-top: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    display: none;
+    transition: none;
+  }
+
+  .devhems-menu-item.has-mega-menu.is-open > .devhems-mega-panel {
+    display: block;
+  }
+
+  .devhems-mega-panel-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .devhems-mega-info {
+    padding: var(--dh-space-3);
+  }
+
+  .devhems-mega-categories {
+    grid-template-columns: 1fr;
+    max-height: none;
+    padding: var(--dh-space-2);
+  }
+
+  .devhems-mega-category {
+    border-bottom: 1px solid var(--dh-color-border);
+    padding-bottom: var(--dh-space-1);
+  }
+
+  .devhems-subservice-link {
+    min-height: 44px;
+  }
+}
+
+.devhems-header-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 22px;
+  background: var(--dh-color-primary);
+  color: #fff;
+  font-weight: 600;
+  border-radius: var(--dh-radius);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.devhems-header-cta:hover,
+.devhems-header-cta:focus-visible {
+  background: var(--dh-color-primary-dark);
+}

@@ -1,0 +1,11 @@
+# WordPress core, plugins, uploads and environment-specific files are never
+# version-controlled here — only this repo's custom theme code is.
+/wp-admin/
+/wp-includes/
+/wp-content/plugins/
+/wp-content/uploads/
+/wp-content/upgrade/
+/wp-content/cache/
+wp-config.php
+*.log
+.DS_Store
