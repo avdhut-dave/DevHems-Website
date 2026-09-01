@@ -6,18 +6,19 @@
       "settings": {
         "content_width": "boxed",
         "flex_direction": "column",
+        "align_items": "center",
         "flex_gap": {
           "unit": "px",
           "size": 12,
           "column": "12"
         },
-        "_element_id": "dh-terms-hero",
         "padding": {
           "unit": "px",
           "top": "64",
           "bottom": "24",
           "isLinked": false
-        }
+        },
+        "_element_id": "dh-terms-hero"
       },
       "elements": [
         {
@@ -43,10 +44,19 @@
           "size": 75
         },
         "flex_direction": "column",
+        "align_items": "center",
         "flex_gap": {
           "unit": "px",
           "size": 16,
           "column": "16"
+        },
+        "padding": {
+          "unit": "px",
+          "top": "88",
+          "right": "24",
+          "bottom": "88",
+          "left": "24",
+          "isLinked": false
         }
       },
       "elements": [

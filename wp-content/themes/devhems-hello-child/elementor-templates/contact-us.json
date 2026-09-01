@@ -6,17 +6,27 @@
       "settings": {
         "content_width": "boxed",
         "flex_direction": "column",
+        "align_items": "center",
         "flex_gap": {
           "unit": "px",
           "size": 12,
           "column": "12"
         },
-        "_element_id": "dh-contact-hero",
         "padding": {
           "unit": "px",
-          "top": "64",
-          "bottom": "24",
+          "top": "88",
+          "right": "24",
+          "bottom": "56",
+          "left": "24",
           "isLinked": false
+        },
+        "_element_id": "dh-contact-hero",
+        "background_background": "gradient",
+        "background_color": "#0B5FFF",
+        "background_color_b": "#0842B8",
+        "background_gradient_angle": {
+          "unit": "deg",
+          "size": 135
         }
       },
       "elements": [
@@ -26,7 +36,8 @@
           "settings": {
             "title": "Contact Us",
             "header_size": "h1",
-            "align": "center"
+            "align": "center",
+            "title_color": "#FFFFFF"
           },
           "elements": [],
           "widgetType": "heading"
@@ -35,7 +46,7 @@
           "id": "000000de",
           "elType": "widget",
           "settings": {
-            "editor": "<p style='text-align:center'>Have a project, a question, or just want to say hello? We'd love to hear from you.</p>"
+            "editor": "<p style='text-align:center;color:#E3ECFF'>Have a project, a question, or just want to say hello? We'd love to hear from you.</p>"
           },
           "elements": [],
           "widgetType": "text-editor"
@@ -49,10 +60,19 @@
       "settings": {
         "content_width": "boxed",
         "flex_direction": "column",
+        "align_items": "center",
         "flex_gap": {
           "unit": "px",
-          "size": 24,
-          "column": "24"
+          "size": 32,
+          "column": "32"
+        },
+        "padding": {
+          "unit": "px",
+          "top": "56",
+          "right": "24",
+          "bottom": "24",
+          "left": "24",
+          "isLinked": false
         },
         "_element_id": "dh-contact-cards"
       },
@@ -63,20 +83,61 @@
           "settings": {
             "flex_direction": "row",
             "content_width": "full",
-            "flex_wrap": "wrap",
             "flex_gap": {
               "unit": "px",
-              "size": 24,
-              "column": "24"
-            }
+              "size": 28,
+              "column": "28"
+            },
+            "flex_wrap": "wrap",
+            "flex_justify_content": "center"
           },
           "elements": [
             {
               "id": "000000e1",
               "elType": "container",
               "settings": {
-                "flex_direction": "row",
-                "content_width": "full"
+                "flex_direction": "column",
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 31.5
+                },
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7EAF0",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 12,
+                  "blur": 32,
+                  "spread": -8,
+                  "color": "rgba(16,24,40,0.12)"
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "28",
+                  "bottom": "32",
+                  "left": "28",
+                  "isLinked": true
+                }
               },
               "elements": [
                 {
@@ -89,7 +150,8 @@
                       "value": "fas fa-phone",
                       "library": "fa-solid"
                     },
-                    "position": "top"
+                    "position": "top",
+                    "primary_color": "#0B5FFF"
                   },
                   "elements": [],
                   "widgetType": "icon-box"
@@ -101,8 +163,48 @@
               "id": "000000e3",
               "elType": "container",
               "settings": {
-                "flex_direction": "row",
-                "content_width": "full"
+                "flex_direction": "column",
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 31.5
+                },
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7EAF0",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 12,
+                  "blur": 32,
+                  "spread": -8,
+                  "color": "rgba(16,24,40,0.12)"
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "28",
+                  "bottom": "32",
+                  "left": "28",
+                  "isLinked": true
+                }
               },
               "elements": [
                 {
@@ -115,7 +217,8 @@
                       "value": "fas fa-envelope",
                       "library": "fa-solid"
                     },
-                    "position": "top"
+                    "position": "top",
+                    "primary_color": "#0B5FFF"
                   },
                   "elements": [],
                   "widgetType": "icon-box"
@@ -127,8 +230,48 @@
               "id": "000000e5",
               "elType": "container",
               "settings": {
-                "flex_direction": "row",
-                "content_width": "full"
+                "flex_direction": "column",
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 31.5
+                },
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7EAF0",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 12,
+                  "blur": 32,
+                  "spread": -8,
+                  "color": "rgba(16,24,40,0.12)"
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "28",
+                  "bottom": "32",
+                  "left": "28",
+                  "isLinked": true
+                }
               },
               "elements": [
                 {
@@ -141,7 +284,8 @@
                       "value": "fas fa-map-marker-alt",
                       "library": "fa-solid"
                     },
-                    "position": "top"
+                    "position": "top",
+                    "primary_color": "#0B5FFF"
                   },
                   "elements": [],
                   "widgetType": "icon-box"
@@ -161,10 +305,19 @@
       "settings": {
         "content_width": "boxed",
         "flex_direction": "column",
+        "align_items": "center",
         "flex_gap": {
           "unit": "px",
           "size": 8,
           "column": "8"
+        },
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "56",
+          "left": "24",
+          "isLinked": false
         },
         "_element_id": "dh-business-hours"
       },
@@ -200,21 +353,36 @@
         "flex_direction": "row",
         "flex_gap": {
           "unit": "px",
-          "size": 40,
-          "column": "40"
+          "size": 48,
+          "column": "48"
         },
-        "_element_id": "dh-contact-form-map"
+        "padding": {
+          "unit": "px",
+          "top": "88",
+          "right": "24",
+          "bottom": "88",
+          "left": "24",
+          "isLinked": false
+        },
+        "_element_id": "dh-contact-form-map",
+        "background_background": "classic",
+        "background_color": "#F6F8FB"
       },
       "elements": [
         {
           "id": "000000ed",
           "elType": "container",
           "settings": {
-            "flex_direction": "row",
+            "flex_direction": "column",
             "content_width": "full",
+            "flex_gap": {
+              "unit": "px",
+              "size": 20,
+              "column": "20"
+            },
             "width": {
               "unit": "%",
-              "size": 60
+              "size": 58
             }
           },
           "elements": [
@@ -246,9 +414,22 @@
           "settings": {
             "flex_direction": "row",
             "content_width": "full",
+            "flex_gap": {
+              "unit": "px",
+              "size": 20,
+              "column": "20"
+            },
             "width": {
               "unit": "%",
-              "size": 40
+              "size": 42
+            },
+            "border_radius": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
             }
           },
           "elements": [
@@ -279,10 +460,19 @@
           "size": 70
         },
         "flex_direction": "column",
+        "align_items": "center",
         "flex_gap": {
           "unit": "px",
           "size": 16,
           "column": "16"
+        },
+        "padding": {
+          "unit": "px",
+          "top": "88",
+          "right": "24",
+          "bottom": "88",
+          "left": "24",
+          "isLinked": false
         },
         "_element_id": "dh-contact-faqs"
       },
@@ -333,10 +523,19 @@
       "settings": {
         "content_width": "boxed",
         "flex_direction": "column",
+        "align_items": "center",
         "flex_gap": {
           "unit": "px",
           "size": 16,
           "column": "16"
+        },
+        "padding": {
+          "unit": "px",
+          "top": "88",
+          "right": "24",
+          "bottom": "88",
+          "left": "24",
+          "isLinked": false
         },
         "_element_id": "dh-contact-final-cta"
       },
@@ -370,7 +569,12 @@
               "elType": "container",
               "settings": {
                 "flex_direction": "row",
-                "content_width": "full"
+                "content_width": "full",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 20,
+                  "column": "20"
+                }
               },
               "elements": [
                 {
