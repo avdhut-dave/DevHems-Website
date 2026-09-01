@@ -1,73 +1,71 @@
-[
-  {
-    "content": [
-      {
-        "id": "000000fd",
-        "elType": "container",
-        "settings": {
-          "content_width": "boxed",
-          "flex_direction": "column",
-          "flex_gap": {
-            "unit": "px",
-            "size": 12,
-            "column": "12"
-          },
-          "_element_id": "dh-privacy-hero",
-          "padding": {
-            "unit": "px",
-            "top": "64",
-            "bottom": "24",
-            "isLinked": false
-          }
+{
+  "content": [
+    {
+      "id": "000000fd",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 12,
+          "column": "12"
         },
-        "elements": [
-          {
-            "id": "000000fc",
-            "elType": "widget",
-            "settings": {
-              "title": "Privacy Policy",
-              "header_size": "h1",
-              "align": "center"
-            },
-            "elements": [],
-            "widgetType": "heading"
-          }
-        ],
-        "isInner": false
+        "_element_id": "dh-privacy-hero",
+        "padding": {
+          "unit": "px",
+          "top": "64",
+          "bottom": "24",
+          "isLinked": false
+        }
       },
-      {
-        "id": "000000ff",
-        "elType": "container",
-        "settings": {
-          "content_width": {
-            "unit": "%",
-            "size": 75
+      "elements": [
+        {
+          "id": "000000fc",
+          "elType": "widget",
+          "settings": {
+            "title": "Privacy Policy",
+            "header_size": "h1",
+            "align": "center"
           },
-          "flex_direction": "column",
-          "flex_gap": {
-            "unit": "px",
-            "size": 16,
-            "column": "16"
-          }
+          "elements": [],
+          "widgetType": "heading"
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "000000ff",
+      "elType": "container",
+      "settings": {
+        "content_width": {
+          "unit": "%",
+          "size": 75
         },
-        "elements": [
-          {
-            "id": "000000fe",
-            "elType": "widget",
-            "settings": {
-              "editor": "<p><em>Last updated: [DATE \u2014 replace with the date this policy is published]</em></p>\n<p><strong>Placeholder legal content \u2014 have this policy reviewed by a qualified lawyer for your jurisdiction (and any GDPR/CCPA obligations that apply to your visitors) before publishing.</strong></p>\n\n<h2>1. Who We Are</h2>\n<p>DevHems Technology (\"we\", \"us\", \"our\") operates devhems.com. This Privacy Policy explains what personal data we collect, why, and how you can control it.</p>\n\n<h2>2. Information We Collect</h2>\n<p>We collect information you submit through our contact, enquiry, service, project and career application forms (name, email, phone, company, job application details and uploaded resumes), plus standard analytics data (pages visited, device/browser type, approximate location) via Google Analytics and similar tools.</p>\n\n<h2>3. How We Use Your Information</h2>\n<p>We use the information you provide to respond to enquiries, deliver requested services, evaluate job applications, send you information you've asked for, and improve our website's performance and content.</p>\n\n<h2>4. Cookies</h2>\n<p>We use cookies for essential site functionality, analytics and (where applicable) advertising retargeting. You can control cookies through your browser settings.</p>\n\n<h2>5. Sharing Your Information</h2>\n<p>We do not sell your personal data. We may share it with service providers who help us operate the site (e.g. email delivery, hosting, spam protection) under confidentiality obligations, or where required by law.</p>\n\n<h2>6. Data Retention</h2>\n<p>We retain submitted form data (stored via Flamingo) and job applications only as long as necessary for the purpose they were collected for, or as required by law.</p>\n\n<h2>7. Your Rights</h2>\n<p>Depending on your location, you may have the right to access, correct, delete, or export your personal data. Contact us at <a href=\"mailto:privacy@devhems.com\">privacy@devhems.com</a> to exercise these rights.</p>\n\n<h2>8. Security</h2>\n<p>We use reasonable technical and organizational measures to protect your data, but no method of transmission over the internet is 100% secure.</p>\n\n<h2>9. Changes to This Policy</h2>\n<p>We may update this policy periodically. The \"Last updated\" date above reflects the most recent revision.</p>\n\n<h2>10. Contact Us</h2>\n<p>Questions about this policy? Email <a href=\"mailto:privacy@devhems.com\">privacy@devhems.com</a>.</p>",
-              "_element_id": "dh-privacy-body"
-            },
-            "elements": [],
-            "widgetType": "text-editor"
-          }
-        ],
-        "isInner": false
-      }
-    ],
-    "page_settings": [],
-    "version": "0.4",
-    "title": "Privacy Policy",
-    "type": "page"
-  }
-]
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 16,
+          "column": "16"
+        }
+      },
+      "elements": [
+        {
+          "id": "000000fe",
+          "elType": "widget",
+          "settings": {
+            "editor": "<p><em>Last updated: [DATE \u2014 replace with the date this policy is published]</em></p>\n<p><strong>Placeholder legal content \u2014 have this policy reviewed by a qualified lawyer for your jurisdiction (and any GDPR/CCPA obligations that apply to your visitors) before publishing.</strong></p>\n\n<h2>1. Who We Are</h2>\n<p>DevHems Technology (\"we\", \"us\", \"our\") operates devhems.com. This Privacy Policy explains what personal data we collect, why, and how you can control it.</p>\n\n<h2>2. Information We Collect</h2>\n<p>We collect information you submit through our contact, enquiry, service, project and career application forms (name, email, phone, company, job application details and uploaded resumes), plus standard analytics data (pages visited, device/browser type, approximate location) via Google Analytics and similar tools.</p>\n\n<h2>3. How We Use Your Information</h2>\n<p>We use the information you provide to respond to enquiries, deliver requested services, evaluate job applications, send you information you've asked for, and improve our website's performance and content.</p>\n\n<h2>4. Cookies</h2>\n<p>We use cookies for essential site functionality, analytics and (where applicable) advertising retargeting. You can control cookies through your browser settings.</p>\n\n<h2>5. Sharing Your Information</h2>\n<p>We do not sell your personal data. We may share it with service providers who help us operate the site (e.g. email delivery, hosting, spam protection) under confidentiality obligations, or where required by law.</p>\n\n<h2>6. Data Retention</h2>\n<p>We retain submitted form data (stored via Flamingo) and job applications only as long as necessary for the purpose they were collected for, or as required by law.</p>\n\n<h2>7. Your Rights</h2>\n<p>Depending on your location, you may have the right to access, correct, delete, or export your personal data. Contact us at <a href=\"mailto:privacy@devhems.com\">privacy@devhems.com</a> to exercise these rights.</p>\n\n<h2>8. Security</h2>\n<p>We use reasonable technical and organizational measures to protect your data, but no method of transmission over the internet is 100% secure.</p>\n\n<h2>9. Changes to This Policy</h2>\n<p>We may update this policy periodically. The \"Last updated\" date above reflects the most recent revision.</p>\n\n<h2>10. Contact Us</h2>\n<p>Questions about this policy? Email <a href=\"mailto:privacy@devhems.com\">privacy@devhems.com</a>.</p>",
+            "_element_id": "dh-privacy-body"
+          },
+          "elements": [],
+          "widgetType": "text-editor"
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "Privacy Policy",
+  "type": "page"
+}

@@ -1,135 +1,133 @@
-[
-  {
-    "content": [
-      {
-        "id": "0000010c",
-        "elType": "container",
-        "settings": {
-          "content_width": "boxed",
-          "flex_direction": "column",
-          "flex_gap": {
-            "unit": "px",
-            "size": 16,
-            "column": "16"
-          },
-          "_element_id": "dh-thank-you",
-          "padding": {
-            "unit": "px",
-            "top": "96",
-            "bottom": "96",
-            "isLinked": false
-          }
+{
+  "content": [
+    {
+      "id": "0000010c",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 16,
+          "column": "16"
         },
-        "elements": [
-          {
-            "id": "00000104",
-            "elType": "widget",
-            "settings": {
-              "selected_icon": {
-                "value": "fas fa-check-circle",
-                "library": "fa-solid"
+        "_element_id": "dh-thank-you",
+        "padding": {
+          "unit": "px",
+          "top": "96",
+          "bottom": "96",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "00000104",
+          "elType": "widget",
+          "settings": {
+            "selected_icon": {
+              "value": "fas fa-check-circle",
+              "library": "fa-solid"
+            },
+            "align": "center",
+            "primary_color": "#14C38E"
+          },
+          "elements": [],
+          "widgetType": "icon"
+        },
+        {
+          "id": "00000105",
+          "elType": "widget",
+          "settings": {
+            "title": "Thank You!",
+            "header_size": "h1",
+            "align": "center"
+          },
+          "elements": [],
+          "widgetType": "heading"
+        },
+        {
+          "id": "00000106",
+          "elType": "widget",
+          "settings": {
+            "editor": "<p style='text-align:center'>Your submission has been received. A member of the DevHems Technology team will get back to you within one business day.</p>"
+          },
+          "elements": [],
+          "widgetType": "text-editor"
+        },
+        {
+          "id": "0000010b",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row",
+            "content_width": "full",
+            "flex_gap": {
+              "unit": "px",
+              "size": 16,
+              "column": "16"
+            }
+          },
+          "elements": [
+            {
+              "id": "00000108",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "content_width": "full"
               },
-              "align": "center",
-              "primary_color": "#14C38E"
-            },
-            "elements": [],
-            "widgetType": "icon"
-          },
-          {
-            "id": "00000105",
-            "elType": "widget",
-            "settings": {
-              "title": "Thank You!",
-              "header_size": "h1",
-              "align": "center"
-            },
-            "elements": [],
-            "widgetType": "heading"
-          },
-          {
-            "id": "00000106",
-            "elType": "widget",
-            "settings": {
-              "editor": "<p style='text-align:center'>Your submission has been received. A member of the DevHems Technology team will get back to you within one business day.</p>"
-            },
-            "elements": [],
-            "widgetType": "text-editor"
-          },
-          {
-            "id": "0000010b",
-            "elType": "container",
-            "settings": {
-              "flex_direction": "row",
-              "content_width": "full",
-              "flex_gap": {
-                "unit": "px",
-                "size": 16,
-                "column": "16"
-              }
-            },
-            "elements": [
-              {
-                "id": "00000108",
-                "elType": "container",
-                "settings": {
-                  "flex_direction": "row",
-                  "content_width": "full"
-                },
-                "elements": [
-                  {
-                    "id": "00000107",
-                    "elType": "widget",
-                    "settings": {
-                      "text": "Back to Home",
-                      "link": {
-                        "url": "/",
-                        "is_external": "",
-                        "nofollow": ""
-                      },
-                      "button_type": "secondary"
+              "elements": [
+                {
+                  "id": "00000107",
+                  "elType": "widget",
+                  "settings": {
+                    "text": "Back to Home",
+                    "link": {
+                      "url": "/",
+                      "is_external": "",
+                      "nofollow": ""
                     },
-                    "elements": [],
-                    "widgetType": "button"
-                  }
-                ],
-                "isInner": true
+                    "button_type": "secondary"
+                  },
+                  "elements": [],
+                  "widgetType": "button"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "0000010a",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "content_width": "full"
               },
-              {
-                "id": "0000010a",
-                "elType": "container",
-                "settings": {
-                  "flex_direction": "row",
-                  "content_width": "full"
-                },
-                "elements": [
-                  {
-                    "id": "00000109",
-                    "elType": "widget",
-                    "settings": {
-                      "text": "Explore Our Services",
-                      "link": {
-                        "url": "/services/",
-                        "is_external": "",
-                        "nofollow": ""
-                      },
-                      "button_type": "secondary"
+              "elements": [
+                {
+                  "id": "00000109",
+                  "elType": "widget",
+                  "settings": {
+                    "text": "Explore Our Services",
+                    "link": {
+                      "url": "/services/",
+                      "is_external": "",
+                      "nofollow": ""
                     },
-                    "elements": [],
-                    "widgetType": "button"
-                  }
-                ],
-                "isInner": true
-              }
-            ],
-            "isInner": true
-          }
-        ],
-        "isInner": false
-      }
-    ],
-    "page_settings": [],
-    "version": "0.4",
-    "title": "Thank You",
-    "type": "page"
-  }
-]
+                    "button_type": "secondary"
+                  },
+                  "elements": [],
+                  "widgetType": "button"
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "Thank You",
+  "type": "page"
+}

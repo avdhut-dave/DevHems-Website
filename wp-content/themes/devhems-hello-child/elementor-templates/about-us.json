@@ -1,988 +1,986 @@
-[
-  {
-    "content": [
-      {
-        "id": "00000094",
-        "elType": "container",
-        "settings": {
-          "content_width": "boxed",
-          "flex_direction": "column",
-          "flex_gap": {
-            "unit": "px",
-            "size": 16,
-            "column": "16"
-          },
-          "_element_id": "dh-about-hero",
-          "padding": {
-            "unit": "px",
-            "top": "72",
-            "bottom": "40",
-            "isLinked": false
-          }
+{
+  "content": [
+    {
+      "id": "00000094",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 16,
+          "column": "16"
         },
-        "elements": [
-          {
-            "id": "00000091",
-            "elType": "widget",
-            "settings": {
-              "title": "ABOUT DEVHEMS TECHNOLOGY",
-              "header_size": "p",
-              "_element_id": "dh-eyebrow"
-            },
-            "elements": [],
-            "widgetType": "heading"
-          },
-          {
-            "id": "00000092",
-            "elType": "widget",
-            "settings": {
-              "title": "We Build Digital Growth Engines, Not Just Websites",
-              "header_size": "h1"
-            },
-            "elements": [],
-            "widgetType": "heading"
-          },
-          {
-            "id": "00000093",
-            "elType": "widget",
-            "settings": {
-              "editor": "<p>DevHems Technology is a full-stack digital partner for businesses that want measurable growth from their website, marketing and automation \u2014 not just deliverables.</p>"
-            },
-            "elements": [],
-            "widgetType": "text-editor"
-          }
-        ],
-        "isInner": false
+        "_element_id": "dh-about-hero",
+        "padding": {
+          "unit": "px",
+          "top": "72",
+          "bottom": "40",
+          "isLinked": false
+        }
       },
-      {
-        "id": "0000009a",
-        "elType": "container",
-        "settings": {
-          "content_width": "boxed",
-          "flex_direction": "row",
-          "flex_gap": {
-            "unit": "px",
-            "size": 40,
-            "column": "40"
+      "elements": [
+        {
+          "id": "00000091",
+          "elType": "widget",
+          "settings": {
+            "title": "ABOUT DEVHEMS TECHNOLOGY",
+            "header_size": "p",
+            "_element_id": "dh-eyebrow"
           },
-          "_element_id": "dh-our-story"
+          "elements": [],
+          "widgetType": "heading"
         },
-        "elements": [
-          {
-            "id": "00000097",
-            "elType": "container",
-            "settings": {
-              "flex_direction": "row",
-              "content_width": "full",
-              "width": {
-                "unit": "%",
-                "size": 60
-              }
-            },
-            "elements": [
-              {
-                "id": "00000095",
-                "elType": "widget",
-                "settings": {
-                  "title": "Our Story",
-                  "header_size": "h2"
-                },
-                "elements": [],
-                "widgetType": "heading"
-              },
-              {
-                "id": "00000096",
-                "elType": "widget",
-                "settings": {
-                  "editor": "<p>Founded to close the gap between marketing agencies that don't build and dev shops that don't market, DevHems Technology brings design, engineering, SEO and AI automation together under one accountable team. Replace this placeholder copy with your company's real history, founding story and milestones.</p>"
-                },
-                "elements": [],
-                "widgetType": "text-editor"
-              }
-            ],
-            "isInner": true
+        {
+          "id": "00000092",
+          "elType": "widget",
+          "settings": {
+            "title": "We Build Digital Growth Engines, Not Just Websites",
+            "header_size": "h1"
           },
-          {
-            "id": "00000099",
-            "elType": "container",
-            "settings": {
-              "flex_direction": "row",
-              "content_width": "full",
-              "width": {
-                "unit": "%",
-                "size": 40
-              }
-            },
-            "elements": [
-              {
-                "id": "00000098",
-                "elType": "widget",
-                "settings": {
-                  "image": {
-                    "url": "",
-                    "id": "",
-                    "alt": "Our team at DevHems Technology",
-                    "source": "library"
-                  }
-                },
-                "elements": [],
-                "widgetType": "image"
-              }
-            ],
-            "isInner": true
-          }
-        ],
-        "isInner": false
+          "elements": [],
+          "widgetType": "heading"
+        },
+        {
+          "id": "00000093",
+          "elType": "widget",
+          "settings": {
+            "editor": "<p>DevHems Technology is a full-stack digital partner for businesses that want measurable growth from their website, marketing and automation \u2014 not just deliverables.</p>"
+          },
+          "elements": [],
+          "widgetType": "text-editor"
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "0000009a",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "row",
+        "flex_gap": {
+          "unit": "px",
+          "size": 40,
+          "column": "40"
+        },
+        "_element_id": "dh-our-story"
       },
-      {
-        "id": "000000a2",
-        "elType": "container",
-        "settings": {
-          "content_width": "boxed",
-          "flex_direction": "column",
-          "flex_gap": {
-            "unit": "px",
-            "size": 24,
-            "column": "24"
+      "elements": [
+        {
+          "id": "00000097",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row",
+            "content_width": "full",
+            "width": {
+              "unit": "%",
+              "size": 60
+            }
           },
-          "_element_id": "dh-mission-vision-values"
-        },
-        "elements": [
-          {
-            "id": "000000a1",
-            "elType": "container",
-            "settings": {
-              "flex_direction": "row",
-              "content_width": "full",
-              "flex_wrap": "wrap",
-              "flex_gap": {
-                "unit": "px",
-                "size": 24,
-                "column": "24"
-              }
+          "elements": [
+            {
+              "id": "00000095",
+              "elType": "widget",
+              "settings": {
+                "title": "Our Story",
+                "header_size": "h2"
+              },
+              "elements": [],
+              "widgetType": "heading"
             },
-            "elements": [
-              {
-                "id": "0000009c",
-                "elType": "container",
-                "settings": {
-                  "flex_direction": "row",
-                  "content_width": "full"
-                },
-                "elements": [
-                  {
-                    "id": "0000009b",
-                    "elType": "widget",
-                    "settings": {
-                      "title_text": "Our Mission",
-                      "description_text": "To give growing businesses enterprise-grade digital capability without enterprise overhead.",
-                      "selected_icon": {
-                        "value": "fas fa-bullseye",
-                        "library": "fa-solid"
-                      },
-                      "position": "top"
-                    },
-                    "elements": [],
-                    "widgetType": "icon-box"
-                  }
-                ],
-                "isInner": true
+            {
+              "id": "00000096",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p>Founded to close the gap between marketing agencies that don't build and dev shops that don't market, DevHems Technology brings design, engineering, SEO and AI automation together under one accountable team. Replace this placeholder copy with your company's real history, founding story and milestones.</p>"
               },
-              {
-                "id": "0000009e",
-                "elType": "container",
-                "settings": {
-                  "flex_direction": "row",
-                  "content_width": "full"
-                },
-                "elements": [
-                  {
-                    "id": "0000009d",
-                    "elType": "widget",
-                    "settings": {
-                      "title_text": "Our Vision",
-                      "description_text": "To be the long-term digital growth partner our clients never have to replace.",
-                      "selected_icon": {
-                        "value": "fas fa-eye",
-                        "library": "fa-solid"
-                      },
-                      "position": "top"
-                    },
-                    "elements": [],
-                    "widgetType": "icon-box"
-                  }
-                ],
-                "isInner": true
+              "elements": [],
+              "widgetType": "text-editor"
+            }
+          ],
+          "isInner": true
+        },
+        {
+          "id": "00000099",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row",
+            "content_width": "full",
+            "width": {
+              "unit": "%",
+              "size": 40
+            }
+          },
+          "elements": [
+            {
+              "id": "00000098",
+              "elType": "widget",
+              "settings": {
+                "image": {
+                  "url": "",
+                  "id": "",
+                  "alt": "Our team at DevHems Technology",
+                  "source": "library"
+                }
               },
-              {
-                "id": "000000a0",
-                "elType": "container",
-                "settings": {
-                  "flex_direction": "row",
-                  "content_width": "full"
-                },
-                "elements": [
-                  {
-                    "id": "0000009f",
-                    "elType": "widget",
-                    "settings": {
-                      "title_text": "Our Values",
-                      "description_text": "Transparency, ownership and results \u2014 measured, not assumed.",
-                      "selected_icon": {
-                        "value": "fas fa-heart",
-                        "library": "fa-solid"
-                      },
-                      "position": "top"
-                    },
-                    "elements": [],
-                    "widgetType": "icon-box"
-                  }
-                ],
-                "isInner": true
-              }
-            ],
-            "isInner": true
-          }
-        ],
-        "isInner": false
+              "elements": [],
+              "widgetType": "image"
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "000000a2",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 24,
+          "column": "24"
+        },
+        "_element_id": "dh-mission-vision-values"
       },
-      {
-        "id": "000000ad",
-        "elType": "container",
-        "settings": {
-          "content_width": "boxed",
-          "flex_direction": "column",
-          "flex_gap": {
-            "unit": "px",
-            "size": 24,
-            "column": "24"
+      "elements": [
+        {
+          "id": "000000a1",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row",
+            "content_width": "full",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 24,
+              "column": "24"
+            }
           },
-          "_element_id": "dh-team"
+          "elements": [
+            {
+              "id": "0000009c",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "content_width": "full"
+              },
+              "elements": [
+                {
+                  "id": "0000009b",
+                  "elType": "widget",
+                  "settings": {
+                    "title_text": "Our Mission",
+                    "description_text": "To give growing businesses enterprise-grade digital capability without enterprise overhead.",
+                    "selected_icon": {
+                      "value": "fas fa-bullseye",
+                      "library": "fa-solid"
+                    },
+                    "position": "top"
+                  },
+                  "elements": [],
+                  "widgetType": "icon-box"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "0000009e",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "content_width": "full"
+              },
+              "elements": [
+                {
+                  "id": "0000009d",
+                  "elType": "widget",
+                  "settings": {
+                    "title_text": "Our Vision",
+                    "description_text": "To be the long-term digital growth partner our clients never have to replace.",
+                    "selected_icon": {
+                      "value": "fas fa-eye",
+                      "library": "fa-solid"
+                    },
+                    "position": "top"
+                  },
+                  "elements": [],
+                  "widgetType": "icon-box"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "000000a0",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "content_width": "full"
+              },
+              "elements": [
+                {
+                  "id": "0000009f",
+                  "elType": "widget",
+                  "settings": {
+                    "title_text": "Our Values",
+                    "description_text": "Transparency, ownership and results \u2014 measured, not assumed.",
+                    "selected_icon": {
+                      "value": "fas fa-heart",
+                      "library": "fa-solid"
+                    },
+                    "position": "top"
+                  },
+                  "elements": [],
+                  "widgetType": "icon-box"
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "000000ad",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 24,
+          "column": "24"
         },
-        "elements": [
-          {
-            "id": "000000ab",
-            "elType": "widget",
-            "settings": {
-              "title": "Meet the Team",
-              "header_size": "h2",
-              "align": "center"
-            },
-            "elements": [],
-            "widgetType": "heading"
-          },
-          {
-            "id": "000000ac",
-            "elType": "container",
-            "settings": {
-              "flex_direction": "row",
-              "content_width": "full",
-              "flex_wrap": "wrap",
-              "flex_gap": {
-                "unit": "px",
-                "size": 24,
-                "column": "24"
-              }
-            },
-            "elements": [
-              {
-                "id": "000000a4",
-                "elType": "container",
-                "settings": {
-                  "flex_direction": "row",
-                  "content_width": "full"
-                },
-                "elements": [
-                  {
-                    "id": "000000a3",
-                    "elType": "widget",
-                    "settings": {
-                      "title_text": "Team Member Name",
-                      "description_text": "Role / Title",
-                      "image": {
-                        "url": "",
-                        "id": "",
-                        "alt": "Team Member Name",
-                        "source": "library"
-                      }
-                    },
-                    "elements": [],
-                    "widgetType": "image-box"
-                  }
-                ],
-                "isInner": true
-              },
-              {
-                "id": "000000a6",
-                "elType": "container",
-                "settings": {
-                  "flex_direction": "row",
-                  "content_width": "full"
-                },
-                "elements": [
-                  {
-                    "id": "000000a5",
-                    "elType": "widget",
-                    "settings": {
-                      "title_text": "Team Member Name",
-                      "description_text": "Role / Title",
-                      "image": {
-                        "url": "",
-                        "id": "",
-                        "alt": "Team Member Name",
-                        "source": "library"
-                      }
-                    },
-                    "elements": [],
-                    "widgetType": "image-box"
-                  }
-                ],
-                "isInner": true
-              },
-              {
-                "id": "000000a8",
-                "elType": "container",
-                "settings": {
-                  "flex_direction": "row",
-                  "content_width": "full"
-                },
-                "elements": [
-                  {
-                    "id": "000000a7",
-                    "elType": "widget",
-                    "settings": {
-                      "title_text": "Team Member Name",
-                      "description_text": "Role / Title",
-                      "image": {
-                        "url": "",
-                        "id": "",
-                        "alt": "Team Member Name",
-                        "source": "library"
-                      }
-                    },
-                    "elements": [],
-                    "widgetType": "image-box"
-                  }
-                ],
-                "isInner": true
-              },
-              {
-                "id": "000000aa",
-                "elType": "container",
-                "settings": {
-                  "flex_direction": "row",
-                  "content_width": "full"
-                },
-                "elements": [
-                  {
-                    "id": "000000a9",
-                    "elType": "widget",
-                    "settings": {
-                      "title_text": "Team Member Name",
-                      "description_text": "Role / Title",
-                      "image": {
-                        "url": "",
-                        "id": "",
-                        "alt": "Team Member Name",
-                        "source": "library"
-                      }
-                    },
-                    "elements": [],
-                    "widgetType": "image-box"
-                  }
-                ],
-                "isInner": true
-              }
-            ],
-            "isInner": true
-          }
-        ],
-        "isInner": false
+        "_element_id": "dh-team"
       },
-      {
-        "id": "000000bb",
-        "elType": "container",
-        "settings": {
-          "content_width": "boxed",
-          "flex_direction": "column",
-          "_element_id": "dh-about-stats",
-          "background_background": "classic",
-          "background_color": "#101828"
+      "elements": [
+        {
+          "id": "000000ab",
+          "elType": "widget",
+          "settings": {
+            "title": "Meet the Team",
+            "header_size": "h2",
+            "align": "center"
+          },
+          "elements": [],
+          "widgetType": "heading"
         },
-        "elements": [
-          {
-            "id": "000000ba",
-            "elType": "container",
-            "settings": {
-              "flex_direction": "row",
-              "content_width": "full",
-              "flex_wrap": "wrap",
-              "flex_gap": {
-                "unit": "px",
-                "size": 24,
-                "column": "24"
+        {
+          "id": "000000ac",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row",
+            "content_width": "full",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 24,
+              "column": "24"
+            }
+          },
+          "elements": [
+            {
+              "id": "000000a4",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "content_width": "full"
               },
-              "flex_justify_content": "space-around"
+              "elements": [
+                {
+                  "id": "000000a3",
+                  "elType": "widget",
+                  "settings": {
+                    "title_text": "Team Member Name",
+                    "description_text": "Role / Title",
+                    "image": {
+                      "url": "",
+                      "id": "",
+                      "alt": "Team Member Name",
+                      "source": "library"
+                    }
+                  },
+                  "elements": [],
+                  "widgetType": "image-box"
+                }
+              ],
+              "isInner": true
             },
-            "elements": [
-              {
-                "id": "000000b0",
-                "elType": "container",
-                "settings": {
-                  "flex_direction": "row",
-                  "content_width": "full"
-                },
-                "elements": [
-                  {
-                    "id": "000000ae",
-                    "elType": "widget",
-                    "settings": {
-                      "title": "150+",
-                      "header_size": "h2",
-                      "align": "center"
-                    },
-                    "elements": [],
-                    "widgetType": "heading"
-                  },
-                  {
-                    "id": "000000af",
-                    "elType": "widget",
-                    "settings": {
-                      "editor": "<p style='text-align:center'>Projects Delivered</p>"
-                    },
-                    "elements": [],
-                    "widgetType": "text-editor"
-                  }
-                ],
-                "isInner": true
+            {
+              "id": "000000a6",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "content_width": "full"
               },
-              {
-                "id": "000000b3",
-                "elType": "container",
-                "settings": {
-                  "flex_direction": "row",
-                  "content_width": "full"
-                },
-                "elements": [
-                  {
-                    "id": "000000b1",
-                    "elType": "widget",
-                    "settings": {
-                      "title": "98%",
-                      "header_size": "h2",
-                      "align": "center"
-                    },
-                    "elements": [],
-                    "widgetType": "heading"
+              "elements": [
+                {
+                  "id": "000000a5",
+                  "elType": "widget",
+                  "settings": {
+                    "title_text": "Team Member Name",
+                    "description_text": "Role / Title",
+                    "image": {
+                      "url": "",
+                      "id": "",
+                      "alt": "Team Member Name",
+                      "source": "library"
+                    }
                   },
-                  {
-                    "id": "000000b2",
-                    "elType": "widget",
-                    "settings": {
-                      "editor": "<p style='text-align:center'>Client Retention</p>"
-                    },
-                    "elements": [],
-                    "widgetType": "text-editor"
-                  }
-                ],
-                "isInner": true
+                  "elements": [],
+                  "widgetType": "image-box"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "000000a8",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "content_width": "full"
               },
-              {
-                "id": "000000b6",
-                "elType": "container",
-                "settings": {
-                  "flex_direction": "row",
-                  "content_width": "full"
-                },
-                "elements": [
-                  {
-                    "id": "000000b4",
-                    "elType": "widget",
-                    "settings": {
-                      "title": "240%",
-                      "header_size": "h2",
-                      "align": "center"
-                    },
-                    "elements": [],
-                    "widgetType": "heading"
+              "elements": [
+                {
+                  "id": "000000a7",
+                  "elType": "widget",
+                  "settings": {
+                    "title_text": "Team Member Name",
+                    "description_text": "Role / Title",
+                    "image": {
+                      "url": "",
+                      "id": "",
+                      "alt": "Team Member Name",
+                      "source": "library"
+                    }
                   },
-                  {
-                    "id": "000000b5",
-                    "elType": "widget",
-                    "settings": {
-                      "editor": "<p style='text-align:center'>Avg. Traffic Growth</p>"
-                    },
-                    "elements": [],
-                    "widgetType": "text-editor"
-                  }
-                ],
-                "isInner": true
+                  "elements": [],
+                  "widgetType": "image-box"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "000000aa",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "content_width": "full"
               },
-              {
-                "id": "000000b9",
-                "elType": "container",
-                "settings": {
-                  "flex_direction": "row",
-                  "content_width": "full"
-                },
-                "elements": [
-                  {
-                    "id": "000000b7",
-                    "elType": "widget",
-                    "settings": {
-                      "title": "40+",
-                      "header_size": "h2",
-                      "align": "center"
-                    },
-                    "elements": [],
-                    "widgetType": "heading"
+              "elements": [
+                {
+                  "id": "000000a9",
+                  "elType": "widget",
+                  "settings": {
+                    "title_text": "Team Member Name",
+                    "description_text": "Role / Title",
+                    "image": {
+                      "url": "",
+                      "id": "",
+                      "alt": "Team Member Name",
+                      "source": "library"
+                    }
                   },
-                  {
-                    "id": "000000b8",
-                    "elType": "widget",
-                    "settings": {
-                      "editor": "<p style='text-align:center'>Team Experts</p>"
-                    },
-                    "elements": [],
-                    "widgetType": "text-editor"
-                  }
-                ],
-                "isInner": true
-              }
-            ],
-            "isInner": true
-          }
-        ],
-        "isInner": false
+                  "elements": [],
+                  "widgetType": "image-box"
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "000000bb",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "_element_id": "dh-about-stats",
+        "background_background": "classic",
+        "background_color": "#101828"
       },
-      {
-        "id": "000000c6",
-        "elType": "container",
-        "settings": {
-          "content_width": "boxed",
-          "flex_direction": "column",
-          "flex_gap": {
-            "unit": "px",
-            "size": 24,
-            "column": "24"
+      "elements": [
+        {
+          "id": "000000ba",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row",
+            "content_width": "full",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 24,
+              "column": "24"
+            },
+            "flex_justify_content": "space-around"
           },
-          "_element_id": "dh-about-why-us"
+          "elements": [
+            {
+              "id": "000000b0",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "content_width": "full"
+              },
+              "elements": [
+                {
+                  "id": "000000ae",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "150+",
+                    "header_size": "h2",
+                    "align": "center"
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "000000af",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p style='text-align:center'>Projects Delivered</p>"
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "000000b3",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "content_width": "full"
+              },
+              "elements": [
+                {
+                  "id": "000000b1",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "98%",
+                    "header_size": "h2",
+                    "align": "center"
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "000000b2",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p style='text-align:center'>Client Retention</p>"
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "000000b6",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "content_width": "full"
+              },
+              "elements": [
+                {
+                  "id": "000000b4",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "240%",
+                    "header_size": "h2",
+                    "align": "center"
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "000000b5",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p style='text-align:center'>Avg. Traffic Growth</p>"
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "000000b9",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "content_width": "full"
+              },
+              "elements": [
+                {
+                  "id": "000000b7",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "40+",
+                    "header_size": "h2",
+                    "align": "center"
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "000000b8",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p style='text-align:center'>Team Experts</p>"
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "000000c6",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 24,
+          "column": "24"
         },
-        "elements": [
-          {
-            "id": "000000c4",
-            "elType": "widget",
-            "settings": {
-              "title": "Why Businesses Choose DevHems",
-              "header_size": "h2",
-              "align": "center"
-            },
-            "elements": [],
-            "widgetType": "heading"
-          },
-          {
-            "id": "000000c5",
-            "elType": "container",
-            "settings": {
-              "flex_direction": "row",
-              "content_width": "full",
-              "flex_wrap": "wrap",
-              "flex_gap": {
-                "unit": "px",
-                "size": 24,
-                "column": "24"
-              }
-            },
-            "elements": [
-              {
-                "id": "000000bd",
-                "elType": "container",
-                "settings": {
-                  "flex_direction": "row",
-                  "content_width": "full"
-                },
-                "elements": [
-                  {
-                    "id": "000000bc",
-                    "elType": "widget",
-                    "settings": {
-                      "title_text": "Proven Results",
-                      "description_text": "240%+ average organic traffic growth across client campaigns.",
-                      "selected_icon": {
-                        "value": "fas fa-award",
-                        "library": "fa-solid"
-                      },
-                      "position": "top"
-                    },
-                    "elements": [],
-                    "widgetType": "icon-box"
-                  }
-                ],
-                "isInner": true
-              },
-              {
-                "id": "000000bf",
-                "elType": "container",
-                "settings": {
-                  "flex_direction": "row",
-                  "content_width": "full"
-                },
-                "elements": [
-                  {
-                    "id": "000000be",
-                    "elType": "widget",
-                    "settings": {
-                      "title_text": "Full-Stack Team",
-                      "description_text": "Strategy, design, development and marketing under one roof.",
-                      "selected_icon": {
-                        "value": "fas fa-users",
-                        "library": "fa-solid"
-                      },
-                      "position": "top"
-                    },
-                    "elements": [],
-                    "widgetType": "icon-box"
-                  }
-                ],
-                "isInner": true
-              },
-              {
-                "id": "000000c1",
-                "elType": "container",
-                "settings": {
-                  "flex_direction": "row",
-                  "content_width": "full"
-                },
-                "elements": [
-                  {
-                    "id": "000000c0",
-                    "elType": "widget",
-                    "settings": {
-                      "title_text": "Transparent Reporting",
-                      "description_text": "Live dashboards and monthly reviews \u2014 no black boxes.",
-                      "selected_icon": {
-                        "value": "fas fa-chart-bar",
-                        "library": "fa-solid"
-                      },
-                      "position": "top"
-                    },
-                    "elements": [],
-                    "widgetType": "icon-box"
-                  }
-                ],
-                "isInner": true
-              },
-              {
-                "id": "000000c3",
-                "elType": "container",
-                "settings": {
-                  "flex_direction": "row",
-                  "content_width": "full"
-                },
-                "elements": [
-                  {
-                    "id": "000000c2",
-                    "elType": "widget",
-                    "settings": {
-                      "title_text": "Fast Turnaround",
-                      "description_text": "Agile delivery without compromising on quality or accessibility.",
-                      "selected_icon": {
-                        "value": "fas fa-bolt",
-                        "library": "fa-solid"
-                      },
-                      "position": "top"
-                    },
-                    "elements": [],
-                    "widgetType": "icon-box"
-                  }
-                ],
-                "isInner": true
-              }
-            ],
-            "isInner": true
-          }
-        ],
-        "isInner": false
+        "_element_id": "dh-about-why-us"
       },
-      {
-        "id": "000000d1",
-        "elType": "container",
-        "settings": {
-          "content_width": "boxed",
-          "flex_direction": "column",
-          "flex_gap": {
-            "unit": "px",
-            "size": 24,
-            "column": "24"
+      "elements": [
+        {
+          "id": "000000c4",
+          "elType": "widget",
+          "settings": {
+            "title": "Why Businesses Choose DevHems",
+            "header_size": "h2",
+            "align": "center"
           },
-          "_element_id": "dh-about-testimonials"
+          "elements": [],
+          "widgetType": "heading"
         },
-        "elements": [
-          {
-            "id": "000000cf",
-            "elType": "widget",
-            "settings": {
-              "title": "Client Testimonials",
-              "header_size": "h2",
-              "align": "center"
-            },
-            "elements": [],
-            "widgetType": "heading"
+        {
+          "id": "000000c5",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row",
+            "content_width": "full",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 24,
+              "column": "24"
+            }
           },
-          {
-            "id": "000000d0",
-            "elType": "container",
-            "settings": {
-              "flex_direction": "row",
-              "content_width": "full",
-              "flex_wrap": "wrap",
-              "flex_gap": {
-                "unit": "px",
-                "size": 24,
-                "column": "24"
-              }
-            },
-            "elements": [
-              {
-                "id": "000000ca",
-                "elType": "container",
-                "settings": {
-                  "flex_direction": "row",
-                  "content_width": "full"
-                },
-                "elements": [
-                  {
-                    "id": "000000c7",
-                    "elType": "widget",
-                    "settings": {
-                      "rating_scale": "5",
-                      "rating": {
-                        "unit": "px",
-                        "size": 5
-                      }
-                    },
-                    "elements": [],
-                    "widgetType": "star-rating"
-                  },
-                  {
-                    "id": "000000c8",
-                    "elType": "widget",
-                    "settings": {
-                      "editor": "<p>\u201cWorking with DevHems felt like adding an in-house team, not hiring an agency.\u201d</p>"
-                    },
-                    "elements": [],
-                    "widgetType": "text-editor"
-                  },
-                  {
-                    "id": "000000c9",
-                    "elType": "widget",
-                    "settings": {
-                      "title": "Client Name, Company",
-                      "header_size": "h5"
-                    },
-                    "elements": [],
-                    "widgetType": "heading"
-                  }
-                ],
-                "isInner": true
+          "elements": [
+            {
+              "id": "000000bd",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "content_width": "full"
               },
-              {
-                "id": "000000ce",
-                "elType": "container",
-                "settings": {
-                  "flex_direction": "row",
-                  "content_width": "full"
-                },
-                "elements": [
-                  {
-                    "id": "000000cb",
-                    "elType": "widget",
-                    "settings": {
-                      "rating_scale": "5",
-                      "rating": {
-                        "unit": "px",
-                        "size": 5
-                      }
+              "elements": [
+                {
+                  "id": "000000bc",
+                  "elType": "widget",
+                  "settings": {
+                    "title_text": "Proven Results",
+                    "description_text": "240%+ average organic traffic growth across client campaigns.",
+                    "selected_icon": {
+                      "value": "fas fa-award",
+                      "library": "fa-solid"
                     },
-                    "elements": [],
-                    "widgetType": "star-rating"
+                    "position": "top"
                   },
-                  {
-                    "id": "000000cc",
-                    "elType": "widget",
-                    "settings": {
-                      "editor": "<p>\u201cWorking with DevHems felt like adding an in-house team, not hiring an agency.\u201d</p>"
-                    },
-                    "elements": [],
-                    "widgetType": "text-editor"
-                  },
-                  {
-                    "id": "000000cd",
-                    "elType": "widget",
-                    "settings": {
-                      "title": "Client Name, Company",
-                      "header_size": "h5"
-                    },
-                    "elements": [],
-                    "widgetType": "heading"
-                  }
-                ],
-                "isInner": true
-              }
-            ],
-            "isInner": true
-          }
-        ],
-        "isInner": false
-      },
-      {
-        "id": "000000d5",
-        "elType": "container",
-        "settings": {
-          "content_width": "boxed",
-          "flex_direction": "column",
-          "flex_gap": {
-            "unit": "px",
-            "size": 16,
-            "column": "16"
-          },
-          "_element_id": "dh-about-project-enquiry",
-          "background_background": "classic",
-          "background_color": "#F5F7FA"
-        },
-        "elements": [
-          {
-            "id": "000000d2",
-            "elType": "widget",
-            "settings": {
-              "title": "Have a Project in Mind?",
-              "header_size": "h2",
-              "align": "center"
+                  "elements": [],
+                  "widgetType": "icon-box"
+                }
+              ],
+              "isInner": true
             },
-            "elements": [],
-            "widgetType": "heading"
-          },
-          {
-            "id": "000000d3",
-            "elType": "widget",
-            "settings": {
-              "editor": "<p style='text-align:center'>Tell us about your goals and we'll get back to you within one business day.</p>"
-            },
-            "elements": [],
-            "widgetType": "text-editor"
-          },
-          {
-            "id": "000000d4",
-            "elType": "widget",
-            "settings": {
-              "shortcode": "[contact-form-7 id=\"PROJECT_ENQUIRY_FORM_ID\" title=\"Project Enquiry Form\"]"
-            },
-            "elements": [],
-            "widgetType": "shortcode"
-          }
-        ],
-        "isInner": false
-      },
-      {
-        "id": "000000dc",
-        "elType": "container",
-        "settings": {
-          "content_width": "boxed",
-          "flex_direction": "column",
-          "flex_gap": {
-            "unit": "px",
-            "size": 16,
-            "column": "16"
-          },
-          "_element_id": "dh-about-final-cta"
-        },
-        "elements": [
-          {
-            "id": "000000d6",
-            "elType": "widget",
-            "settings": {
-              "title": "Let's Build Something Great Together",
-              "header_size": "h2",
-              "align": "center"
-            },
-            "elements": [],
-            "widgetType": "heading"
-          },
-          {
-            "id": "000000db",
-            "elType": "container",
-            "settings": {
-              "flex_direction": "row",
-              "content_width": "full",
-              "flex_gap": {
-                "unit": "px",
-                "size": 16,
-                "column": "16"
-              }
-            },
-            "elements": [
-              {
-                "id": "000000d8",
-                "elType": "container",
-                "settings": {
-                  "flex_direction": "row",
-                  "content_width": "full"
-                },
-                "elements": [
-                  {
-                    "id": "000000d7",
-                    "elType": "widget",
-                    "settings": {
-                      "text": "Start Your Project",
-                      "link": {
-                        "url": "#popup:start-your-project",
-                        "is_external": "",
-                        "nofollow": ""
-                      },
-                      "button_type": "primary"
-                    },
-                    "elements": [],
-                    "widgetType": "button"
-                  }
-                ],
-                "isInner": true
+            {
+              "id": "000000bf",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "content_width": "full"
               },
-              {
-                "id": "000000da",
-                "elType": "container",
-                "settings": {
-                  "flex_direction": "row",
-                  "content_width": "full"
-                },
-                "elements": [
-                  {
-                    "id": "000000d9",
-                    "elType": "widget",
-                    "settings": {
-                      "text": "Contact Us",
-                      "link": {
-                        "url": "/contact-us/",
-                        "is_external": "",
-                        "nofollow": ""
-                      },
-                      "button_type": "secondary"
+              "elements": [
+                {
+                  "id": "000000be",
+                  "elType": "widget",
+                  "settings": {
+                    "title_text": "Full-Stack Team",
+                    "description_text": "Strategy, design, development and marketing under one roof.",
+                    "selected_icon": {
+                      "value": "fas fa-users",
+                      "library": "fa-solid"
                     },
-                    "elements": [],
-                    "widgetType": "button"
-                  }
-                ],
-                "isInner": true
-              }
-            ],
-            "isInner": true
-          }
-        ],
-        "isInner": false
-      }
-    ],
-    "page_settings": [],
-    "version": "0.4",
-    "title": "About Us",
-    "type": "page"
-  }
-]
+                    "position": "top"
+                  },
+                  "elements": [],
+                  "widgetType": "icon-box"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "000000c1",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "content_width": "full"
+              },
+              "elements": [
+                {
+                  "id": "000000c0",
+                  "elType": "widget",
+                  "settings": {
+                    "title_text": "Transparent Reporting",
+                    "description_text": "Live dashboards and monthly reviews \u2014 no black boxes.",
+                    "selected_icon": {
+                      "value": "fas fa-chart-bar",
+                      "library": "fa-solid"
+                    },
+                    "position": "top"
+                  },
+                  "elements": [],
+                  "widgetType": "icon-box"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "000000c3",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "content_width": "full"
+              },
+              "elements": [
+                {
+                  "id": "000000c2",
+                  "elType": "widget",
+                  "settings": {
+                    "title_text": "Fast Turnaround",
+                    "description_text": "Agile delivery without compromising on quality or accessibility.",
+                    "selected_icon": {
+                      "value": "fas fa-bolt",
+                      "library": "fa-solid"
+                    },
+                    "position": "top"
+                  },
+                  "elements": [],
+                  "widgetType": "icon-box"
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "000000d1",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 24,
+          "column": "24"
+        },
+        "_element_id": "dh-about-testimonials"
+      },
+      "elements": [
+        {
+          "id": "000000cf",
+          "elType": "widget",
+          "settings": {
+            "title": "Client Testimonials",
+            "header_size": "h2",
+            "align": "center"
+          },
+          "elements": [],
+          "widgetType": "heading"
+        },
+        {
+          "id": "000000d0",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row",
+            "content_width": "full",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 24,
+              "column": "24"
+            }
+          },
+          "elements": [
+            {
+              "id": "000000ca",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "content_width": "full"
+              },
+              "elements": [
+                {
+                  "id": "000000c7",
+                  "elType": "widget",
+                  "settings": {
+                    "rating_scale": "5",
+                    "rating": {
+                      "unit": "px",
+                      "size": 5
+                    }
+                  },
+                  "elements": [],
+                  "widgetType": "star-rating"
+                },
+                {
+                  "id": "000000c8",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p>\u201cWorking with DevHems felt like adding an in-house team, not hiring an agency.\u201d</p>"
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                },
+                {
+                  "id": "000000c9",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "Client Name, Company",
+                    "header_size": "h5"
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "000000ce",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "content_width": "full"
+              },
+              "elements": [
+                {
+                  "id": "000000cb",
+                  "elType": "widget",
+                  "settings": {
+                    "rating_scale": "5",
+                    "rating": {
+                      "unit": "px",
+                      "size": 5
+                    }
+                  },
+                  "elements": [],
+                  "widgetType": "star-rating"
+                },
+                {
+                  "id": "000000cc",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p>\u201cWorking with DevHems felt like adding an in-house team, not hiring an agency.\u201d</p>"
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                },
+                {
+                  "id": "000000cd",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "Client Name, Company",
+                    "header_size": "h5"
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "000000d5",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 16,
+          "column": "16"
+        },
+        "_element_id": "dh-about-project-enquiry",
+        "background_background": "classic",
+        "background_color": "#F5F7FA"
+      },
+      "elements": [
+        {
+          "id": "000000d2",
+          "elType": "widget",
+          "settings": {
+            "title": "Have a Project in Mind?",
+            "header_size": "h2",
+            "align": "center"
+          },
+          "elements": [],
+          "widgetType": "heading"
+        },
+        {
+          "id": "000000d3",
+          "elType": "widget",
+          "settings": {
+            "editor": "<p style='text-align:center'>Tell us about your goals and we'll get back to you within one business day.</p>"
+          },
+          "elements": [],
+          "widgetType": "text-editor"
+        },
+        {
+          "id": "000000d4",
+          "elType": "widget",
+          "settings": {
+            "shortcode": "[contact-form-7 id=\"PROJECT_ENQUIRY_FORM_ID\" title=\"Project Enquiry Form\"]"
+          },
+          "elements": [],
+          "widgetType": "shortcode"
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "000000dc",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 16,
+          "column": "16"
+        },
+        "_element_id": "dh-about-final-cta"
+      },
+      "elements": [
+        {
+          "id": "000000d6",
+          "elType": "widget",
+          "settings": {
+            "title": "Let's Build Something Great Together",
+            "header_size": "h2",
+            "align": "center"
+          },
+          "elements": [],
+          "widgetType": "heading"
+        },
+        {
+          "id": "000000db",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row",
+            "content_width": "full",
+            "flex_gap": {
+              "unit": "px",
+              "size": 16,
+              "column": "16"
+            }
+          },
+          "elements": [
+            {
+              "id": "000000d8",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "content_width": "full"
+              },
+              "elements": [
+                {
+                  "id": "000000d7",
+                  "elType": "widget",
+                  "settings": {
+                    "text": "Start Your Project",
+                    "link": {
+                      "url": "#popup:start-your-project",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "button_type": "primary"
+                  },
+                  "elements": [],
+                  "widgetType": "button"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "000000da",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "content_width": "full"
+              },
+              "elements": [
+                {
+                  "id": "000000d9",
+                  "elType": "widget",
+                  "settings": {
+                    "text": "Contact Us",
+                    "link": {
+                      "url": "/contact-us/",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "button_type": "secondary"
+                  },
+                  "elements": [],
+                  "widgetType": "button"
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "About Us",
+  "type": "page"
+}
