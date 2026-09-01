@@ -92,3 +92,19 @@ function devhems_get_service_short_description( $post_id = null ) {
 	$value   = function_exists( 'get_field' ) ? get_field( 'short_description', $post_id ) : '';
 	return $value ? $value : get_the_excerpt( $post_id );
 }
+
+/**
+ * Estimated reading time for the current post, shown on blog cards and the
+ * blog detail hero. Based on a 200 words-per-minute average reading speed.
+ */
+function devhems_reading_time( $post_id = null ) {
+	$post_id    = $post_id ?: get_the_ID();
+	$word_count = str_word_count( wp_strip_all_tags( get_post_field( 'post_content', $post_id ) ) );
+	$minutes    = max( 1, (int) ceil( $word_count / 200 ) );
+
+	return sprintf(
+		/* translators: %d: estimated reading time in minutes */
+		_n( '%d min read', '%d min read', $minutes, 'devhems-child' ),
+		$minutes
+	);
+}

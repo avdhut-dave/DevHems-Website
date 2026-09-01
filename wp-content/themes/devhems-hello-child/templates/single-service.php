@@ -36,6 +36,36 @@ get_header();
 		<?php the_content(); ?>
 	</section>
 
+	<?php $problems = get_field( 'problems_addressed' ); ?>
+	<?php if ( $problems ) : ?>
+	<section class="devhems-service-problems">
+		<h2><?php esc_html_e( 'Business Problems We Solve', 'devhems-child' ); ?></h2>
+		<div class="devhems-card-grid">
+			<?php foreach ( $problems as $problem ) : ?>
+				<div class="devhems-benefit-card">
+					<h3><?php echo esc_html( $problem['title'] ); ?></h3>
+					<p><?php echo esc_html( $problem['description'] ); ?></p>
+				</div>
+			<?php endforeach; ?>
+		</div>
+	</section>
+	<?php endif; ?>
+
+	<?php $included = get_field( 'services_included' ); ?>
+	<?php if ( $included ) : ?>
+	<section class="devhems-service-included">
+		<h2><?php esc_html_e( 'What\'s Included', 'devhems-child' ); ?></h2>
+		<div class="devhems-card-grid">
+			<?php foreach ( $included as $item ) : ?>
+				<div class="devhems-benefit-card">
+					<h3><?php echo esc_html( $item['title'] ); ?></h3>
+					<p><?php echo esc_html( $item['description'] ); ?></p>
+				</div>
+			<?php endforeach; ?>
+		</div>
+	</section>
+	<?php endif; ?>
+
 	<?php $benefits = get_field( 'benefits' ); ?>
 	<?php if ( $benefits ) : ?>
 	<section class="devhems-service-benefits">
@@ -101,6 +131,8 @@ get_header();
 		</div>
 	</section>
 	<?php endif; ?>
+
+	<?php get_template_part( 'template-parts/why-choose-devhems' ); ?>
 
 	<?php $faqs = get_field( 'faqs' ); ?>
 	<?php if ( $faqs ) : ?>
