@@ -9,17 +9,19 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 ?>
 
-<main id="content" tabindex="-1">
 <?php while ( have_posts() ) : the_post(); ?>
 
-	<?php echo do_shortcode( '[devhems_breadcrumbs]' ); ?>
+	<?php $client = get_field( 'client_name' ); ?>
+	<?php
+	get_template_part( 'template-parts/page-banner', null, array(
+		'title'   => get_the_title(),
+		'support' => $client,
+	) );
+	?>
+
+<main id="content" tabindex="-1">
 
 	<section class="devhems-case-study-hero">
-		<h1><?php the_title(); ?></h1>
-		<?php $client = get_field( 'client_name' ); ?>
-		<?php if ( $client ) : ?>
-			<p class="devhems-case-study-client"><?php echo esc_html( $client ); ?></p>
-		<?php endif; ?>
 		<?php echo get_the_post_thumbnail( get_the_ID(), 'devhems-hero', array( 'loading' => 'eager' ) ); ?>
 	</section>
 

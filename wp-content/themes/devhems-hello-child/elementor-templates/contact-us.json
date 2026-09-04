@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "000000df",
+      "id": "000000a0",
       "elType": "container",
       "settings": {
         "content_width": "boxed",
@@ -14,16 +14,16 @@
         },
         "padding": {
           "unit": "px",
-          "top": "88",
+          "top": "64",
           "right": "24",
-          "bottom": "56",
+          "bottom": "44",
           "left": "24",
           "isLinked": false
         },
-        "_element_id": "dh-contact-hero",
+        "_element_id": "dh-contact-banner",
         "background_background": "gradient",
-        "background_color": "#0B5FFF",
-        "background_color_b": "#0842B8",
+        "background_color": "#0A1B3D",
+        "background_color_b": "#173FA8",
         "background_gradient_angle": {
           "unit": "deg",
           "size": 135
@@ -31,22 +31,31 @@
       },
       "elements": [
         {
-          "id": "000000dd",
+          "id": "0000009d",
           "elType": "widget",
           "settings": {
-            "title": "Contact Us",
+            "shortcode": "[devhems_breadcrumbs]",
+            "_element_id": "dh-banner-breadcrumb"
+          },
+          "elements": [],
+          "widgetType": "shortcode"
+        },
+        {
+          "id": "0000009e",
+          "elType": "widget",
+          "settings": {
+            "title": "Let's Talk About Your Growth",
             "header_size": "h1",
-            "align": "center",
             "title_color": "#FFFFFF"
           },
           "elements": [],
           "widgetType": "heading"
         },
         {
-          "id": "000000de",
+          "id": "0000009f",
           "elType": "widget",
           "settings": {
-            "editor": "<p style='text-align:center;color:#E3ECFF'>Have a project, a question, or just want to say hello? We'd love to hear from you.</p>"
+            "editor": "<p style='color:#CBD8F3'>Reach us directly, or send a message and we'll respond within one business day.</p>"
           },
           "elements": [],
           "widgetType": "text-editor"
@@ -55,7 +64,7 @@
       "isInner": false
     },
     {
-      "id": "000000e7",
+      "id": "000000a8",
       "elType": "container",
       "settings": {
         "content_width": "boxed",
@@ -78,7 +87,7 @@
       },
       "elements": [
         {
-          "id": "000000e6",
+          "id": "000000a7",
           "elType": "container",
           "settings": {
             "flex_direction": "row",
@@ -93,7 +102,7 @@
           },
           "elements": [
             {
-              "id": "000000e1",
+              "id": "000000a2",
               "elType": "container",
               "settings": {
                 "flex_direction": "column",
@@ -141,17 +150,17 @@
               },
               "elements": [
                 {
-                  "id": "000000e0",
+                  "id": "000000a1",
                   "elType": "widget",
                   "settings": {
                     "title_text": "Call Us",
-                    "description_text": "+1 (555) 123-4567",
+                    "description_text": "+91 88662 39680",
                     "selected_icon": {
                       "value": "fas fa-phone",
                       "library": "fa-solid"
                     },
                     "position": "top",
-                    "primary_color": "#0B5FFF"
+                    "primary_color": "#1E56E0"
                   },
                   "elements": [],
                   "widgetType": "icon-box"
@@ -160,7 +169,7 @@
               "isInner": true
             },
             {
-              "id": "000000e3",
+              "id": "000000a4",
               "elType": "container",
               "settings": {
                 "flex_direction": "column",
@@ -208,17 +217,17 @@
               },
               "elements": [
                 {
-                  "id": "000000e2",
+                  "id": "000000a3",
                   "elType": "widget",
                   "settings": {
                     "title_text": "Email Us",
-                    "description_text": "info@devhems.com",
+                    "description_text": "sales@devhems.com",
                     "selected_icon": {
                       "value": "fas fa-envelope",
                       "library": "fa-solid"
                     },
                     "position": "top",
-                    "primary_color": "#0B5FFF"
+                    "primary_color": "#1E56E0"
                   },
                   "elements": [],
                   "widgetType": "icon-box"
@@ -227,7 +236,7 @@
               "isInner": true
             },
             {
-              "id": "000000e5",
+              "id": "000000a6",
               "elType": "container",
               "settings": {
                 "flex_direction": "column",
@@ -275,17 +284,17 @@
               },
               "elements": [
                 {
-                  "id": "000000e4",
+                  "id": "000000a5",
                   "elType": "widget",
                   "settings": {
                     "title_text": "Visit Us",
-                    "description_text": "123 Business Ave, Suite 100, Your City",
+                    "description_text": "Sakar 5, 511, Ashram Rd, Ellisbridge, Ahmedabad, Gujarat 380006",
                     "selected_icon": {
                       "value": "fas fa-map-marker-alt",
                       "library": "fa-solid"
                     },
                     "position": "top",
-                    "primary_color": "#0B5FFF"
+                    "primary_color": "#1E56E0"
                   },
                   "elements": [],
                   "widgetType": "icon-box"
@@ -300,7 +309,7 @@
       "isInner": false
     },
     {
-      "id": "000000ea",
+      "id": "000000ae",
       "elType": "container",
       "settings": {
         "content_width": "boxed",
@@ -308,8 +317,8 @@
         "align_items": "center",
         "flex_gap": {
           "unit": "px",
-          "size": 8,
-          "column": "8"
+          "size": 12,
+          "column": "12"
         },
         "padding": {
           "unit": "px",
@@ -323,7 +332,7 @@
       },
       "elements": [
         {
-          "id": "000000e8",
+          "id": "000000a9",
           "elType": "widget",
           "settings": {
             "title": "Business Hours",
@@ -334,19 +343,50 @@
           "widgetType": "heading"
         },
         {
-          "id": "000000e9",
+          "id": "000000aa",
           "elType": "widget",
           "settings": {
-            "editor": "<p style='text-align:center'>Monday \u2013 Friday: 9:00 AM \u2013 6:00 PM<br>Saturday \u2013 Sunday: Closed</p>"
+            "editor": "<p style='text-align:center'>Monday \u2013 Friday: 9:00 AM \u2013 6:30 PM<br>Saturday \u2013 Sunday: Closed</p>"
           },
           "elements": [],
           "widgetType": "text-editor"
+        },
+        {
+          "id": "000000ad",
+          "elType": "widget",
+          "settings": {
+            "social_icon_list": [
+              {
+                "_id": "000000a",
+                "social_icon": {
+                  "value": "fab fa-instagram",
+                  "library": "fa-brands"
+                },
+                "link": {
+                  "url": "https://instagram.com/devhemstechnology"
+                }
+              },
+              {
+                "_id": "000000a",
+                "social_icon": {
+                  "value": "fab fa-linkedin-in",
+                  "library": "fa-brands"
+                },
+                "link": {
+                  "url": "https://www.linkedin.com/in/dev-hems-821662392/"
+                }
+              }
+            ],
+            "align": "center"
+          },
+          "elements": [],
+          "widgetType": "social-icons"
         }
       ],
       "isInner": false
     },
     {
-      "id": "000000f0",
+      "id": "000000b4",
       "elType": "container",
       "settings": {
         "content_width": "boxed",
@@ -370,7 +410,7 @@
       },
       "elements": [
         {
-          "id": "000000ed",
+          "id": "000000b1",
           "elType": "container",
           "settings": {
             "flex_direction": "column",
@@ -387,7 +427,7 @@
           },
           "elements": [
             {
-              "id": "000000eb",
+              "id": "000000af",
               "elType": "widget",
               "settings": {
                 "title": "Send Us a Message",
@@ -397,7 +437,7 @@
               "widgetType": "heading"
             },
             {
-              "id": "000000ec",
+              "id": "000000b0",
               "elType": "widget",
               "settings": {
                 "shortcode": "[contact-form-7 id=\"GENERAL_CONTACT_FORM_ID\" title=\"General Contact Form\"]"
@@ -409,7 +449,7 @@
           "isInner": true
         },
         {
-          "id": "000000ef",
+          "id": "000000b3",
           "elType": "container",
           "settings": {
             "flex_direction": "row",
@@ -434,10 +474,10 @@
           },
           "elements": [
             {
-              "id": "000000ee",
+              "id": "000000b2",
               "elType": "widget",
               "settings": {
-                "address": "DevHems Technology Office",
+                "address": "Sakar 5, 511, Ashram Rd, Ellisbridge, Ahmedabad, Gujarat 380006",
                 "zoom": {
                   "size": 14
                 }
@@ -452,7 +492,7 @@
       "isInner": false
     },
     {
-      "id": "000000f6",
+      "id": "000000ba",
       "elType": "container",
       "settings": {
         "content_width": {
@@ -478,7 +518,7 @@
       },
       "elements": [
         {
-          "id": "000000f1",
+          "id": "000000b5",
           "elType": "widget",
           "settings": {
             "title": "Frequently Asked Questions",
@@ -489,22 +529,22 @@
           "widgetType": "heading"
         },
         {
-          "id": "000000f5",
+          "id": "000000b9",
           "elType": "widget",
           "settings": {
             "tabs": [
               {
-                "_id": "000000f",
+                "_id": "000000b",
                 "tab_title": "How fast will I get a response?",
                 "tab_content": "We respond to all enquiries within one business day."
               },
               {
-                "_id": "000000f",
+                "_id": "000000b",
                 "tab_title": "Do you offer free consultations?",
                 "tab_content": "Yes, every project enquiry starts with a free discovery call."
               },
               {
-                "_id": "000000f",
+                "_id": "000000b",
                 "tab_title": "Can I visit your office?",
                 "tab_content": "Yes \u2014 please book an appointment in advance via the contact form above."
               }
@@ -518,7 +558,7 @@
       "isInner": false
     },
     {
-      "id": "000000fb",
+      "id": "000000bd",
       "elType": "container",
       "settings": {
         "content_width": "boxed",
@@ -537,66 +577,36 @@
           "left": "24",
           "isLinked": false
         },
-        "_element_id": "dh-contact-final-cta"
+        "_element_id": "dh-contact-final-cta",
+        "background_background": "gradient",
+        "background_color": "#0A1B3D",
+        "background_color_b": "#173FA8",
+        "background_gradient_angle": {
+          "unit": "deg",
+          "size": 135
+        }
       },
       "elements": [
         {
-          "id": "000000f7",
+          "id": "000000bb",
           "elType": "widget",
           "settings": {
-            "title": "Prefer to Start Your Project Right Away?",
+            "title": "Ready to Start Right Away?",
             "header_size": "h2",
-            "align": "center"
+            "align": "center",
+            "title_color": "#FFFFFF"
           },
           "elements": [],
           "widgetType": "heading"
         },
         {
-          "id": "000000fa",
-          "elType": "container",
+          "id": "000000bc",
+          "elType": "widget",
           "settings": {
-            "flex_direction": "row",
-            "content_width": "full",
-            "flex_gap": {
-              "unit": "px",
-              "size": 16,
-              "column": "16"
-            }
+            "shortcode": "[devhems_consultation_trigger label=\"Get Free Consultation\"]"
           },
-          "elements": [
-            {
-              "id": "000000f9",
-              "elType": "container",
-              "settings": {
-                "flex_direction": "row",
-                "content_width": "full",
-                "flex_gap": {
-                  "unit": "px",
-                  "size": 20,
-                  "column": "20"
-                }
-              },
-              "elements": [
-                {
-                  "id": "000000f8",
-                  "elType": "widget",
-                  "settings": {
-                    "text": "Start Your Project",
-                    "link": {
-                      "url": "#popup:start-your-project",
-                      "is_external": "",
-                      "nofollow": ""
-                    },
-                    "button_type": "primary"
-                  },
-                  "elements": [],
-                  "widgetType": "button"
-                }
-              ],
-              "isInner": true
-            }
-          ],
-          "isInner": true
+          "elements": [],
+          "widgetType": "shortcode"
         }
       ],
       "isInner": false

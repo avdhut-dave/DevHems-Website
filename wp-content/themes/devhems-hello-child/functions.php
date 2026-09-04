@@ -31,6 +31,7 @@ function devhems_includes() {
 		'inc/template-tags.php',
 		'inc/breadcrumbs.php',
 		'inc/template-loader.php',
+		'inc/consultation-modal.php',
 	);
 
 	foreach ( $modules as $module ) {

@@ -1,0 +1,53 @@
+/* "Get Free Consultation" modal — see inc/consultation-modal.php */
+
+.devhems-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 27, 61, 0.7);
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.devhems-modal-overlay.is-open {
+  display: flex;
+}
+
+.devhems-modal-box {
+  background: #fff;
+  border-radius: var(--dh-radius);
+  padding: var(--dh-space-4);
+  max-width: 480px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.devhems-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  background: var(--dh-color-bg-alt);
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--dh-color-text);
+}
+
+.devhems-modal-box h2 {
+  font-family: var(--dh-font-heading);
+  font-size: 22px;
+  margin: 0 0 8px;
+}
+
+.devhems-modal-box p {
+  color: var(--dh-color-text-muted);
+  font-size: 14px;
+}

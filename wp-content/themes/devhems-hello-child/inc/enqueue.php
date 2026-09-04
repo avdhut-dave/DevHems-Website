@@ -9,6 +9,13 @@ defined( 'ABSPATH' ) || exit;
 
 function devhems_enqueue_assets() {
 	wp_enqueue_style(
+		'devhems-google-fonts',
+		'https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap',
+		array(),
+		null
+	);
+
+	wp_enqueue_style(
 		'hello-elementor-parent',
 		get_template_directory_uri() . '/style.css',
 		array(),
@@ -43,6 +50,13 @@ function devhems_enqueue_assets() {
 		DEVHEMS_THEME_VERSION
 	);
 
+	wp_enqueue_style(
+		'devhems-modal',
+		DEVHEMS_THEME_URI . '/assets/css/modal.css',
+		array( 'devhems-child' ),
+		DEVHEMS_THEME_VERSION
+	);
+
 	wp_enqueue_script(
 		'devhems-mega-menu',
 		DEVHEMS_THEME_URI . '/assets/js/mega-menu.js',
@@ -54,6 +68,14 @@ function devhems_enqueue_assets() {
 	wp_enqueue_script(
 		'devhems-accordion',
 		DEVHEMS_THEME_URI . '/assets/js/accordion.js',
+		array(),
+		DEVHEMS_THEME_VERSION,
+		true
+	);
+
+	wp_enqueue_script(
+		'devhems-modal',
+		DEVHEMS_THEME_URI . '/assets/js/modal.js',
 		array(),
 		DEVHEMS_THEME_VERSION,
 		true

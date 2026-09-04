@@ -26,6 +26,59 @@ main#content {
   color: var(--dh-color-text-muted);
 }
 
+/* Page banner — every inner page (Services, Service Detail, Portfolio,
+   Case Study, Careers, Career Detail, Blog, Blog Post, Sitemap, 404) opens
+   with this: dark navy-to-blue gradient, breadcrumb, H1, one-line support
+   copy. Breaks out of main#content's max-width to run full-bleed. */
+.devhems-page-banner {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background: linear-gradient(135deg, var(--dh-color-secondary) 0%, var(--dh-color-primary-dark) 100%);
+  color: #fff;
+  padding: 56px var(--dh-space-3) 40px;
+  margin-bottom: var(--dh-space-4);
+}
+.devhems-page-banner .devhems-breadcrumbs ol {
+  color: #B9C8EE;
+}
+.devhems-page-banner .devhems-breadcrumbs a {
+  color: #B9C8EE;
+}
+.devhems-page-banner .devhems-breadcrumbs li:last-child {
+  color: #fff;
+  font-weight: 600;
+}
+.devhems-page-banner-inner {
+  max-width: var(--dh-container);
+  margin: 0 auto;
+}
+.devhems-page-banner h1 {
+  color: #fff;
+  margin: 0 0 10px;
+  font-size: clamp(26px, 3.6vw, 40px);
+}
+.devhems-page-banner p {
+  color: #CBD8F3;
+  max-width: 62ch;
+  margin: 0;
+}
+.devhems-bottom-cta {
+  margin-top: var(--dh-space-5);
+  margin-bottom: calc(var(--dh-space-5) * -1);
+  padding-top: var(--dh-space-5);
+  padding-bottom: var(--dh-space-5);
+}
+.devhems-bottom-cta p {
+  margin: 0 auto;
+}
+.devhems-bottom-cta .devhems-header-cta {
+  margin-top: var(--dh-space-2);
+}
+
 .devhems-archive-header {
   margin: var(--dh-space-3) 0;
 }

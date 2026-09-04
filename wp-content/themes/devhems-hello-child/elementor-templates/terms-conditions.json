@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "00000101",
+      "id": "000000c3",
       "elType": "container",
       "settings": {
         "content_width": "boxed",
@@ -22,7 +22,7 @@
       },
       "elements": [
         {
-          "id": "00000100",
+          "id": "000000c2",
           "elType": "widget",
           "settings": {
             "title": "Terms and Conditions",
@@ -36,7 +36,7 @@
       "isInner": false
     },
     {
-      "id": "00000103",
+      "id": "000000c5",
       "elType": "container",
       "settings": {
         "content_width": {
@@ -61,7 +61,7 @@
       },
       "elements": [
         {
-          "id": "00000102",
+          "id": "000000c4",
           "elType": "widget",
           "settings": {
             "editor": "<p><em>Last updated: [DATE \u2014 replace with the date these terms are published]</em></p>\n<p><strong>Placeholder legal content \u2014 have these terms reviewed by a qualified lawyer before publishing, especially the liability, payment and intellectual-property clauses.</strong></p>\n\n<h2>1. Acceptance of Terms</h2>\n<p>By accessing devhems.com or engaging DevHems Technology for services, you agree to these Terms and Conditions.</p>\n\n<h2>2. Services</h2>\n<p>DevHems Technology provides digital marketing, website design and development, and AI/automation services as described on this website or in a signed proposal/statement of work. Specific deliverables, timelines and pricing for a given engagement are governed by that proposal, not this page.</p>\n\n<h2>3. Client Responsibilities</h2>\n<p>Clients agree to provide timely feedback, access, and content/assets required to deliver the agreed services, and to hold necessary rights to any content or brand assets supplied to us.</p>\n\n<h2>4. Payment Terms</h2>\n<p>Payment terms, deposits, and refund conditions are set out in the individual service agreement/proposal signed with each client.</p>\n\n<h2>5. Intellectual Property</h2>\n<p>Unless otherwise agreed in writing, final deliverables transfer to the client upon full payment; DevHems Technology retains the right to showcase completed work in its portfolio/case studies unless the client requests otherwise in writing.</p>\n\n<h2>6. Website Use</h2>\n<p>You agree not to misuse this website (e.g. attempting unauthorized access, scraping content, or submitting false information through our forms).</p>\n\n<h2>7. Limitation of Liability</h2>\n<p>To the maximum extent permitted by law, DevHems Technology is not liable for indirect, incidental or consequential damages arising from use of this website or our services.</p>\n\n<h2>8. Third-Party Links</h2>\n<p>Our website may link to third-party sites; we are not responsible for their content or privacy practices.</p>\n\n<h2>9. Changes to These Terms</h2>\n<p>We may update these Terms periodically. Continued use of the site after changes constitutes acceptance of the updated Terms.</p>\n\n<h2>10. Contact Us</h2>\n<p>Questions about these Terms? Email <a href=\"mailto:info@devhems.com\">info@devhems.com</a>.</p>",

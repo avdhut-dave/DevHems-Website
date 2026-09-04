@@ -12,14 +12,14 @@ get_header();
 $industries = get_terms( array( 'taxonomy' => 'industry', 'hide_empty' => true ) );
 ?>
 
+<?php
+get_template_part( 'template-parts/page-banner', null, array(
+	'title'   => __( 'Case Studies', 'devhems-child' ),
+	'support' => __( 'Real projects, real results — see how we\'ve helped businesses across industries grow with websites, marketing and automation.', 'devhems-child' ),
+) );
+?>
+
 <main id="content" tabindex="-1">
-	<?php echo do_shortcode( '[devhems_breadcrumbs]' ); ?>
-
-	<header class="devhems-archive-header">
-		<h1><?php esc_html_e( 'Case Studies', 'devhems-child' ); ?></h1>
-		<p><?php esc_html_e( 'Real projects, real results — see how we\'ve helped businesses across industries grow with websites, marketing and automation.', 'devhems-child' ); ?></p>
-	</header>
-
 	<?php if ( ! empty( $industries ) && ! is_wp_error( $industries ) ) : ?>
 	<nav class="devhems-service-filter" aria-label="<?php esc_attr_e( 'Filter case studies by industry', 'devhems-child' ); ?>">
 		<a href="<?php echo esc_url( get_post_type_archive_link( 'case_study' ) ); ?>" class="devhems-filter-pill<?php echo ( ! is_tax() ) ? ' is-active' : ''; ?>">
@@ -48,11 +48,7 @@ $industries = get_terms( array( 'taxonomy' => 'industry', 'hide_empty' => true )
 	</div>
 
 	<?php the_posts_pagination(); ?>
-
-	<section class="devhems-final-cta">
-		<h2><?php esc_html_e( 'Want results like these for your business?', 'devhems-child' ); ?></h2>
-		<a class="devhems-header-cta" href="<?php echo esc_url( home_url( '/contact-us/' ) ); ?>"><?php esc_html_e( 'Start Your Project', 'devhems-child' ); ?></a>
-	</section>
 </main>
 
+<?php get_template_part( 'template-parts/bottom-cta-banner' ); ?>
 <?php get_footer(); ?>

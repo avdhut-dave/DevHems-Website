@@ -60,15 +60,20 @@ hardcoded so the site owner can edit it without touching code.
 5. Contact → Add New: create the 7 forms using `cf7-forms/1-*.txt` through
    `cf7-forms/7-*.txt`. Note each form's ID/shortcode.
 6. Add this to a code snippet or `wp-config.php`-adjacent mu-plugin (not
-   this theme, since it's environment-specific) to wire the Service Enquiry
-   and Career Application forms to their real CF7 IDs:
+   this theme, since it's environment-specific) to wire the Service Enquiry,
+   Career Application and Popup Enquiry forms to their real CF7 IDs:
    ```php
    add_filter( 'devhems_service_enquiry_form_id', fn() => 123 );
    add_filter( 'devhems_career_application_form_id', fn() => 124 );
+   add_filter( 'devhems_consultation_form_id', fn() => 125 ); // Popup Enquiry Form, cf7-forms/7-*.txt
    ```
 7. Build the header/footer in Elementor (Pro Theme Builder if licensed),
    using the `[devhems_mega_menu]` shortcode for the navigation if not
-   using Elementor Pro's own Nav Menu widget.
+   using Elementor Pro's own Nav Menu widget, and
+   `[devhems_consultation_trigger label="Get Free Consultation"]` for the
+   header CTA button — it opens a real modal (built in
+   `inc/consultation-modal.php`, no Elementor Pro Popup Builder required)
+   containing the Popup Enquiry Form, and never navigates away from the page.
 7a. Import the static-content layouts: create a Page in WP Admin for each of
     **Home, About Us, Contact Us, Privacy Policy, Terms and Conditions, and
     Thank You**, edit it with Elementor, then **Templates (folder icon) →
@@ -135,4 +140,31 @@ hardcoded so the site owner can edit it without touching code.
   Builder, which can't be authored as JSON and verified without a live site
   to import it into. Those four ship as working PHP templates instead, with
   a widget-by-widget Theme Builder rebuild guide for when Pro is available
-  (`elementor-templates/THEME-BUILDER-GUIDE.md`).
+  (`elementor-templates/THEME-BUILDER-GUIDE.md`). All PHP templates share
+  the same `template-parts/page-banner.php` (dark gradient + breadcrumb + H1)
+  and `template-parts/bottom-cta-banner.php` (the one reusable "Ready to
+  grow?" component) so the JSON pages and PHP templates read as one system.
+- **Brand palette**: extracted from the DevHems Technology logo and set as
+  CSS custom properties in `style.css` (`--dh-color-primary` #1E56E0 blue,
+  `--dh-color-secondary` #0A1B3D navy, `--dh-color-accent` #3E8EFF sky,
+  `--dh-color-cta` #FF9F1C amber reserved for primary CTA buttons) and
+  Manrope/Inter fonts, enqueued from Google Fonts in `inc/enqueue.php`.
+  Mirror the same 5 colors and 2 fonts into **Elementor → Site Settings →
+  Global Colors/Fonts** so Elementor-built sections (Home/About/Contact and
+  anything built in the Theme Builder) match the PHP-templated pages exactly.
+- **CPT UI plugin**: not needed and shouldn't be installed — Services, Case
+  Studies, Careers and Testimonials are already registered as Custom Post
+  Types in code (`inc/post-types-*.php`), which is more durable than a
+  plugin-based registration (survives theme/plugin changes, lives in
+  version control). Installing CPT UI risks a duplicate/conflicting
+  registration of the same post type slugs.
+- **"Get Free Consultation" modal**: built without Elementor Pro's Popup
+  Builder. `inc/consultation-modal.php` renders the modal markup once in
+  `wp_footer`; `assets/js/modal.js` toggles it open for any element with the
+  class `devhems-open-modal` (the `[devhems_consultation_trigger]` shortcode
+  button already carries it — use that shortcode for the header CTA and any
+  other "Start Your Project"/"Get Free Consultation" button instead of a
+  plain link).
+- **Case study tabs & testimonials**: the Home page JSON uses Elementor's
+  native **Tabs** and **Testimonial** widgets — both are free, not
+  Pro-only — for the metric-driven case-study tabs and client quotes.

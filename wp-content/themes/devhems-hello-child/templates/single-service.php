@@ -19,18 +19,16 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 ?>
 
-<main id="content" tabindex="-1">
 <?php while ( have_posts() ) : the_post(); ?>
 
-	<?php echo do_shortcode( '[devhems_breadcrumbs]' ); ?>
+	<?php
+	get_template_part( 'template-parts/page-banner', null, array(
+		'title'   => get_the_title(),
+		'support' => get_field( 'hero_subtitle' ) ?: devhems_get_service_short_description(),
+	) );
+	?>
 
-	<section class="devhems-service-hero">
-		<h1><?php the_title(); ?></h1>
-		<?php $hero_subtitle = get_field( 'hero_subtitle' ); ?>
-		<?php if ( $hero_subtitle ) : ?>
-			<p class="devhems-service-hero-subtitle"><?php echo esc_html( $hero_subtitle ); ?></p>
-		<?php endif; ?>
-	</section>
+<main id="content" tabindex="-1">
 
 	<section class="devhems-service-overview">
 		<?php the_content(); ?>
@@ -177,12 +175,9 @@ get_header();
 		<?php echo do_shortcode( '[devhems_service_enquiry_form]' ); ?>
 	</section>
 
-	<section class="devhems-final-cta">
-		<h2><?php esc_html_e( 'Ready to grow with DevHems Technology?', 'devhems-child' ); ?></h2>
-		<a class="devhems-header-cta" href="<?php echo esc_url( home_url( '/contact-us/' ) ); ?>"><?php esc_html_e( 'Start Your Project', 'devhems-child' ); ?></a>
-	</section>
-
-<?php endwhile; ?>
 </main>
+
+<?php get_template_part( 'template-parts/bottom-cta-banner' ); ?>
+<?php endwhile; ?>
 
 <?php get_footer(); ?>

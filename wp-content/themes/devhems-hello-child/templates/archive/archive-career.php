@@ -24,14 +24,14 @@ $perks = apply_filters( 'devhems_careers_perks', array(
 ) );
 ?>
 
+<?php
+get_template_part( 'template-parts/page-banner', null, array(
+	'title'   => __( 'Careers at DevHems Technology', 'devhems-child' ),
+	'support' => __( "We're a full-stack digital team solving real growth problems for real clients. If you'd rather build things that ship than sit in process, you'll fit right in.", 'devhems-child' ),
+) );
+?>
+
 <main id="content" tabindex="-1">
-	<?php echo do_shortcode( '[devhems_breadcrumbs]' ); ?>
-
-	<header class="devhems-archive-header">
-		<h1><?php esc_html_e( 'Careers at DevHems Technology', 'devhems-child' ); ?></h1>
-		<p><?php esc_html_e( "We're a full-stack digital team solving real growth problems for real clients. If you'd rather build things that ship than sit in process, you'll fit right in.", 'devhems-child' ); ?></p>
-	</header>
-
 	<section class="devhems-careers-perks">
 		<h2><?php esc_html_e( 'Why Work With Us', 'devhems-child' ); ?></h2>
 		<div class="devhems-card-grid">
@@ -87,10 +87,7 @@ $perks = apply_filters( 'devhems_careers_perks', array(
 		<?php endif; ?>
 	</section>
 
-	<section class="devhems-final-cta">
-		<h2><?php esc_html_e( "Don't see the right role?", 'devhems-child' ); ?></h2>
-		<a class="devhems-header-cta" href="<?php echo esc_url( home_url( '/contact-us/' ) ); ?>"><?php esc_html_e( 'Get in Touch', 'devhems-child' ); ?></a>
-	</section>
 </main>
 
+<?php get_template_part( 'template-parts/bottom-cta-banner' ); ?>
 <?php get_footer(); ?>

@@ -14,30 +14,28 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 
 $categories = get_categories( array( 'hide_empty' => true ) );
+
+if ( is_category() ) {
+	$banner_title = single_cat_title( '', false );
+} elseif ( is_tag() ) {
+	$banner_title = single_tag_title( '', false );
+} elseif ( is_search() ) {
+	$banner_title = sprintf(
+		/* translators: %s: search query */
+		__( 'Search Results for: %s', 'devhems-child' ),
+		get_search_query()
+	);
+} else {
+	$banner_title = __( 'Growth Notes', 'devhems-child' );
+}
+
+get_template_part( 'template-parts/page-banner', null, array(
+	'title'   => $banner_title,
+	'support' => is_search() ? '' : __( 'SEO, paid media, social and web development insights from the DevHems Technology team.', 'devhems-child' ),
+) );
 ?>
 
 <main id="content" tabindex="-1">
-	<?php echo do_shortcode( '[devhems_breadcrumbs]' ); ?>
-
-	<header class="devhems-archive-header">
-		<h1>
-			<?php
-			if ( is_category() ) {
-				single_cat_title();
-			} elseif ( is_tag() ) {
-				single_tag_title();
-			} elseif ( is_search() ) {
-				printf( esc_html__( 'Search Results for: %s', 'devhems-child' ), '<span>' . esc_html( get_search_query() ) . '</span>' );
-			} else {
-				esc_html_e( 'Blog', 'devhems-child' );
-			}
-			?>
-		</h1>
-		<?php if ( ! is_search() ) : ?>
-			<p><?php esc_html_e( 'Insights on SEO, web development, AI automation and growth marketing from the DevHems Technology team.', 'devhems-child' ); ?></p>
-		<?php endif; ?>
-	</header>
-
 	<?php if ( ! empty( $categories ) ) : ?>
 	<nav class="devhems-service-filter" aria-label="<?php esc_attr_e( 'Filter posts by category', 'devhems-child' ); ?>">
 		<a href="<?php echo esc_url( get_permalink( get_option( 'page_for_posts' ) ) ?: home_url( '/' ) ); ?>" class="devhems-filter-pill<?php echo ( ! is_category() ) ? ' is-active' : ''; ?>">
@@ -68,10 +66,7 @@ $categories = get_categories( array( 'hide_empty' => true ) );
 		<p><?php esc_html_e( 'No posts found.', 'devhems-child' ); ?></p>
 	<?php endif; ?>
 
-	<section class="devhems-final-cta">
-		<h2><?php esc_html_e( 'Want growth insights delivered to your inbox?', 'devhems-child' ); ?></h2>
-		<?php echo do_shortcode( '[contact-form-7 id="FOOTER_ENQUIRY_FORM_ID" title="Footer Enquiry Form"]' ); ?>
-	</section>
 </main>
 
+<?php get_template_part( 'template-parts/bottom-cta-banner' ); ?>
 <?php get_footer(); ?>

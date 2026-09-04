@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "0000010c",
+      "id": "000000ce",
       "elType": "container",
       "settings": {
         "content_width": "boxed",
@@ -22,7 +22,7 @@
       },
       "elements": [
         {
-          "id": "00000104",
+          "id": "000000c6",
           "elType": "widget",
           "settings": {
             "selected_icon": {
@@ -30,13 +30,13 @@
               "library": "fa-solid"
             },
             "align": "center",
-            "primary_color": "#14C38E"
+            "primary_color": "#3E8EFF"
           },
           "elements": [],
           "widgetType": "icon"
         },
         {
-          "id": "00000105",
+          "id": "000000c7",
           "elType": "widget",
           "settings": {
             "title": "Thank You!",
@@ -47,7 +47,7 @@
           "widgetType": "heading"
         },
         {
-          "id": "00000106",
+          "id": "000000c8",
           "elType": "widget",
           "settings": {
             "editor": "<p style='text-align:center'>Your submission has been received. A member of the DevHems Technology team will get back to you within one business day.</p>"
@@ -56,7 +56,7 @@
           "widgetType": "text-editor"
         },
         {
-          "id": "0000010b",
+          "id": "000000cd",
           "elType": "container",
           "settings": {
             "flex_direction": "row",
@@ -69,7 +69,7 @@
           },
           "elements": [
             {
-              "id": "00000108",
+              "id": "000000ca",
               "elType": "container",
               "settings": {
                 "flex_direction": "row",
@@ -82,7 +82,7 @@
               },
               "elements": [
                 {
-                  "id": "00000107",
+                  "id": "000000c9",
                   "elType": "widget",
                   "settings": {
                     "text": "Back to Home",
@@ -100,7 +100,7 @@
               "isInner": true
             },
             {
-              "id": "0000010a",
+              "id": "000000cc",
               "elType": "container",
               "settings": {
                 "flex_direction": "row",
@@ -113,7 +113,7 @@
               },
               "elements": [
                 {
-                  "id": "00000109",
+                  "id": "000000cb",
                   "elType": "widget",
                   "settings": {
                     "text": "Explore Our Services",

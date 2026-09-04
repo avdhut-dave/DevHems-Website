@@ -256,14 +256,18 @@ body {
   justify-content: center;
   min-height: 44px;
   padding: 10px 22px;
-  background: var(--dh-color-primary);
-  color: #fff;
-  font-weight: 600;
-  border-radius: var(--dh-radius);
+  background: var(--dh-color-cta);
+  color: #1A1200;
+  font-weight: 700;
+  border: none;
+  border-radius: 999px;
   text-decoration: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-family: var(--dh-font-body);
+  font-size: 14.5px;
 }
 .devhems-header-cta:hover,
 .devhems-header-cta:focus-visible {
-  background: var(--dh-color-primary-dark);
+  background: var(--dh-color-cta-dark);
 }

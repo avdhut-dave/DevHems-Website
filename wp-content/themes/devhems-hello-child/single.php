@@ -10,16 +10,20 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 ?>
 
-<main id="content" tabindex="-1">
 <?php while ( have_posts() ) : the_post(); ?>
 
-	<?php echo do_shortcode( '[devhems_breadcrumbs]' ); ?>
+	<?php
+	get_template_part( 'template-parts/page-banner', null, array(
+		'title'   => get_the_title(),
+		'support' => wp_strip_all_tags( get_the_category_list( ', ' ) ),
+	) );
+	?>
+
+<main id="content" tabindex="-1">
 
 	<article <?php post_class( 'devhems-blog-article' ); ?>>
 
 		<header class="devhems-blog-hero">
-			<p class="devhems-blog-category"><?php echo esc_html( get_the_category_list( ', ' ) ); ?></p>
-			<h1><?php the_title(); ?></h1>
 			<p class="devhems-blog-meta">
 				<?php
 				printf(
@@ -80,18 +84,15 @@ get_header();
 	</section>
 	<?php endif; ?>
 
-	<section class="devhems-final-cta">
-		<h2><?php esc_html_e( 'Ready to put these insights into action?', 'devhems-child' ); ?></h2>
-		<a class="devhems-header-cta" href="<?php echo esc_url( home_url( '/contact-us/' ) ); ?>"><?php esc_html_e( 'Start Your Project', 'devhems-child' ); ?></a>
-	</section>
-
 	<?php if ( comments_open() || get_comments_number() ) : ?>
 		<section class="devhems-comments">
 			<?php comments_template(); ?>
 		</section>
 	<?php endif; ?>
 
-<?php endwhile; ?>
 </main>
+
+<?php get_template_part( 'template-parts/bottom-cta-banner' ); ?>
+<?php endwhile; ?>
 
 <?php get_footer(); ?>

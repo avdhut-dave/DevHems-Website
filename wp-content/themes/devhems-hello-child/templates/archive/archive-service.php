@@ -13,14 +13,14 @@ get_header();
 $categories = get_terms( array( 'taxonomy' => 'service_category', 'hide_empty' => true ) );
 ?>
 
+<?php
+get_template_part( 'template-parts/page-banner', null, array(
+	'title'   => __( 'Our Services', 'devhems-child' ),
+	'support' => __( 'Seven disciplines. One accountable team. Zero vendor hand-offs.', 'devhems-child' ),
+) );
+?>
+
 <main id="content" tabindex="-1">
-	<?php echo do_shortcode( '[devhems_breadcrumbs]' ); ?>
-
-	<header class="devhems-archive-header">
-		<h1><?php esc_html_e( 'Our Services', 'devhems-child' ); ?></h1>
-		<p><?php esc_html_e( 'Digital marketing, website development and AI automation services built around your growth goals.', 'devhems-child' ); ?></p>
-	</header>
-
 	<?php if ( ! empty( $categories ) && ! is_wp_error( $categories ) ) : ?>
 	<nav class="devhems-service-filter" aria-label="<?php esc_attr_e( 'Filter services by category', 'devhems-child' ); ?>">
 		<a href="<?php echo esc_url( get_post_type_archive_link( 'service' ) ); ?>" class="devhems-filter-pill<?php echo ( ! is_tax() ) ? ' is-active' : ''; ?>">
@@ -46,11 +46,7 @@ $categories = get_terms( array( 'taxonomy' => 'service_category', 'hide_empty' =
 	</div>
 
 	<?php the_posts_pagination(); ?>
-
-	<section class="devhems-final-cta">
-		<h2><?php esc_html_e( 'Not sure which service fits your business?', 'devhems-child' ); ?></h2>
-		<a class="devhems-header-cta" href="<?php echo esc_url( home_url( '/contact-us/' ) ); ?>"><?php esc_html_e( 'Talk to Our Team', 'devhems-child' ); ?></a>
-	</section>
 </main>
 
+<?php get_template_part( 'template-parts/bottom-cta-banner' ); ?>
 <?php get_footer(); ?>

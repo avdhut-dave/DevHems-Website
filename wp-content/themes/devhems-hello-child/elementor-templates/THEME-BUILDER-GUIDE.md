@@ -111,3 +111,19 @@ requirement:
 - FAQ accordion
 - Why Choose DevHems block
 - Service/Career enquiry form wrapper
+
+## Widgets that need Elementor Pro (flagged as requested)
+
+The Home page JSON in this repo deliberately avoids these — it uses a
+single static hero and Elementor's free Tabs/Testimonial widgets instead —
+so the site works fully on free Elementor. Add these only once Pro is
+licensed:
+
+| Feature | Free Elementor alternative shipped | Pro widget to upgrade to |
+|---|---|---|
+| Hero image/video **slider** (2–3 rotating slides) | Single static hero (`home.json`) | **Slides** widget |
+| Header "Get Free Consultation" **popup modal** | Custom modal, no Pro needed — `inc/consultation-modal.php` + `[devhems_consultation_trigger]` | Popup Builder (optional alternative; not required) |
+| Case study **tabs** | Already free — Elementor's native **Tabs** widget (`home.json`) | — (no upgrade needed) |
+| Testimonial **carousel** | Static Testimonial widgets side by side (`home.json`) | **Testimonial Carousel** widget |
+| Blog **slider** on Home | Elementor's native **Posts** widget in grid layout, or `index.php`'s grid | **Loop Carousel** widget |
+| Sticky **Table of Contents** on Blog Detail | Not built — add manually per post via `the_content` headings, or a lightweight TOC plugin (e.g. "Table of Contents Plus") | **Table of Contents** widget (auto-generates + sticky) |

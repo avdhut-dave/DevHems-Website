@@ -9,36 +9,30 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 ?>
 
-<main id="content" tabindex="-1">
 <?php while ( have_posts() ) : the_post(); ?>
-
-	<?php echo do_shortcode( '[devhems_breadcrumbs]' ); ?>
 
 	<?php
 	$status     = get_field( 'job_status' );
 	$department = get_the_terms( get_the_ID(), 'department' );
+
+	$meta_bits = array_filter( array(
+		( $department && ! is_wp_error( $department ) ) ? $department[0]->name : '',
+		get_field( 'job_location' ),
+		get_field( 'employment_type' ) ? ucwords( str_replace( '-', ' ', get_field( 'employment_type' ) ) ) : '',
+		get_field( 'experience_required' ),
+	) );
+
+	get_template_part( 'template-parts/page-banner', null, array(
+		'title'   => get_the_title(),
+		'support' => implode( ' · ', $meta_bits ),
+	) );
 	?>
 
-	<section class="devhems-job-hero">
-		<h1><?php the_title(); ?></h1>
-		<ul class="devhems-job-meta">
-			<?php if ( $department && ! is_wp_error( $department ) ) : ?>
-				<li><?php echo esc_html( $department[0]->name ); ?></li>
-			<?php endif; ?>
-			<?php if ( get_field( 'job_location' ) ) : ?>
-				<li><?php echo esc_html( get_field( 'job_location' ) ); ?></li>
-			<?php endif; ?>
-			<?php if ( get_field( 'employment_type' ) ) : ?>
-				<li><?php echo esc_html( ucwords( str_replace( '-', ' ', get_field( 'employment_type' ) ) ) ); ?></li>
-			<?php endif; ?>
-			<?php if ( get_field( 'experience_required' ) ) : ?>
-				<li><?php echo esc_html( get_field( 'experience_required' ) ); ?></li>
-			<?php endif; ?>
-		</ul>
-		<?php if ( 'closed' === $status ) : ?>
-			<p class="devhems-job-closed-notice"><?php esc_html_e( 'This position is no longer accepting applications.', 'devhems-child' ); ?></p>
-		<?php endif; ?>
-	</section>
+<main id="content" tabindex="-1">
+
+	<?php if ( 'closed' === $status ) : ?>
+		<p class="devhems-job-closed-notice"><?php esc_html_e( 'This position is no longer accepting applications.', 'devhems-child' ); ?></p>
+	<?php endif; ?>
 
 	<div class="devhems-job-body">
 		<section>

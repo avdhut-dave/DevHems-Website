@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "0000000c",
+      "id": "0000000a",
       "elType": "container",
       "settings": {
         "content_width": "boxed",
@@ -21,8 +21,8 @@
         },
         "_element_id": "dh-hero",
         "background_background": "gradient",
-        "background_color": "#0B5FFF",
-        "background_color_b": "#0842B8",
+        "background_color": "#0A1B3D",
+        "background_color_b": "#173FA8",
         "background_gradient_angle": {
           "unit": "deg",
           "size": 135
@@ -30,7 +30,7 @@
       },
       "elements": [
         {
-          "id": "00000009",
+          "id": "00000007",
           "elType": "container",
           "settings": {
             "flex_direction": "column",
@@ -50,10 +50,10 @@
               "id": "00000001",
               "elType": "widget",
               "settings": {
-                "title": "DIGITAL MARKETING \u00b7 WEB DEVELOPMENT \u00b7 AI AUTOMATION",
+                "title": "PERFORMANCE-FIRST DIGITAL AGENCY",
                 "header_size": "p",
                 "_element_id": "dh-eyebrow",
-                "title_color": "#BFD7FF"
+                "title_color": "#9EC0FF"
               },
               "elements": [],
               "widgetType": "heading"
@@ -62,7 +62,7 @@
               "id": "00000002",
               "elType": "widget",
               "settings": {
-                "title": "Grow Your Business With Websites, SEO and AI Built to Perform",
+                "title": "Data-Driven Strategy Meets Creative Execution",
                 "header_size": "h1",
                 "title_color": "#FFFFFF"
               },
@@ -73,13 +73,13 @@
               "id": "00000003",
               "elType": "widget",
               "settings": {
-                "editor": "<p style='color:#E3ECFF'>DevHems Technology partners with ambitious brands to design fast websites, run data-driven marketing campaigns, and automate growth with AI \u2014 so you spend less time on busywork and more time closing deals.</p>"
+                "editor": "<p style='color:#CBD8F3'>50+ brands across India trust DevHems Technology to turn traffic into revenue \u2014 through SEO/AEO/GEO, paid media, social, video and conversion-focused websites.</p>"
               },
               "elements": [],
               "widgetType": "text-editor"
             },
             {
-              "id": "00000008",
+              "id": "00000006",
               "elType": "container",
               "settings": {
                 "flex_direction": "row",
@@ -92,66 +92,28 @@
               },
               "elements": [
                 {
-                  "id": "00000005",
-                  "elType": "container",
+                  "id": "00000004",
+                  "elType": "widget",
                   "settings": {
-                    "flex_direction": "row",
-                    "content_width": "full",
-                    "flex_gap": {
-                      "unit": "px",
-                      "size": 20,
-                      "column": "20"
-                    }
+                    "shortcode": "[devhems_consultation_trigger label=\"Get Free Consultation\"]"
                   },
-                  "elements": [
-                    {
-                      "id": "00000004",
-                      "elType": "widget",
-                      "settings": {
-                        "text": "Start Your Project",
-                        "link": {
-                          "url": "#popup:start-your-project",
-                          "is_external": "",
-                          "nofollow": ""
-                        },
-                        "button_type": "primary"
-                      },
-                      "elements": [],
-                      "widgetType": "button"
-                    }
-                  ],
-                  "isInner": true
+                  "elements": [],
+                  "widgetType": "shortcode"
                 },
                 {
-                  "id": "00000007",
-                  "elType": "container",
+                  "id": "00000005",
+                  "elType": "widget",
                   "settings": {
-                    "flex_direction": "row",
-                    "content_width": "full",
-                    "flex_gap": {
-                      "unit": "px",
-                      "size": 20,
-                      "column": "20"
-                    }
+                    "text": "View Our Services",
+                    "link": {
+                      "url": "/services/",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "button_type": "secondary"
                   },
-                  "elements": [
-                    {
-                      "id": "00000006",
-                      "elType": "widget",
-                      "settings": {
-                        "text": "View Our Services",
-                        "link": {
-                          "url": "/services/",
-                          "is_external": "",
-                          "nofollow": ""
-                        },
-                        "button_type": "secondary"
-                      },
-                      "elements": [],
-                      "widgetType": "button"
-                    }
-                  ],
-                  "isInner": true
+                  "elements": [],
+                  "widgetType": "button"
                 }
               ],
               "isInner": true
@@ -160,7 +122,7 @@
           "isInner": true
         },
         {
-          "id": "0000000b",
+          "id": "00000009",
           "elType": "container",
           "settings": {
             "flex_direction": "column",
@@ -177,11 +139,11 @@
           },
           "elements": [
             {
-              "id": "0000000a",
+              "id": "00000008",
               "elType": "widget",
               "settings": {
                 "image": {
-                  "url": "https://placehold.co/900x700/0842B8/FFFFFF?text=Hero+Image&font=poppins",
+                  "url": "https://placehold.co/900x700/173FA8/FFFFFF?text=Hero+Image&font=poppins",
                   "id": "",
                   "alt": "Hero Image",
                   "source": "url"
@@ -205,7 +167,7 @@
       "isInner": false
     },
     {
-      "id": "00000014",
+      "id": "00000012",
       "elType": "container",
       "settings": {
         "content_width": "boxed",
@@ -228,7 +190,7 @@
       },
       "elements": [
         {
-          "id": "0000000d",
+          "id": "0000000b",
           "elType": "widget",
           "settings": {
             "title": "Trusted by growing teams across industries",
@@ -239,7 +201,7 @@
           "widgetType": "heading"
         },
         {
-          "id": "00000013",
+          "id": "00000011",
           "elType": "container",
           "settings": {
             "flex_direction": "row",
@@ -254,7 +216,7 @@
           },
           "elements": [
             {
-              "id": "0000000e",
+              "id": "0000000c",
               "elType": "widget",
               "settings": {
                 "image": {
@@ -268,7 +230,7 @@
               "widgetType": "image"
             },
             {
-              "id": "0000000f",
+              "id": "0000000d",
               "elType": "widget",
               "settings": {
                 "image": {
@@ -282,7 +244,7 @@
               "widgetType": "image"
             },
             {
-              "id": "00000010",
+              "id": "0000000e",
               "elType": "widget",
               "settings": {
                 "image": {
@@ -296,7 +258,7 @@
               "widgetType": "image"
             },
             {
-              "id": "00000011",
+              "id": "0000000f",
               "elType": "widget",
               "settings": {
                 "image": {
@@ -310,7 +272,7 @@
               "widgetType": "image"
             },
             {
-              "id": "00000012",
+              "id": "00000010",
               "elType": "widget",
               "settings": {
                 "image": {
@@ -330,7 +292,7 @@
       "isInner": false
     },
     {
-      "id": "00000020",
+      "id": "0000002a",
       "elType": "container",
       "settings": {
         "content_width": "boxed",
@@ -353,10 +315,10 @@
       },
       "elements": [
         {
-          "id": "0000001e",
+          "id": "00000028",
           "elType": "widget",
           "settings": {
-            "title": "Core Services",
+            "title": "What We Do Best",
             "header_size": "h2",
             "align": "center"
           },
@@ -364,7 +326,7 @@
           "widgetType": "heading"
         },
         {
-          "id": "0000001f",
+          "id": "00000029",
           "elType": "container",
           "settings": {
             "flex_direction": "row",
@@ -379,14 +341,14 @@
           },
           "elements": [
             {
-              "id": "00000017",
+              "id": "00000015",
               "elType": "container",
               "settings": {
                 "flex_direction": "column",
                 "content_width": "full",
                 "width": {
                   "unit": "%",
-                  "size": 31.5
+                  "size": 22
                 },
                 "background_background": "classic",
                 "background_color": "#FFFFFF",
@@ -427,17 +389,17 @@
               },
               "elements": [
                 {
-                  "id": "00000015",
+                  "id": "00000013",
                   "elType": "widget",
                   "settings": {
-                    "title_text": "Digital Marketing & SEO",
-                    "description_text": "Search Engine Optimization, Google/Meta/LinkedIn Ads, content and social media that turn visibility into revenue.",
+                    "title_text": "SEO / AEO / GEO",
+                    "description_text": "Search visibility built for Google, AI answer engines and generative search alike.",
                     "selected_icon": {
-                      "value": "fas fa-chart-line",
+                      "value": "fas fa-magnifying-glass-chart",
                       "library": "fa-solid"
                     },
                     "position": "top",
-                    "primary_color": "#0B5FFF",
+                    "primary_color": "#1E56E0",
                     "icon_space": {
                       "unit": "px",
                       "size": 20
@@ -446,10 +408,96 @@
                   "elements": [],
                   "widgetType": "icon-box"
                 },
+                {
+                  "id": "00000014",
+                  "elType": "widget",
+                  "settings": {
+                    "text": "Learn More",
+                    "link": {
+                      "url": "/services/",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "button_type": "link"
+                  },
+                  "elements": [],
+                  "widgetType": "button"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "00000018",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 22
+                },
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7EAF0",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 12,
+                  "blur": 32,
+                  "spread": -8,
+                  "color": "rgba(16,24,40,0.12)"
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "28",
+                  "bottom": "32",
+                  "left": "28",
+                  "isLinked": true
+                }
+              },
+              "elements": [
                 {
                   "id": "00000016",
                   "elType": "widget",
                   "settings": {
+                    "title_text": "PPC Advertising",
+                    "description_text": "Google, Meta and LinkedIn campaigns tuned for cost-per-acquisition, not clicks.",
+                    "selected_icon": {
+                      "value": "fas fa-bullseye",
+                      "library": "fa-solid"
+                    },
+                    "position": "top",
+                    "primary_color": "#1E56E0",
+                    "icon_space": {
+                      "unit": "px",
+                      "size": 20
+                    }
+                  },
+                  "elements": [],
+                  "widgetType": "icon-box"
+                },
+                {
+                  "id": "00000017",
+                  "elType": "widget",
+                  "settings": {
                     "text": "Learn More",
                     "link": {
                       "url": "/services/",
@@ -465,14 +513,14 @@
               "isInner": true
             },
             {
-              "id": "0000001a",
+              "id": "0000001b",
               "elType": "container",
               "settings": {
                 "flex_direction": "column",
                 "content_width": "full",
                 "width": {
                   "unit": "%",
-                  "size": 31.5
+                  "size": 22
                 },
                 "background_background": "classic",
                 "background_color": "#FFFFFF",
@@ -512,104 +560,18 @@
                 }
               },
               "elements": [
-                {
-                  "id": "00000018",
-                  "elType": "widget",
-                  "settings": {
-                    "title_text": "Website Design & Development",
-                    "description_text": "Responsive, conversion-focused websites built on WordPress, Shopify, React and custom stacks.",
-                    "selected_icon": {
-                      "value": "fas fa-laptop-code",
-                      "library": "fa-solid"
-                    },
-                    "position": "top",
-                    "primary_color": "#0B5FFF",
-                    "icon_space": {
-                      "unit": "px",
-                      "size": 20
-                    }
-                  },
-                  "elements": [],
-                  "widgetType": "icon-box"
-                },
                 {
                   "id": "00000019",
                   "elType": "widget",
                   "settings": {
-                    "text": "Learn More",
-                    "link": {
-                      "url": "/services/",
-                      "is_external": "",
-                      "nofollow": ""
-                    },
-                    "button_type": "link"
-                  },
-                  "elements": [],
-                  "widgetType": "button"
-                }
-              ],
-              "isInner": true
-            },
-            {
-              "id": "0000001d",
-              "elType": "container",
-              "settings": {
-                "flex_direction": "column",
-                "content_width": "full",
-                "width": {
-                  "unit": "%",
-                  "size": 31.5
-                },
-                "background_background": "classic",
-                "background_color": "#FFFFFF",
-                "border_border": "solid",
-                "border_color": "#E7EAF0",
-                "border_width": {
-                  "unit": "px",
-                  "top": "1",
-                  "right": "1",
-                  "bottom": "1",
-                  "left": "1",
-                  "isLinked": true
-                },
-                "border_radius": {
-                  "unit": "px",
-                  "top": "16",
-                  "right": "16",
-                  "bottom": "16",
-                  "left": "16",
-                  "isLinked": true
-                },
-                "box_shadow_box_shadow_type": "yes",
-                "box_shadow_box_shadow": {
-                  "horizontal": 0,
-                  "vertical": 12,
-                  "blur": 32,
-                  "spread": -8,
-                  "color": "rgba(16,24,40,0.12)"
-                },
-                "padding": {
-                  "unit": "px",
-                  "top": "32",
-                  "right": "28",
-                  "bottom": "32",
-                  "left": "28",
-                  "isLinked": true
-                }
-              },
-              "elements": [
-                {
-                  "id": "0000001b",
-                  "elType": "widget",
-                  "settings": {
-                    "title_text": "AI & Automation",
-                    "description_text": "Chatbots, workflow automation and AI-powered website integrations that cut manual work.",
+                    "title_text": "Social Media Management",
+                    "description_text": "Content and community management that builds a following that converts.",
                     "selected_icon": {
-                      "value": "fas fa-robot",
+                      "value": "fas fa-hashtag",
                       "library": "fa-solid"
                     },
                     "position": "top",
-                    "primary_color": "#0B5FFF",
+                    "primary_color": "#1E56E0",
                     "icon_space": {
                       "unit": "px",
                       "size": 20
@@ -619,7 +581,7 @@
                   "widgetType": "icon-box"
                 },
                 {
-                  "id": "0000001c",
+                  "id": "0000001a",
                   "elType": "widget",
                   "settings": {
                     "text": "Learn More",
@@ -635,73 +597,16 @@
                 }
               ],
               "isInner": true
-            }
-          ],
-          "isInner": true
-        }
-      ],
-      "isInner": false
-    },
-    {
-      "id": "0000002b",
-      "elType": "container",
-      "settings": {
-        "content_width": "boxed",
-        "flex_direction": "column",
-        "align_items": "center",
-        "flex_gap": {
-          "unit": "px",
-          "size": 32,
-          "column": "32"
-        },
-        "padding": {
-          "unit": "px",
-          "top": "88",
-          "right": "24",
-          "bottom": "88",
-          "left": "24",
-          "isLinked": false
-        },
-        "_element_id": "dh-why-us",
-        "background_background": "classic",
-        "background_color": "#F6F8FB"
-      },
-      "elements": [
-        {
-          "id": "00000029",
-          "elType": "widget",
-          "settings": {
-            "title": "Why Choose DevHems Technology",
-            "header_size": "h2",
-            "align": "center"
-          },
-          "elements": [],
-          "widgetType": "heading"
-        },
-        {
-          "id": "0000002a",
-          "elType": "container",
-          "settings": {
-            "flex_direction": "row",
-            "content_width": "full",
-            "flex_gap": {
-              "unit": "px",
-              "size": 24,
-              "column": "24"
             },
-            "flex_wrap": "wrap",
-            "flex_justify_content": "center"
-          },
-          "elements": [
             {
-              "id": "00000022",
+              "id": "0000001e",
               "elType": "container",
               "settings": {
                 "flex_direction": "column",
                 "content_width": "full",
                 "width": {
                   "unit": "%",
-                  "size": 23
+                  "size": 22
                 },
                 "background_background": "classic",
                 "background_color": "#FFFFFF",
@@ -742,20 +647,125 @@
               },
               "elements": [
                 {
-                  "id": "00000021",
+                  "id": "0000001c",
                   "elType": "widget",
                   "settings": {
-                    "title_text": "Proven Results",
-                    "description_text": "240%+ average organic traffic growth across client campaigns.",
+                    "title_text": "Video Editing",
+                    "description_text": "Short-form and long-form video production for ads, reels and brand stories.",
                     "selected_icon": {
-                      "value": "fas fa-award",
+                      "value": "fas fa-clapperboard",
                       "library": "fa-solid"
                     },
                     "position": "top",
-                    "primary_color": "#14C38E"
+                    "primary_color": "#1E56E0",
+                    "icon_space": {
+                      "unit": "px",
+                      "size": 20
+                    }
                   },
                   "elements": [],
                   "widgetType": "icon-box"
+                },
+                {
+                  "id": "0000001d",
+                  "elType": "widget",
+                  "settings": {
+                    "text": "Learn More",
+                    "link": {
+                      "url": "/services/",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "button_type": "link"
+                  },
+                  "elements": [],
+                  "widgetType": "button"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "00000021",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 22
+                },
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7EAF0",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 12,
+                  "blur": 32,
+                  "spread": -8,
+                  "color": "rgba(16,24,40,0.12)"
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "28",
+                  "bottom": "32",
+                  "left": "28",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "0000001f",
+                  "elType": "widget",
+                  "settings": {
+                    "title_text": "Podcast Production",
+                    "description_text": "Recording, editing and distribution so your show sounds professional everywhere.",
+                    "selected_icon": {
+                      "value": "fas fa-podcast",
+                      "library": "fa-solid"
+                    },
+                    "position": "top",
+                    "primary_color": "#1E56E0",
+                    "icon_space": {
+                      "unit": "px",
+                      "size": 20
+                    }
+                  },
+                  "elements": [],
+                  "widgetType": "icon-box"
+                },
+                {
+                  "id": "00000020",
+                  "elType": "widget",
+                  "settings": {
+                    "text": "Learn More",
+                    "link": {
+                      "url": "/services/",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "button_type": "link"
+                  },
+                  "elements": [],
+                  "widgetType": "button"
                 }
               ],
               "isInner": true
@@ -768,7 +778,7 @@
                 "content_width": "full",
                 "width": {
                   "unit": "%",
-                  "size": 23
+                  "size": 22
                 },
                 "background_background": "classic",
                 "background_color": "#FFFFFF",
@@ -809,33 +819,52 @@
               },
               "elements": [
                 {
-                  "id": "00000023",
+                  "id": "00000022",
                   "elType": "widget",
                   "settings": {
-                    "title_text": "Full-Stack Team",
-                    "description_text": "Strategy, design, development and marketing under one roof.",
+                    "title_text": "Website Design",
+                    "description_text": "Conversion-focused UI/UX design that reflects your brand, not a template.",
                     "selected_icon": {
-                      "value": "fas fa-users",
+                      "value": "fas fa-pen-ruler",
                       "library": "fa-solid"
                     },
                     "position": "top",
-                    "primary_color": "#14C38E"
+                    "primary_color": "#1E56E0",
+                    "icon_space": {
+                      "unit": "px",
+                      "size": 20
+                    }
                   },
                   "elements": [],
                   "widgetType": "icon-box"
+                },
+                {
+                  "id": "00000023",
+                  "elType": "widget",
+                  "settings": {
+                    "text": "Learn More",
+                    "link": {
+                      "url": "/services/",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "button_type": "link"
+                  },
+                  "elements": [],
+                  "widgetType": "button"
                 }
               ],
               "isInner": true
             },
             {
-              "id": "00000026",
+              "id": "00000027",
               "elType": "container",
               "settings": {
                 "flex_direction": "column",
                 "content_width": "full",
                 "width": {
                   "unit": "%",
-                  "size": 23
+                  "size": 22
                 },
                 "background_background": "classic",
                 "background_color": "#FFFFFF",
@@ -879,23 +908,99 @@
                   "id": "00000025",
                   "elType": "widget",
                   "settings": {
-                    "title_text": "Transparent Reporting",
-                    "description_text": "Live dashboards and monthly reviews \u2014 no black boxes.",
+                    "title_text": "Website Development",
+                    "description_text": "Fast, secure builds on WordPress, Shopify and custom stacks.",
                     "selected_icon": {
-                      "value": "fas fa-chart-bar",
+                      "value": "fas fa-code",
                       "library": "fa-solid"
                     },
                     "position": "top",
-                    "primary_color": "#14C38E"
+                    "primary_color": "#1E56E0",
+                    "icon_space": {
+                      "unit": "px",
+                      "size": 20
+                    }
                   },
                   "elements": [],
                   "widgetType": "icon-box"
+                },
+                {
+                  "id": "00000026",
+                  "elType": "widget",
+                  "settings": {
+                    "text": "Learn More",
+                    "link": {
+                      "url": "/services/",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "button_type": "link"
+                  },
+                  "elements": [],
+                  "widgetType": "button"
                 }
               ],
               "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "00000035",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "align_items": "center",
+        "flex_gap": {
+          "unit": "px",
+          "size": 32,
+          "column": "32"
+        },
+        "padding": {
+          "unit": "px",
+          "top": "88",
+          "right": "24",
+          "bottom": "88",
+          "left": "24",
+          "isLinked": false
+        },
+        "_element_id": "dh-why-us",
+        "background_background": "classic",
+        "background_color": "#F6F8FB"
+      },
+      "elements": [
+        {
+          "id": "00000033",
+          "elType": "widget",
+          "settings": {
+            "title": "Why Choose DevHems Technology",
+            "header_size": "h2",
+            "align": "center"
+          },
+          "elements": [],
+          "widgetType": "heading"
+        },
+        {
+          "id": "00000034",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row",
+            "content_width": "full",
+            "flex_gap": {
+              "unit": "px",
+              "size": 24,
+              "column": "24"
             },
+            "flex_wrap": "wrap",
+            "flex_justify_content": "center"
+          },
+          "elements": [
             {
-              "id": "00000028",
+              "id": "0000002c",
               "elType": "container",
               "settings": {
                 "flex_direction": "column",
@@ -943,7 +1048,208 @@
               },
               "elements": [
                 {
-                  "id": "00000027",
+                  "id": "0000002b",
+                  "elType": "widget",
+                  "settings": {
+                    "title_text": "Proven Results",
+                    "description_text": "240%+ average organic traffic growth across client campaigns.",
+                    "selected_icon": {
+                      "value": "fas fa-award",
+                      "library": "fa-solid"
+                    },
+                    "position": "top",
+                    "primary_color": "#3E8EFF"
+                  },
+                  "elements": [],
+                  "widgetType": "icon-box"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "0000002e",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 23
+                },
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7EAF0",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 12,
+                  "blur": 32,
+                  "spread": -8,
+                  "color": "rgba(16,24,40,0.12)"
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "28",
+                  "bottom": "32",
+                  "left": "28",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "0000002d",
+                  "elType": "widget",
+                  "settings": {
+                    "title_text": "Full-Stack Team",
+                    "description_text": "Strategy, design, development and marketing under one roof.",
+                    "selected_icon": {
+                      "value": "fas fa-users",
+                      "library": "fa-solid"
+                    },
+                    "position": "top",
+                    "primary_color": "#3E8EFF"
+                  },
+                  "elements": [],
+                  "widgetType": "icon-box"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "00000030",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 23
+                },
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7EAF0",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 12,
+                  "blur": 32,
+                  "spread": -8,
+                  "color": "rgba(16,24,40,0.12)"
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "28",
+                  "bottom": "32",
+                  "left": "28",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "0000002f",
+                  "elType": "widget",
+                  "settings": {
+                    "title_text": "Transparent Reporting",
+                    "description_text": "Live dashboards and monthly reviews \u2014 no black boxes.",
+                    "selected_icon": {
+                      "value": "fas fa-chart-bar",
+                      "library": "fa-solid"
+                    },
+                    "position": "top",
+                    "primary_color": "#3E8EFF"
+                  },
+                  "elements": [],
+                  "widgetType": "icon-box"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "00000032",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 23
+                },
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7EAF0",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 12,
+                  "blur": 32,
+                  "spread": -8,
+                  "color": "rgba(16,24,40,0.12)"
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "28",
+                  "bottom": "32",
+                  "left": "28",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "00000031",
                   "elType": "widget",
                   "settings": {
                     "title_text": "Fast Turnaround",
@@ -953,7 +1259,7 @@
                       "library": "fa-solid"
                     },
                     "position": "top",
-                    "primary_color": "#14C38E"
+                    "primary_color": "#3E8EFF"
                   },
                   "elements": [],
                   "widgetType": "icon-box"
@@ -968,7 +1274,7 @@
       "isInner": false
     },
     {
-      "id": "00000039",
+      "id": "00000043",
       "elType": "container",
       "settings": {
         "content_width": "boxed",
@@ -989,11 +1295,11 @@
         },
         "_element_id": "dh-stats",
         "background_background": "classic",
-        "background_color": "#101828"
+        "background_color": "#0A1B3D"
       },
       "elements": [
         {
-          "id": "00000038",
+          "id": "00000042",
           "elType": "container",
           "settings": {
             "flex_direction": "row",
@@ -1008,7 +1314,7 @@
           },
           "elements": [
             {
-              "id": "0000002e",
+              "id": "00000038",
               "elType": "container",
               "settings": {
                 "flex_direction": "column",
@@ -1024,146 +1330,146 @@
                 }
               },
               "elements": [
-                {
-                  "id": "0000002c",
-                  "elType": "widget",
-                  "settings": {
-                    "title": "150+",
-                    "header_size": "h2",
-                    "align": "center",
-                    "title_color": "#FFFFFF"
-                  },
-                  "elements": [],
-                  "widgetType": "heading"
-                },
-                {
-                  "id": "0000002d",
-                  "elType": "widget",
-                  "settings": {
-                    "editor": "<p style='text-align:center;color:#AEB8C8'>Projects Delivered</p>"
-                  },
-                  "elements": [],
-                  "widgetType": "text-editor"
-                }
-              ],
-              "isInner": true
-            },
-            {
-              "id": "00000031",
-              "elType": "container",
-              "settings": {
-                "flex_direction": "column",
-                "content_width": "full",
-                "flex_gap": {
-                  "unit": "px",
-                  "size": 20,
-                  "column": "20"
-                },
-                "width": {
-                  "unit": "%",
-                  "size": 22
-                }
-              },
-              "elements": [
-                {
-                  "id": "0000002f",
-                  "elType": "widget",
-                  "settings": {
-                    "title": "98%",
-                    "header_size": "h2",
-                    "align": "center",
-                    "title_color": "#FFFFFF"
-                  },
-                  "elements": [],
-                  "widgetType": "heading"
-                },
-                {
-                  "id": "00000030",
-                  "elType": "widget",
-                  "settings": {
-                    "editor": "<p style='text-align:center;color:#AEB8C8'>Client Retention</p>"
-                  },
-                  "elements": [],
-                  "widgetType": "text-editor"
-                }
-              ],
-              "isInner": true
-            },
-            {
-              "id": "00000034",
-              "elType": "container",
-              "settings": {
-                "flex_direction": "column",
-                "content_width": "full",
-                "flex_gap": {
-                  "unit": "px",
-                  "size": 20,
-                  "column": "20"
-                },
-                "width": {
-                  "unit": "%",
-                  "size": 22
-                }
-              },
-              "elements": [
-                {
-                  "id": "00000032",
-                  "elType": "widget",
-                  "settings": {
-                    "title": "240%",
-                    "header_size": "h2",
-                    "align": "center",
-                    "title_color": "#FFFFFF"
-                  },
-                  "elements": [],
-                  "widgetType": "heading"
-                },
-                {
-                  "id": "00000033",
-                  "elType": "widget",
-                  "settings": {
-                    "editor": "<p style='text-align:center;color:#AEB8C8'>Avg. Traffic Growth</p>"
-                  },
-                  "elements": [],
-                  "widgetType": "text-editor"
-                }
-              ],
-              "isInner": true
-            },
-            {
-              "id": "00000037",
-              "elType": "container",
-              "settings": {
-                "flex_direction": "column",
-                "content_width": "full",
-                "flex_gap": {
-                  "unit": "px",
-                  "size": 20,
-                  "column": "20"
-                },
-                "width": {
-                  "unit": "%",
-                  "size": 22
-                }
-              },
-              "elements": [
-                {
-                  "id": "00000035",
-                  "elType": "widget",
-                  "settings": {
-                    "title": "40+",
-                    "header_size": "h2",
-                    "align": "center",
-                    "title_color": "#FFFFFF"
-                  },
-                  "elements": [],
-                  "widgetType": "heading"
-                },
                 {
                   "id": "00000036",
                   "elType": "widget",
                   "settings": {
-                    "editor": "<p style='text-align:center;color:#AEB8C8'>Team Experts</p>"
+                    "title": "50+",
+                    "header_size": "h2",
+                    "align": "center",
+                    "title_color": "#FFFFFF"
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "00000037",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p style='text-align:center;color:#AEB8C8'>Brands Served Across India</p>"
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "0000003b",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "content_width": "full",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 20,
+                  "column": "20"
+                },
+                "width": {
+                  "unit": "%",
+                  "size": 22
+                }
+              },
+              "elements": [
+                {
+                  "id": "00000039",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "206K",
+                    "header_size": "h2",
+                    "align": "center",
+                    "title_color": "#FFFFFF"
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "0000003a",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p style='text-align:center;color:#AEB8C8'>Organic Clicks \u2014 12mo Campaign</p>"
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "0000003e",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "content_width": "full",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 20,
+                  "column": "20"
+                },
+                "width": {
+                  "unit": "%",
+                  "size": 22
+                }
+              },
+              "elements": [
+                {
+                  "id": "0000003c",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "10.1M",
+                    "header_size": "h2",
+                    "align": "center",
+                    "title_color": "#FFFFFF"
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "0000003d",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p style='text-align:center;color:#AEB8C8'>Search Impressions Generated</p>"
+                  },
+                  "elements": [],
+                  "widgetType": "text-editor"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "00000041",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "content_width": "full",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 20,
+                  "column": "20"
+                },
+                "width": {
+                  "unit": "%",
+                  "size": 22
+                }
+              },
+              "elements": [
+                {
+                  "id": "0000003f",
+                  "elType": "widget",
+                  "settings": {
+                    "title": "98/92/100",
+                    "header_size": "h2",
+                    "align": "center",
+                    "title_color": "#FFFFFF"
+                  },
+                  "elements": [],
+                  "widgetType": "heading"
+                },
+                {
+                  "id": "00000040",
+                  "elType": "widget",
+                  "settings": {
+                    "editor": "<p style='text-align:center;color:#AEB8C8'>PageSpeed Scores Delivered</p>"
                   },
                   "elements": [],
                   "widgetType": "text-editor"
@@ -1178,7 +1484,7 @@
       "isInner": false
     },
     {
-      "id": "0000004c",
+      "id": "00000056",
       "elType": "container",
       "settings": {
         "content_width": "boxed",
@@ -1201,7 +1507,7 @@
       },
       "elements": [
         {
-          "id": "0000004a",
+          "id": "00000054",
           "elType": "widget",
           "settings": {
             "title": "Our Work Process",
@@ -1212,7 +1518,7 @@
           "widgetType": "heading"
         },
         {
-          "id": "0000004b",
+          "id": "00000055",
           "elType": "container",
           "settings": {
             "flex_direction": "row",
@@ -1227,7 +1533,7 @@
           },
           "elements": [
             {
-              "id": "0000003d",
+              "id": "00000047",
               "elType": "container",
               "settings": {
                 "flex_direction": "column",
@@ -1275,19 +1581,19 @@
               },
               "elements": [
                 {
-                  "id": "0000003a",
+                  "id": "00000044",
                   "elType": "widget",
                   "settings": {
                     "title": "1",
                     "header_size": "h3",
                     "align": "center",
-                    "title_color": "#0B5FFF"
+                    "title_color": "#1E56E0"
                   },
                   "elements": [],
                   "widgetType": "heading"
                 },
                 {
-                  "id": "0000003b",
+                  "id": "00000045",
                   "elType": "widget",
                   "settings": {
                     "title": "Discover",
@@ -1298,7 +1604,7 @@
                   "widgetType": "heading"
                 },
                 {
-                  "id": "0000003c",
+                  "id": "00000046",
                   "elType": "widget",
                   "settings": {
                     "editor": "<p style='text-align:center'>We audit your business, market and current digital presence.</p>"
@@ -1310,7 +1616,7 @@
               "isInner": true
             },
             {
-              "id": "00000041",
+              "id": "0000004b",
               "elType": "container",
               "settings": {
                 "flex_direction": "column",
@@ -1358,19 +1664,19 @@
               },
               "elements": [
                 {
-                  "id": "0000003e",
+                  "id": "00000048",
                   "elType": "widget",
                   "settings": {
                     "title": "2",
                     "header_size": "h3",
                     "align": "center",
-                    "title_color": "#0B5FFF"
+                    "title_color": "#1E56E0"
                   },
                   "elements": [],
                   "widgetType": "heading"
                 },
                 {
-                  "id": "0000003f",
+                  "id": "00000049",
                   "elType": "widget",
                   "settings": {
                     "title": "Strategize",
@@ -1381,7 +1687,7 @@
                   "widgetType": "heading"
                 },
                 {
-                  "id": "00000040",
+                  "id": "0000004a",
                   "elType": "widget",
                   "settings": {
                     "editor": "<p style='text-align:center'>We build a roadmap tied to measurable growth goals.</p>"
@@ -1393,7 +1699,7 @@
               "isInner": true
             },
             {
-              "id": "00000045",
+              "id": "0000004f",
               "elType": "container",
               "settings": {
                 "flex_direction": "column",
@@ -1441,19 +1747,19 @@
               },
               "elements": [
                 {
-                  "id": "00000042",
+                  "id": "0000004c",
                   "elType": "widget",
                   "settings": {
                     "title": "3",
                     "header_size": "h3",
                     "align": "center",
-                    "title_color": "#0B5FFF"
+                    "title_color": "#1E56E0"
                   },
                   "elements": [],
                   "widgetType": "heading"
                 },
                 {
-                  "id": "00000043",
+                  "id": "0000004d",
                   "elType": "widget",
                   "settings": {
                     "title": "Build & Launch",
@@ -1464,7 +1770,7 @@
                   "widgetType": "heading"
                 },
                 {
-                  "id": "00000044",
+                  "id": "0000004e",
                   "elType": "widget",
                   "settings": {
                     "editor": "<p style='text-align:center'>Design, development and campaigns go live on schedule.</p>"
@@ -1476,7 +1782,7 @@
               "isInner": true
             },
             {
-              "id": "00000049",
+              "id": "00000053",
               "elType": "container",
               "settings": {
                 "flex_direction": "column",
@@ -1524,19 +1830,19 @@
               },
               "elements": [
                 {
-                  "id": "00000046",
+                  "id": "00000050",
                   "elType": "widget",
                   "settings": {
                     "title": "4",
                     "header_size": "h3",
                     "align": "center",
-                    "title_color": "#0B5FFF"
+                    "title_color": "#1E56E0"
                   },
                   "elements": [],
                   "widgetType": "heading"
                 },
                 {
-                  "id": "00000047",
+                  "id": "00000051",
                   "elType": "widget",
                   "settings": {
                     "title": "Optimize",
@@ -1547,7 +1853,7 @@
                   "widgetType": "heading"
                 },
                 {
-                  "id": "00000048",
+                  "id": "00000052",
                   "elType": "widget",
                   "settings": {
                     "editor": "<p style='text-align:center'>Continuous testing and reporting to compound results.</p>"
@@ -1565,10 +1871,13 @@
       "isInner": false
     },
     {
-      "id": "00000060",
+      "id": "0000005e",
       "elType": "container",
       "settings": {
-        "content_width": "boxed",
+        "content_width": {
+          "unit": "%",
+          "size": 80
+        },
         "flex_direction": "column",
         "align_items": "center",
         "flex_gap": {
@@ -1590,10 +1899,10 @@
       },
       "elements": [
         {
-          "id": "0000005c",
+          "id": "00000057",
           "elType": "widget",
           "settings": {
-            "title": "Featured Case Studies",
+            "title": "Case Studies by the Numbers",
             "header_size": "h2",
             "align": "center"
           },
@@ -1601,346 +1910,32 @@
           "widgetType": "heading"
         },
         {
-          "id": "0000005d",
-          "elType": "container",
+          "id": "0000005b",
+          "elType": "widget",
           "settings": {
-            "flex_direction": "row",
-            "content_width": "full",
-            "flex_gap": {
-              "unit": "px",
-              "size": 28,
-              "column": "28"
-            },
-            "flex_wrap": "wrap",
-            "flex_justify_content": "center"
+            "tabs": [
+              {
+                "_id": "0000005",
+                "tab_title": "Automotive Parts",
+                "tab_content": "<p><strong>SEO / AEO / GEO &mdash; 12-Month Program</strong></p><p>A 12-month organic search program focused on high-intent product and category pages for an automotive parts brand.</p><p style='font-size:28px;font-weight:800;color:#1E56E0;margin:16px 0 0;'>206K organic clicks &middot; 10.1M impressions</p>"
+              },
+              {
+                "_id": "0000005",
+                "tab_title": "Healthcare",
+                "tab_content": "<p><strong>Social Media &mdash; 6-Month Program</strong></p><p>An Instagram growth and content program built around patient trust and education for a healthcare brand.</p><p style='font-size:28px;font-weight:800;color:#1E56E0;margin:16px 0 0;'>87.6% Instagram account growth</p>"
+              },
+              {
+                "_id": "0000005",
+                "tab_title": "E-commerce",
+                "tab_content": "<p><strong>Website Development</strong></p><p>A performance-first storefront rebuild optimized for Core Web Vitals and conversion.</p><p style='font-size:28px;font-weight:800;color:#1E56E0;margin:16px 0 0;'>98 / 92 / 100 PageSpeed scores</p>"
+              }
+            ]
           },
-          "elements": [
-            {
-              "id": "00000051",
-              "elType": "container",
-              "settings": {
-                "flex_direction": "column",
-                "content_width": "full",
-                "width": {
-                  "unit": "%",
-                  "size": 31.5
-                },
-                "background_background": "classic",
-                "background_color": "#FFFFFF",
-                "border_border": "solid",
-                "border_color": "#E7EAF0",
-                "border_width": {
-                  "unit": "px",
-                  "top": "1",
-                  "right": "1",
-                  "bottom": "1",
-                  "left": "1",
-                  "isLinked": true
-                },
-                "border_radius": {
-                  "unit": "px",
-                  "top": "16",
-                  "right": "16",
-                  "bottom": "16",
-                  "left": "16",
-                  "isLinked": true
-                },
-                "box_shadow_box_shadow_type": "yes",
-                "box_shadow_box_shadow": {
-                  "horizontal": 0,
-                  "vertical": 12,
-                  "blur": 32,
-                  "spread": -8,
-                  "color": "rgba(16,24,40,0.12)"
-                },
-                "padding": {
-                  "unit": "px",
-                  "top": "32",
-                  "right": "28",
-                  "bottom": "32",
-                  "left": "28",
-                  "isLinked": true
-                }
-              },
-              "elements": [
-                {
-                  "id": "0000004d",
-                  "elType": "widget",
-                  "settings": {
-                    "image": {
-                      "url": "https://placehold.co/800x600/0B5FFF/FFFFFF?text=Case+Study+1&font=poppins",
-                      "id": "",
-                      "alt": "Case Study 1",
-                      "source": "url"
-                    },
-                    "border_radius": {
-                      "unit": "px",
-                      "top": "16",
-                      "right": "16",
-                      "bottom": "16",
-                      "left": "16",
-                      "isLinked": true
-                    }
-                  },
-                  "elements": [],
-                  "widgetType": "image"
-                },
-                {
-                  "id": "0000004e",
-                  "elType": "widget",
-                  "settings": {
-                    "title": "Client Success Story",
-                    "header_size": "h4"
-                  },
-                  "elements": [],
-                  "widgetType": "heading"
-                },
-                {
-                  "id": "0000004f",
-                  "elType": "widget",
-                  "settings": {
-                    "editor": "<p>A short summary of the challenge and the measurable result achieved.</p>"
-                  },
-                  "elements": [],
-                  "widgetType": "text-editor"
-                },
-                {
-                  "id": "00000050",
-                  "elType": "widget",
-                  "settings": {
-                    "text": "Read Case Study",
-                    "link": {
-                      "url": "/portfolio/",
-                      "is_external": "",
-                      "nofollow": ""
-                    },
-                    "button_type": "link"
-                  },
-                  "elements": [],
-                  "widgetType": "button"
-                }
-              ],
-              "isInner": true
-            },
-            {
-              "id": "00000056",
-              "elType": "container",
-              "settings": {
-                "flex_direction": "column",
-                "content_width": "full",
-                "width": {
-                  "unit": "%",
-                  "size": 31.5
-                },
-                "background_background": "classic",
-                "background_color": "#FFFFFF",
-                "border_border": "solid",
-                "border_color": "#E7EAF0",
-                "border_width": {
-                  "unit": "px",
-                  "top": "1",
-                  "right": "1",
-                  "bottom": "1",
-                  "left": "1",
-                  "isLinked": true
-                },
-                "border_radius": {
-                  "unit": "px",
-                  "top": "16",
-                  "right": "16",
-                  "bottom": "16",
-                  "left": "16",
-                  "isLinked": true
-                },
-                "box_shadow_box_shadow_type": "yes",
-                "box_shadow_box_shadow": {
-                  "horizontal": 0,
-                  "vertical": 12,
-                  "blur": 32,
-                  "spread": -8,
-                  "color": "rgba(16,24,40,0.12)"
-                },
-                "padding": {
-                  "unit": "px",
-                  "top": "32",
-                  "right": "28",
-                  "bottom": "32",
-                  "left": "28",
-                  "isLinked": true
-                }
-              },
-              "elements": [
-                {
-                  "id": "00000052",
-                  "elType": "widget",
-                  "settings": {
-                    "image": {
-                      "url": "https://placehold.co/800x600/101828/FFFFFF?text=Case+Study+2&font=poppins",
-                      "id": "",
-                      "alt": "Case Study 2",
-                      "source": "url"
-                    },
-                    "border_radius": {
-                      "unit": "px",
-                      "top": "16",
-                      "right": "16",
-                      "bottom": "16",
-                      "left": "16",
-                      "isLinked": true
-                    }
-                  },
-                  "elements": [],
-                  "widgetType": "image"
-                },
-                {
-                  "id": "00000053",
-                  "elType": "widget",
-                  "settings": {
-                    "title": "Client Success Story",
-                    "header_size": "h4"
-                  },
-                  "elements": [],
-                  "widgetType": "heading"
-                },
-                {
-                  "id": "00000054",
-                  "elType": "widget",
-                  "settings": {
-                    "editor": "<p>A short summary of the challenge and the measurable result achieved.</p>"
-                  },
-                  "elements": [],
-                  "widgetType": "text-editor"
-                },
-                {
-                  "id": "00000055",
-                  "elType": "widget",
-                  "settings": {
-                    "text": "Read Case Study",
-                    "link": {
-                      "url": "/portfolio/",
-                      "is_external": "",
-                      "nofollow": ""
-                    },
-                    "button_type": "link"
-                  },
-                  "elements": [],
-                  "widgetType": "button"
-                }
-              ],
-              "isInner": true
-            },
-            {
-              "id": "0000005b",
-              "elType": "container",
-              "settings": {
-                "flex_direction": "column",
-                "content_width": "full",
-                "width": {
-                  "unit": "%",
-                  "size": 31.5
-                },
-                "background_background": "classic",
-                "background_color": "#FFFFFF",
-                "border_border": "solid",
-                "border_color": "#E7EAF0",
-                "border_width": {
-                  "unit": "px",
-                  "top": "1",
-                  "right": "1",
-                  "bottom": "1",
-                  "left": "1",
-                  "isLinked": true
-                },
-                "border_radius": {
-                  "unit": "px",
-                  "top": "16",
-                  "right": "16",
-                  "bottom": "16",
-                  "left": "16",
-                  "isLinked": true
-                },
-                "box_shadow_box_shadow_type": "yes",
-                "box_shadow_box_shadow": {
-                  "horizontal": 0,
-                  "vertical": 12,
-                  "blur": 32,
-                  "spread": -8,
-                  "color": "rgba(16,24,40,0.12)"
-                },
-                "padding": {
-                  "unit": "px",
-                  "top": "32",
-                  "right": "28",
-                  "bottom": "32",
-                  "left": "28",
-                  "isLinked": true
-                }
-              },
-              "elements": [
-                {
-                  "id": "00000057",
-                  "elType": "widget",
-                  "settings": {
-                    "image": {
-                      "url": "https://placehold.co/800x600/14C38E/FFFFFF?text=Case+Study+3&font=poppins",
-                      "id": "",
-                      "alt": "Case Study 3",
-                      "source": "url"
-                    },
-                    "border_radius": {
-                      "unit": "px",
-                      "top": "16",
-                      "right": "16",
-                      "bottom": "16",
-                      "left": "16",
-                      "isLinked": true
-                    }
-                  },
-                  "elements": [],
-                  "widgetType": "image"
-                },
-                {
-                  "id": "00000058",
-                  "elType": "widget",
-                  "settings": {
-                    "title": "Client Success Story",
-                    "header_size": "h4"
-                  },
-                  "elements": [],
-                  "widgetType": "heading"
-                },
-                {
-                  "id": "00000059",
-                  "elType": "widget",
-                  "settings": {
-                    "editor": "<p>A short summary of the challenge and the measurable result achieved.</p>"
-                  },
-                  "elements": [],
-                  "widgetType": "text-editor"
-                },
-                {
-                  "id": "0000005a",
-                  "elType": "widget",
-                  "settings": {
-                    "text": "Read Case Study",
-                    "link": {
-                      "url": "/portfolio/",
-                      "is_external": "",
-                      "nofollow": ""
-                    },
-                    "button_type": "link"
-                  },
-                  "elements": [],
-                  "widgetType": "button"
-                }
-              ],
-              "isInner": true
-            }
-          ],
-          "isInner": true
+          "elements": [],
+          "widgetType": "tabs"
         },
         {
-          "id": "0000005f",
+          "id": "0000005d",
           "elType": "container",
           "settings": {
             "flex_direction": "row",
@@ -1954,7 +1949,7 @@
           },
           "elements": [
             {
-              "id": "0000005e",
+              "id": "0000005c",
               "elType": "widget",
               "settings": {
                 "text": "View All Case Studies",
@@ -1975,7 +1970,7 @@
       "isInner": false
     },
     {
-      "id": "00000069",
+      "id": "00000067",
       "elType": "container",
       "settings": {
         "content_width": "boxed",
@@ -1998,7 +1993,7 @@
       },
       "elements": [
         {
-          "id": "00000061",
+          "id": "0000005f",
           "elType": "widget",
           "settings": {
             "title": "Industries We Serve",
@@ -2009,7 +2004,7 @@
           "widgetType": "heading"
         },
         {
-          "id": "00000068",
+          "id": "00000066",
           "elType": "widget",
           "settings": {
             "icon_list": [
@@ -2070,7 +2065,7 @@
       "isInner": false
     },
     {
-      "id": "00000074",
+      "id": "0000006e",
       "elType": "container",
       "settings": {
         "content_width": "boxed",
@@ -2093,7 +2088,7 @@
       },
       "elements": [
         {
-          "id": "00000072",
+          "id": "0000006c",
           "elType": "widget",
           "settings": {
             "title": "What Our Clients Say",
@@ -2104,7 +2099,7 @@
           "widgetType": "heading"
         },
         {
-          "id": "00000073",
+          "id": "0000006d",
           "elType": "container",
           "settings": {
             "flex_direction": "row",
@@ -2119,7 +2114,73 @@
           },
           "elements": [
             {
-              "id": "0000006d",
+              "id": "00000069",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 47
+                },
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7EAF0",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 12,
+                  "blur": 32,
+                  "spread": -8,
+                  "color": "rgba(16,24,40,0.12)"
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "28",
+                  "bottom": "32",
+                  "left": "28",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "00000068",
+                  "elType": "widget",
+                  "settings": {
+                    "testimonial_content": "DevHems transformed our online presence and doubled our qualified leads within two quarters.",
+                    "testimonial_name": "Client Name",
+                    "testimonial_job": "Automotive Parts Brand",
+                    "testimonial_image": {
+                      "url": "",
+                      "id": ""
+                    }
+                  },
+                  "elements": [],
+                  "widgetType": "testimonial"
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "0000006b",
               "elType": "container",
               "settings": {
                 "flex_direction": "column",
@@ -2170,116 +2231,16 @@
                   "id": "0000006a",
                   "elType": "widget",
                   "settings": {
-                    "rating_scale": "5",
-                    "rating": {
-                      "unit": "px",
-                      "size": 5
+                    "testimonial_content": "Our Instagram engagement grew faster in six months than in the previous two years combined.",
+                    "testimonial_name": "Client Name",
+                    "testimonial_job": "Healthcare Brand",
+                    "testimonial_image": {
+                      "url": "",
+                      "id": ""
                     }
                   },
                   "elements": [],
-                  "widgetType": "star-rating"
-                },
-                {
-                  "id": "0000006b",
-                  "elType": "widget",
-                  "settings": {
-                    "editor": "<p>\u201cDevHems transformed our online presence and doubled our qualified leads within two quarters.\u201d</p>"
-                  },
-                  "elements": [],
-                  "widgetType": "text-editor"
-                },
-                {
-                  "id": "0000006c",
-                  "elType": "widget",
-                  "settings": {
-                    "title": "Client Name, Company",
-                    "header_size": "h5"
-                  },
-                  "elements": [],
-                  "widgetType": "heading"
-                }
-              ],
-              "isInner": true
-            },
-            {
-              "id": "00000071",
-              "elType": "container",
-              "settings": {
-                "flex_direction": "column",
-                "content_width": "full",
-                "width": {
-                  "unit": "%",
-                  "size": 47
-                },
-                "background_background": "classic",
-                "background_color": "#FFFFFF",
-                "border_border": "solid",
-                "border_color": "#E7EAF0",
-                "border_width": {
-                  "unit": "px",
-                  "top": "1",
-                  "right": "1",
-                  "bottom": "1",
-                  "left": "1",
-                  "isLinked": true
-                },
-                "border_radius": {
-                  "unit": "px",
-                  "top": "16",
-                  "right": "16",
-                  "bottom": "16",
-                  "left": "16",
-                  "isLinked": true
-                },
-                "box_shadow_box_shadow_type": "yes",
-                "box_shadow_box_shadow": {
-                  "horizontal": 0,
-                  "vertical": 12,
-                  "blur": 32,
-                  "spread": -8,
-                  "color": "rgba(16,24,40,0.12)"
-                },
-                "padding": {
-                  "unit": "px",
-                  "top": "32",
-                  "right": "28",
-                  "bottom": "32",
-                  "left": "28",
-                  "isLinked": true
-                }
-              },
-              "elements": [
-                {
-                  "id": "0000006e",
-                  "elType": "widget",
-                  "settings": {
-                    "rating_scale": "5",
-                    "rating": {
-                      "unit": "px",
-                      "size": 5
-                    }
-                  },
-                  "elements": [],
-                  "widgetType": "star-rating"
-                },
-                {
-                  "id": "0000006f",
-                  "elType": "widget",
-                  "settings": {
-                    "editor": "<p>\u201cDevHems transformed our online presence and doubled our qualified leads within two quarters.\u201d</p>"
-                  },
-                  "elements": [],
-                  "widgetType": "text-editor"
-                },
-                {
-                  "id": "00000070",
-                  "elType": "widget",
-                  "settings": {
-                    "title": "Client Name, Company",
-                    "header_size": "h5"
-                  },
-                  "elements": [],
-                  "widgetType": "heading"
+                  "widgetType": "testimonial"
                 }
               ],
               "isInner": true
@@ -2291,7 +2252,7 @@
       "isInner": false
     },
     {
-      "id": "00000086",
+      "id": "00000080",
       "elType": "container",
       "settings": {
         "content_width": "boxed",
@@ -2316,7 +2277,7 @@
       },
       "elements": [
         {
-          "id": "00000084",
+          "id": "0000007e",
           "elType": "widget",
           "settings": {
             "title": "Latest From Our Blog",
@@ -2327,7 +2288,7 @@
           "widgetType": "heading"
         },
         {
-          "id": "00000085",
+          "id": "0000007f",
           "elType": "container",
           "settings": {
             "flex_direction": "row",
@@ -2342,7 +2303,7 @@
           },
           "elements": [
             {
-              "id": "00000079",
+              "id": "00000073",
               "elType": "container",
               "settings": {
                 "flex_direction": "column",
@@ -2390,11 +2351,11 @@
               },
               "elements": [
                 {
-                  "id": "00000075",
+                  "id": "0000006f",
                   "elType": "widget",
                   "settings": {
                     "image": {
-                      "url": "https://placehold.co/800x600/101828/FFFFFF?text=Blog+Post+1&font=poppins",
+                      "url": "https://placehold.co/800x600/0A1B3D/FFFFFF?text=Blog+Post+1&font=poppins",
                       "id": "",
                       "alt": "Blog Post 1",
                       "source": "url"
@@ -2412,7 +2373,7 @@
                   "widgetType": "image"
                 },
                 {
-                  "id": "00000076",
+                  "id": "00000070",
                   "elType": "widget",
                   "settings": {
                     "title": "Blog Post Title",
@@ -2422,7 +2383,7 @@
                   "widgetType": "heading"
                 },
                 {
-                  "id": "00000077",
+                  "id": "00000071",
                   "elType": "widget",
                   "settings": {
                     "editor": "<p>A short excerpt introducing the article.</p>"
@@ -2431,7 +2392,7 @@
                   "widgetType": "text-editor"
                 },
                 {
-                  "id": "00000078",
+                  "id": "00000072",
                   "elType": "widget",
                   "settings": {
                     "text": "Read More",
@@ -2449,7 +2410,7 @@
               "isInner": true
             },
             {
-              "id": "0000007e",
+              "id": "00000078",
               "elType": "container",
               "settings": {
                 "flex_direction": "column",
@@ -2497,11 +2458,11 @@
               },
               "elements": [
                 {
-                  "id": "0000007a",
+                  "id": "00000074",
                   "elType": "widget",
                   "settings": {
                     "image": {
-                      "url": "https://placehold.co/800x600/14C38E/FFFFFF?text=Blog+Post+2&font=poppins",
+                      "url": "https://placehold.co/800x600/3E8EFF/FFFFFF?text=Blog+Post+2&font=poppins",
                       "id": "",
                       "alt": "Blog Post 2",
                       "source": "url"
@@ -2519,7 +2480,7 @@
                   "widgetType": "image"
                 },
                 {
-                  "id": "0000007b",
+                  "id": "00000075",
                   "elType": "widget",
                   "settings": {
                     "title": "Blog Post Title",
@@ -2529,7 +2490,7 @@
                   "widgetType": "heading"
                 },
                 {
-                  "id": "0000007c",
+                  "id": "00000076",
                   "elType": "widget",
                   "settings": {
                     "editor": "<p>A short excerpt introducing the article.</p>"
@@ -2538,7 +2499,7 @@
                   "widgetType": "text-editor"
                 },
                 {
-                  "id": "0000007d",
+                  "id": "00000077",
                   "elType": "widget",
                   "settings": {
                     "text": "Read More",
@@ -2556,7 +2517,7 @@
               "isInner": true
             },
             {
-              "id": "00000083",
+              "id": "0000007d",
               "elType": "container",
               "settings": {
                 "flex_direction": "column",
@@ -2604,11 +2565,11 @@
               },
               "elements": [
                 {
-                  "id": "0000007f",
+                  "id": "00000079",
                   "elType": "widget",
                   "settings": {
                     "image": {
-                      "url": "https://placehold.co/800x600/0842B8/FFFFFF?text=Blog+Post+3&font=poppins",
+                      "url": "https://placehold.co/800x600/173FA8/FFFFFF?text=Blog+Post+3&font=poppins",
                       "id": "",
                       "alt": "Blog Post 3",
                       "source": "url"
@@ -2626,7 +2587,7 @@
                   "widgetType": "image"
                 },
                 {
-                  "id": "00000080",
+                  "id": "0000007a",
                   "elType": "widget",
                   "settings": {
                     "title": "Blog Post Title",
@@ -2636,7 +2597,7 @@
                   "widgetType": "heading"
                 },
                 {
-                  "id": "00000081",
+                  "id": "0000007b",
                   "elType": "widget",
                   "settings": {
                     "editor": "<p>A short excerpt introducing the article.</p>"
@@ -2645,7 +2606,7 @@
                   "widgetType": "text-editor"
                 },
                 {
-                  "id": "00000082",
+                  "id": "0000007c",
                   "elType": "widget",
                   "settings": {
                     "text": "Read More",
@@ -2669,7 +2630,7 @@
       "isInner": false
     },
     {
-      "id": "0000008c",
+      "id": "00000086",
       "elType": "container",
       "settings": {
         "content_width": {
@@ -2695,7 +2656,7 @@
       },
       "elements": [
         {
-          "id": "00000087",
+          "id": "00000081",
           "elType": "widget",
           "settings": {
             "title": "Frequently Asked Questions",
@@ -2706,7 +2667,7 @@
           "widgetType": "heading"
         },
         {
-          "id": "0000008b",
+          "id": "00000085",
           "elType": "widget",
           "settings": {
             "tabs": [
@@ -2735,16 +2696,19 @@
       "isInner": false
     },
     {
-      "id": "00000090",
+      "id": "00000089",
       "elType": "container",
       "settings": {
-        "content_width": "boxed",
+        "content_width": {
+          "unit": "%",
+          "size": 60
+        },
         "flex_direction": "column",
         "align_items": "center",
         "flex_gap": {
           "unit": "px",
-          "size": 16,
-          "column": "16"
+          "size": 24,
+          "column": "24"
         },
         "padding": {
           "unit": "px",
@@ -2754,36 +2718,33 @@
           "left": "24",
           "isLinked": false
         },
-        "_element_id": "dh-project-enquiry",
-        "background_background": "classic",
-        "background_color": "#F6F8FB"
+        "_element_id": "dh-bottom-cta",
+        "background_background": "gradient",
+        "background_color": "#0A1B3D",
+        "background_color_b": "#173FA8",
+        "background_gradient_angle": {
+          "unit": "deg",
+          "size": 135
+        }
       },
       "elements": [
         {
-          "id": "0000008d",
+          "id": "00000087",
           "elType": "widget",
           "settings": {
-            "title": "Start Your Project Today",
+            "title": "Ready to Grow With a Team That Shows Its Work?",
             "header_size": "h2",
-            "align": "center"
+            "align": "center",
+            "title_color": "#FFFFFF"
           },
           "elements": [],
           "widgetType": "heading"
         },
         {
-          "id": "0000008e",
+          "id": "00000088",
           "elType": "widget",
           "settings": {
-            "editor": "<p style='text-align:center'>Tell us about your goals and we'll get back to you within one business day.</p>"
-          },
-          "elements": [],
-          "widgetType": "text-editor"
-        },
-        {
-          "id": "0000008f",
-          "elType": "widget",
-          "settings": {
-            "shortcode": "[contact-form-7 id=\"PROJECT_ENQUIRY_FORM_ID\" title=\"Project Enquiry Form\"]"
+            "shortcode": "[devhems_consultation_trigger label=\"Get Free Consultation\"]"
           },
           "elements": [],
           "widgetType": "shortcode"
